@@ -1,8 +1,6 @@
-package practico2_1.ej1;
+package practico2_1.ej1e;
 
-//public boolean delete(Integer delete){
- //por que es un boolean?
-//preguntar si esta bien el metodo de la altura
+import java.util.ArrayList;
 
 public class Tree {
     TreeNode raiz;
@@ -24,8 +22,8 @@ public class Tree {
 
     private TreeNode find(TreeNode node, Integer value){
         if (node == null || node.getValor() == value){
-                return node;
-            }
+            return node;
+        }
 
         if (value < node.getValor()) {
             return find(node.getIzq(), value);
@@ -52,7 +50,6 @@ public class Tree {
 
         return 1 + Math.max(alturaIzq, alturaDer); // La altura del nodo es 1 más el máximo de las alturas de los subárboles izquierdo y derecho
     }
-
     //Recorridos
     public void printPreOrder(){
         printPreOrder(raiz);
@@ -77,7 +74,6 @@ public class Tree {
             System.out.println(nodo.getValor() + " ");
         }
     }
-
     public void printInOrder(){
         printInOrder(raiz);
     }
@@ -127,6 +123,84 @@ public class Tree {
             this.add(this.raiz, valor);
     }
 
+    public ArrayList<Integer> getLongestBranch(){
+        if(!this.isEmpty()){
+            return this.getLongestBranch(this.raiz);
+        }else{
+            return null;
+        }
+    }
+
+    private ArrayList<Integer> getLongestBranch(TreeNode node){
+
+        if(node == null){
+            return new ArrayList<>();
+        }
+
+        ArrayList<Integer> izq = this.getLongestBranch(node.getIzq());
+        ArrayList<Integer> der = this.getLongestBranch(node.getDer());
+
+        ArrayList<Integer> longestBranch = new ArrayList<>();
+        longestBranch.add(node.getValor()); // Agrega la raíz
+        // Comparamos las longitudes de las ramas izquierda y derecha
+
+        if (der.size() > izq.size()) {
+            longestBranch.addAll(der); // Agrega la rama más larga de la derecha
+            return longestBranch;
+        } else {
+            longestBranch.addAll(izq); // Agrega la rama más larga de la izquierda
+            return longestBranch;
+        }
+    }
+
+    public ArrayList<Integer> getElemAtLevel(int nivel){
+        if(!this.isEmpty()){
+            return this.getElemAtLevel(this.raiz, nivel, 0);
+        }else{
+            return null;
+        }
+    }
+
+    private ArrayList<Integer> getElemAtLevel(TreeNode node, int nivel, int nivelActual){
+
+        if(node == null){
+            return new ArrayList<>();
+        }
+
+        if(nivelActual == nivel){
+
+            ArrayList<Integer> num = new ArrayList<>();
+            num.add(node.getValor());
+            return num;
+
+        }else {
+
+            ArrayList<Integer> list = new ArrayList<>();
+            list.addAll(this.getElemAtLevel(node.getIzq(), nivel, nivelActual + 1));
+            list.addAll(this.getElemAtLevel(node.getDer(), nivel, nivelActual + 1));
+            return list;
+
+        }
+
+    }
+
+    public Integer getMaxElem(){
+        if(this!=null){
+            return this.getMaxElem(this.raiz);
+        }else{
+            return null;
+        }
+    }
+
+    private Integer getMaxElem(TreeNode node){
+
+        if(node.getDer() != null) {
+            if (node.getDer().getValor() > node.getValor()) {
+                return this.getMaxElem(node.getDer());
+            }
+        }
+        return node.getValor();
+    }
 
 
 }

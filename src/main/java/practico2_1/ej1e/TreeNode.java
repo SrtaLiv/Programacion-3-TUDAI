@@ -1,4 +1,4 @@
-package practico2_1.ej1;
+package practico2_1.ej1e;
 
 public class TreeNode {
     TreeNode derecha;
@@ -16,13 +16,14 @@ public class TreeNode {
         return derecha;
     }
 
+    public TreeNode getIzq() {
+        return izquierda;
+    }
+
     public void setDer(TreeNode derecha) {
         this.derecha = derecha;
     }
 
-    public TreeNode getIzq() {
-        return izquierda;
-    }
 
     public void setIzq(TreeNode izquierda) {
         this.izquierda = izquierda;
