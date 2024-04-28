@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="git add .&#10;git commit - m &quot;tp3&quot;">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practico3/ej1/Hashing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="tp hash, metodos">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico4/Arco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico4/Grafo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico4/GrafoDirigido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico4/GrafoNoDirigido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico4/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico3/ej1.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +76,7 @@
     "Application.main.executor": "Run",
     "Application.practico1.ej5.Main.executor": "Run",
     "Application.practico1.ej6.Main.executor": "Run",
+    "Application.practico4.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -105,20 +108,7 @@
       <recent name="practico1.ej6" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.main">
-    <configuration name="AlgoritmosOrdenamiento" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practico2.ej6.AlgoritmosOrdenamiento" />
-      <module name="Programacion-3-JAVA-TUDAI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="practico2.ej6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="practico2_1.ej1.Main" />
       <module name="Programacion-3-JAVA-TUDAI" />
@@ -166,13 +156,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="practico4.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practico4.Main" />
+      <module name="Programacion-3-JAVA-TUDAI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practico4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.practico4.Main" />
         <item itemvalue="Application.main" />
         <item itemvalue="Application.Tree" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.MergeSort" />
-        <item itemvalue="Application.AlgoritmosOrdenamiento" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713879622474</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="tp hash, metodos">
+      <option name="closed" value="true" />
+      <created>1714023357824</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714023357824</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,6 +230,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git add ." />
-    <option name="LAST_COMMIT_MESSAGE" value="git add ." />
+    <MESSAGE value="tp hash, metodos" />
+    <option name="LAST_COMMIT_MESSAGE" value="tp hash, metodos" />
   </component>
 </project>
