@@ -62,7 +62,7 @@ public class GrafoDirigido<T> implements Grafo<T> {
 
     @Override
     public Iterator<Integer> obtenerAdyacentes(int verticeId) {
-        // TODO Auto-generated method stub
+        // TODO Auto-generated method stub d
         return null;
     }
 
