@@ -2,7 +2,6 @@ package practico4;
 import java.util.Iterator;
 
 public interface Grafo<T> {
-
     // Agrega un vertice
     public void agregarVertice(int verticeId);
 

@@ -1,80 +1,188 @@
 package practico4;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 
+//puedo hacer los get y set de mis vertices?
 public class GrafoDirigido<T> implements Grafo<T> {
+    //GRAFO DIRIGIDO CON LISTA DE ADYACENCIA
+    private ArrayList<Vertice> vertices;
 
-    @Override
-    public void agregarVertice(int verticeId) {
-        // TODO Auto-generated method stub
+    //Arcos?
+    public GrafoDirigido() {
+        vertices = new ArrayList<>();
     }
 
+
+    public class Vertice {
+        public Vertice() {
+            this.id = getId();
+            this.adyacentes = new ArrayList<>();
+        }
+
+        protected int id;
+        protected ArrayList<Arco<T>> adyacentes;
+
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public ArrayList<Arco<T>> getAdyacentes() {
+            return adyacentes;
+        }
+
+        public void setAdyacentes(ArrayList<Arco<T>> adyacentes) {
+            this.adyacentes = adyacentes;
+        }
+
+    }
+
+    public ArrayList<Vertice> getVertices() {
+        return new ArrayList<>(vertices);
+    }
+
+    public void setVertices(ArrayList<Vertice> vertices) {
+        this.vertices = vertices;
+    }
+
+    //Un vertice necesita Arcos-relaciones
+    @Override
+    public void agregarVertice(int verticeId) {
+        Vertice v = new Vertice();
+        v.id = verticeId;
+        v.adyacentes = new ArrayList<>();
+        vertices.add(v);
+    }
+
+    //Elimino el arco, luego selecciono mis Arcos o busco mi Adyacente?
     @Override
     public void borrarVertice(int verticeId) {
-        // TODO Auto-generated method stub
+        if (vertices != null && verticeId >= 0) {
+            Vertice verticeAEliminar = vertices.get(verticeId);
+            for (Vertice v : vertices) {
+                Iterator<Arco<T>> iteradorArcos = v.adyacentes.iterator();
+
+            }
+            vertices.remove(verticeId);
+
+        }
     }
 
     @Override
     public void agregarArco(int verticeId1, int verticeId2, T etiqueta) {
-        // TODO Auto-generated method stub
+        Vertice v1 = vertices.get(verticeId1);
+        //Vertice v2 = vertices.get(verticeId2);
+        Arco<T> nuevoArco = new Arco<>(verticeId1, verticeId2, etiqueta);
+
+        // Desde v1 a v2 (v2 es adyacente a v1)
+        v1.adyacentes.add(nuevoArco);
     }
 
     @Override
     public void borrarArco(int verticeId1, int verticeId2) {
-        // TODO Auto-generated method stub
+        //busco adyacentes y arcos.
+        if (existeArco(verticeId1, verticeId2)) {
+            Arco<T> arcoBorrado = this.obtenerArco(verticeId1, verticeId2);
+            Vertice v1 = vertices.get(verticeId1);
+            v1.adyacentes.remove(arcoBorrado);
+        }
     }
 
     @Override
     public boolean contieneVertice(int verticeId) {
-        // TODO Auto-generated method stub
-        return false;
+        return vertices.get(verticeId) != null;
     }
 
     @Override
     public boolean existeArco(int verticeId1, int verticeId2) {
-
-        return false;
+        return obtenerArco(verticeId1, verticeId2) != null;
     }
 
     @Override
     public Arco<T> obtenerArco(int verticeId1, int verticeId2) {
-        // TODO Auto-generated method stub
+        Vertice v1 = vertices.get(verticeId1);
+
+        if (v1 != null && v1.getAdyacentes() != null) {
+            for (Arco<T> arco : v1.getAdyacentes()) {
+                if (arco.getVerticeDestino() == verticeId2) {
+                    return arco;
+                }
+            }
+        }
         return null;
     }
 
     @Override
     public int cantidadVertices() {
-        // TODO Auto-generated method stub
-        return 0;
+        return vertices.size();
     }
 
     @Override
     public int cantidadArcos() {
-        // TODO Auto-generated method stub
-        return 0;
+        int cant = 0;
+        for (Vertice vertice : vertices) {
+            if (vertice.adyacentes != null) {
+                cant += vertice.getAdyacentes().size();
+            }
+        }
+        return cant;
     }
 
+
+    //no se como hacer este iteraor
     @Override
     public Iterator<Integer> obtenerVertices() {
-        // TODO Auto-generated method stub
-        return null;
+        ArrayList<Integer> idsVertices = new ArrayList<>();
+        for (Vertice v : vertices) {
+            idsVertices.add(v.getId());
+        }
+        return idsVertices.iterator();
     }
 
     @Override
     public Iterator<Integer> obtenerAdyacentes(int verticeId) {
-        // TODO Auto-generated method stub d
-        return null;
+        ArrayList<Integer> verticesAdyacentes = new ArrayList<>();
+
+        if (verticeId >= 0 && verticeId < vertices.size()) {
+            Vertice v = vertices.get(verticeId);
+
+            if (v.getAdyacentes() != null) {
+                for (Arco<T> arco : v.getAdyacentes()) {
+                    verticesAdyacentes.add(arco.getVerticeDestino());
+                }
+            }
+        }
+
+        return verticesAdyacentes.iterator();
     }
 
     @Override
     public Iterator<Arco<T>> obtenerArcos() {
-        // TODO Auto-generated method stub
         return null;
     }
 
     @Override
     public Iterator<Arco<T>> obtenerArcos(int verticeId) {
-        // TODO Auto-generated method stub
         return null;
     }
+
+    //METODO ENCARGADO DE VER QUE SE HAYAN PASADO POR TDOSOS LOS VERTICES
+    //el primer for recorre los vertices y los inicializa en blanco
+    //el tiempo es opcional
+    // el segundo for va a llamar a el dfs visitado
+    // public Grafo<T> DepthFirstSearch(Grafo<T> gr){
+
+
+
+  /*  public boolean DFS_Visitado(Vertice v) {
+
+        tiempo++;
+    }
+*/
+
+//este abajo me lo pidio java
 }
