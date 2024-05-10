@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="agregue tp grafos">
-      <change afterPath="$PROJECT_DIR$/src/main/java/practico4/GrafoDirigido" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practico4/GrafoDirigidoMatriz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practico4/IteradorArcos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practico4/IteradorVertices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practico4/RecorridoSimple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/Grafo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/Grafo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/GrafoDirigido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/GrafoDirigido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/programacion3javatudai/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/programacion3javatudai/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico2_1/e.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico2_1/ej1e/Tree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico2_1/ej1e/TreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico2_1/ej1e/main.class" beforeDir="false" />
-    </list>
+    <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="Grafo Dirigido con Lista de Adyacencia" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,6 +94,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Liv\IdeaProjects\Programacion-3-JAVA-TUDAI\src\main\java\practico1" />
       <recent name="C:\Users\Liv\IdeaProjects\Programacion-3-JAVA-TUDAI\src\main\java\org\example\programacion3javatudai\ListaVinculada" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="practico4" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="practico4" />
@@ -239,7 +226,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714269912836</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Grafo Dirigido con Lista de Adyacencia">
+      <option name="closed" value="true" />
+      <created>1715364450381</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715364450381</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Grafo Dirigido con Lista de Adyacencia">
+      <option name="closed" value="true" />
+      <created>1715364479265</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715364479265</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,7 +260,8 @@
     <MESSAGE value="git add ." />
     <MESSAGE value="tp hash, metodos" />
     <MESSAGE value="agregue tp grafos" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregue tp grafos" />
+    <MESSAGE value="Grafo Dirigido con Lista de Adyacencia" />
+    <option name="LAST_COMMIT_MESSAGE" value="Grafo Dirigido con Lista de Adyacencia" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
