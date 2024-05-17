@@ -26,7 +26,6 @@ public class Tree {
         if (node == null || node.getValor() == value){
                 return node;
             }
-
         if (value < node.getValor()) {
             return find(node.getIzq(), value);
         } else {

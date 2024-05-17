@@ -13,15 +13,23 @@ public class GrafoDirigido<T> implements Grafo<T> {
         vertices = new ArrayList<>();
     }
 
-
     public class Vertice {
         public Vertice() {
             this.id = getId();
             this.adyacentes = new ArrayList<>();
         }
 
+        protected boolean visitado;
         protected int id;
         protected ArrayList<Arco<T>> adyacentes;
+
+        public boolean isVisitado() {
+            return visitado;
+        }
+
+        public void setVisitado(boolean visitado) {
+            this.visitado = visitado;
+        }
 
         public int getId() {
             return id;
@@ -170,19 +178,5 @@ public class GrafoDirigido<T> implements Grafo<T> {
         return null;
     }
 
-    //METODO ENCARGADO DE VER QUE SE HAYAN PASADO POR TDOSOS LOS VERTICES
-    //el primer for recorre los vertices y los inicializa en blanco
-    //el tiempo es opcional
-    // el segundo for va a llamar a el dfs visitado
-    // public Grafo<T> DepthFirstSearch(Grafo<T> gr){
 
-
-
-  /*  public boolean DFS_Visitado(Vertice v) {
-
-        tiempo++;
-    }
-*/
-
-//este abajo me lo pidio java
 }
