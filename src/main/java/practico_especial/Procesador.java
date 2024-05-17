@@ -1,11 +1,16 @@
 package practico_especial;
 
-import java.time.LocalDate;
-
 public class Procesador {
-    int id_procesador;
-    int codigo_procesador;
-    Boolean esta_refrigerado;
-    int anio_funcionamiento;
+    int idProcesador;
+    int codigoProcesador;
+    Boolean estaRefrigerado;
+    int anioFuncionamiento;
+
+    public Procesador(int idProcesador, int codigoProcesador, Boolean estaRefrigerado, int anioFuncionamiento) {
+        this.idProcesador = idProcesador;
+        this.codigoProcesador = codigoProcesador;
+        this.estaRefrigerado = estaRefrigerado;
+        this.anioFuncionamiento = anioFuncionamiento;
+    }
 
 }
