@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 
-//puedo hacer los get y set de mis vertices?
 public class GrafoDirigidoHASH<T> implements Grafo<T> {
     private HashMap<Integer, HashSet<Arco<T>>> vertices;
     public GrafoDirigidoHASH(){
@@ -14,21 +13,33 @@ public class GrafoDirigidoHASH<T> implements Grafo<T> {
 
     @Override
     public void agregarVertice(int verticeId) {
-        this.vertices.put(verticeId, new HashSet<>());
+        if (!this.vertices.containsKey(verticeId)){ //Si no cintiene la clave..
+            this.vertices.put(verticeId, new HashSet<>());
+        }
     }
 
     @Override
     public void borrarVertice(int verticeId) {
-        this.vertices.remove(verticeId);
+        if (this.vertices.containsKey(verticeId)) {
+            // Eliminar los arcos entrantes
+            for (HashSet<Arco<T>> arcos : this.vertices.values()) {
+                arcos.removeIf(arco -> arco.getVerticeDestino() == verticeId);
+            }
+            // Eliminar el vértice
+            this.vertices.remove(verticeId);
+        }
     }
 
     @Override
     public void agregarArco(int verticeId1, int verticeId2, T etiqueta) {
-
+        agregarVertice(verticeId1);
+        agregarVertice(verticeId1);
+        this.vertices.get(verticeId1).add(new Arco<>(verticeId1, verticeId1, etiqueta));
     }
 
     @Override
     public void borrarArco(int verticeId1, int verticeId2) {
+        this.vertices.get(verticeId1);
 
     }
 
@@ -64,17 +75,7 @@ public class GrafoDirigidoHASH<T> implements Grafo<T> {
 
     @Override
     public Iterator<Integer> obtenerAdyacentes(int verticeId) {
-        Iterator<Arco<T>> arcoIterator = this.obtenerArcos(verticeId);
-
-        if (this.vertices.containsKey(verticeId)){
-            HashSet<Integer> verticesAdyacentes = new HashSet<>();
-            while (obtenerArcos().hasNext()){
-                verticesAdyacentes.add(obtenerArcos().next().getVerticeDestino());
-
-                return verticesAdyacentes.iterator();
-            }
-            return null;
-        }
+        return null;
     }
 
     @Override

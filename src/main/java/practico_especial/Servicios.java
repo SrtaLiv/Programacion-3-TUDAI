@@ -2,12 +2,18 @@ package practico_especial;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
 public class Servicios {
 
     private List<Tarea> tareas;
     private List<Procesador> procesadores;
+    private HashMap<String, Tarea> hashmapTareas;
+
+    private List<Tarea> tareasCriticas;
+    private List<Tarea> tareasNoCriticas;
 
     //Completar con las estructuras y métodos privados que se requieran.
     /*
@@ -15,8 +21,12 @@ public class Servicios {
      */
     public Servicios(String pathProcesadores, String pathTareas) {
 
-        this.procesadores = this.cargarProcesadores(pathProcesadores);
-        this.tareas = this.cargarTareas(pathTareas);
+        this.hashmapTareas = new HashMap<>();
+        this.tareasCriticas = new ArrayList<>();
+        this.tareasNoCriticas = new ArrayList<>();
+
+        this.cargarProcesadores(pathProcesadores);
+        this.cargarTareas(pathTareas);
 
     }
 
@@ -33,9 +43,8 @@ public class Servicios {
         return lines;                                                                   // return lista de lineas
     }
 
-    private List<Tarea> cargarTareas(String pathTareas) {
+    private void cargarTareas(String pathTareas) {
 
-        List<Tarea> tareas = new ArrayList<>();
         List<String> csv = this.leerArchivo(pathTareas);                                // leo el archivo csv
 
         for(String line: csv) {                                                         // recorro linea x linea
@@ -48,14 +57,22 @@ public class Servicios {
             Boolean esCritica =         Boolean.parseBoolean(datos[3]);
             int nievlPrioridad =        Integer.parseInt(datos[4]);
 
-            tareas.add(new Tarea(idTarea, nombreTarea, tiempoEjecucion, esCritica, nievlPrioridad));
+            Tarea t = new Tarea(idTarea, nombreTarea, tiempoEjecucion, esCritica, nievlPrioridad);
+
+            this.tareas.add(t);                             // agrego tarea a la lista simple
+            hashmapTareas.put(t.getId(), t);                // agergo tarea al hashmap con clave tarea.id
+
+            if(t.esCritica()){
+                tareasCriticas.add(t);                     // agrego a lista de critica o NOcritica
+            }else{
+                tareasNoCriticas.add(t);
+            }
+
         }
-        return tareas;
     }
 
-    private List<Procesador> cargarProcesadores(String pathProcesadores) {
+    private void cargarProcesadores(String pathProcesadores) {
 
-        List<Procesador> cpu = new ArrayList<>();
         List<String> csv = this.leerArchivo(pathProcesadores);
 
         for(String line: csv) {
@@ -67,48 +84,36 @@ public class Servicios {
             Boolean estaRefrigerado =   Boolean.parseBoolean(datos[3]);
             int anioFuncionamiento =    Integer.parseInt(datos[4]);
 
-            cpu.add(new Procesador(idProcesador, codigoProcesador, estaRefrigerado, anioFuncionamiento));
+            this.procesadores.add(new Procesador(idProcesador, codigoProcesador, estaRefrigerado, anioFuncionamiento));
         }
-        return cpu;
     }
 
     /*
      * Expresar la complejidad temporal del servicio 1.
-     * O(N)
+     * O(1)
      */
     public Tarea servicio1(String ID) {
-        for (Tarea t : tareas){
-            if (t.getId().equals(ID)){
-                return t;
-            }
-        }
-        return null;
+       return hashmapTareas.get(ID);
     }
 
     /*
      * Expresar la complejidad temporal del servicio 2.
-     * O(N)
+     * O(1)
      */
     public List<Tarea> servicio2(boolean esCritica) {
-        List<Tarea> tareasCriticas = new ArrayList<>();
-        for (Tarea t : tareas){
-            if (t.esCritica() == esCritica){
-                tareasCriticas.add(t);
-            }
-        }
-        return tareasCriticas;
+        if(esCritica)
+            return this.tareasCriticas;
+        return this.tareasNoCriticas;
     }
 
     /*
      * Expresar la complejidad temporal del servicio 3.
-     * O(N)
+     * O(N) -> en el peor de los casos es O(N), en el mejor O(prioridadSuperior)
      */
-    public List<Tarea> servicio3(int prioridadInferior, int
-            prioridadSuperior) {
+    public List<Tarea> servicio3(int prioridadInferior, int prioridadSuperior) {
         List<Tarea> nivelPrioridad = new ArrayList<>();
         for (Tarea t : tareas){
-            if (t.getNivelPrioridad() >= prioridadInferior &&
-                    t.getNivelPrioridad() <= prioridadSuperior){
+            if (t.getNivelPrioridad() >= prioridadInferior && t.getNivelPrioridad() <= prioridadSuperior){
                 nivelPrioridad.add(t);
             }
         }

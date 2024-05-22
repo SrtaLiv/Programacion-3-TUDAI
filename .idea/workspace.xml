@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="SERVICIO DFS Y BFS">
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico4/ej3/GrafoTieneCiclo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico_especial/Procesador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico_especial/Procesador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/GrafoDirigidoHASH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/GrafoDirigidoHASH.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/ServicioBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/ej2/ServicioBFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/ServicioDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/ej2/ServicioDFS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/practico_especial/Servicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico_especial/Servicios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico_especial/Tarea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico_especial/Tarea.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +111,7 @@
       <recent name="C:\Users\Liv\IdeaProjects\Programacion-3-JAVA-TUDAI\src\main\java\org\example\programacion3javatudai\ListaVinculada" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="practico4.ej2" />
       <recent name="practico4" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -145,9 +148,9 @@
       </method>
     </configuration>
     <configuration name="Tree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
       <option name="MAIN_CLASS_NAME" value="Tree" />
       <module name="Programacion-3-JAVA-TUDAI" />
+      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -170,7 +173,7 @@
       <module name="Programacion-3-JAVA-TUDAI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="practico4.*" />
+          <option name="PATTERN" value="practico4.ej2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -191,8 +194,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+        <option value="jdk-22-openjdk-22-3183f394aec4-bad0321e" />
       </set>
     </attachedChunks>
   </component>
