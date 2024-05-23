@@ -7,7 +7,8 @@ import java.util.HashSet;
 import java.util.Iterator;
 
 public class GrafoTieneCiclo {
-    GrafoDirigido<?> grafito;
+
+    /*GrafoDirigido<?> grafito;
 
     public GrafoTieneCiclo(GrafoDirigido<?> grafito) {
         this.grafito = grafito;
@@ -22,7 +23,7 @@ public class GrafoTieneCiclo {
         HashSet<GrafoDirigido<?>.Vertice> enRecorrido = new HashSet<>();
 
         for (GrafoDirigido<?>.Vertice vertice : grafito.getVertices()) {
-            if (dfs(vertice, visitados, enRecorr ido)) {
+            if (dfs(vertice, visitados, enRecorrido)) {
                 return true;
             }
         }
@@ -49,5 +50,5 @@ public class GrafoTieneCiclo {
 
         enRecorrido.remove(vertice); // Eliminar de la lista de recorrido
         return false;
-    }
+    }*/
 }

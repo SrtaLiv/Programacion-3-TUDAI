@@ -6,6 +6,8 @@ import practico4.GrafoDirigido;
 import java.util.*;
 
 public class ServicioDFS {
+
+    /*
     GrafoDirigido<?> grafoDirigido;
 
     ArrayList<GrafoDirigido.Vertice> verticesVisitados;
@@ -43,6 +45,6 @@ public class ServicioDFS {
 
 
     }
-
+*/
 
 }

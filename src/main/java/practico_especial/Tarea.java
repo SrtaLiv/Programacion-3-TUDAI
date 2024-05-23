@@ -3,11 +3,11 @@ package practico_especial;
 public class Tarea {
     private String idTarea;
     private String nombreTarea;
-    private double tiempoEjecucion;
+    private Integer tiempoEjecucion;
     private Boolean esCritica;
-    private int nivelPrioridad; //del 1 al 100
+    private Integer nivelPrioridad; //del 1 al 100
 
-    public Tarea(String idTarea, String nombreTarea, double tiempoEjecucion, Boolean esCritica, int nivelPrioridad) {
+    public Tarea(String idTarea, String nombreTarea, Integer tiempoEjecucion, Boolean esCritica, Integer nivelPrioridad) {
         this.idTarea = idTarea;
         this.nombreTarea = nombreTarea;
         this.tiempoEjecucion = tiempoEjecucion;
@@ -31,11 +31,11 @@ public class Tarea {
         this.nombreTarea = nombreTarea;
     }
 
-    public double getTiempoEjecucion() {
+    public Integer getTiempoEjecucion() {
         return tiempoEjecucion;
     }
 
-    public void setTiempoEjecucion(double tiempoEjecucion) {
+    public void setTiempoEjecucion(Integer tiempoEjecucion) {
         this.tiempoEjecucion = tiempoEjecucion;
     }
 
@@ -47,7 +47,7 @@ public class Tarea {
         this.esCritica = esCritica;
     }
 
-    public int getNivelPrioridad() {
+    public Integer getNivelPrioridad() {
         return nivelPrioridad;
     }
 
