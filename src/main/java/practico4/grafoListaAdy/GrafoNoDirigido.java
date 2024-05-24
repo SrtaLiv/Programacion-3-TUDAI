@@ -1,4 +1,4 @@
-package practico4;
+package practico4.grafoListaAdy;
 
 public class GrafoNoDirigido<T> extends GrafoDirigido<T> {
 

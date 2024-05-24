@@ -1,10 +1,8 @@
 package practico4.ej3;
 
-import practico4.Arco;
-import practico4.GrafoDirigido;
+import practico4.grafoListaAdy.GrafoDirigido;
 
 import java.util.HashSet;
-import java.util.Iterator;
 
 public class GrafoTieneCiclo {
     GrafoDirigido<?> grafito;
@@ -22,7 +20,7 @@ public class GrafoTieneCiclo {
         HashSet<GrafoDirigido<?>.Vertice> enRecorrido = new HashSet<>();
 
         for (GrafoDirigido<?>.Vertice vertice : grafito.getVertices()) {
-            if (dfs(vertice, visitados, enRecorr ido)) {
+            if (dfs(vertice, visitados, enRecorrido)) {
                 return true;
             }
         }
@@ -41,11 +39,13 @@ public class GrafoTieneCiclo {
         visitados.add(vertice);
         enRecorrido.add(vertice);
 
-        for (Arco<?> arco : vertice.getAdyacentes()) {
+        /*for (Arco<?> arco : vertice.getAdyacentes()) {
             if (dfs(arco.getVerticeDestino(), visitados, enRecorrido)) {
                 return true;
             }
         }
+
+         */
 
         enRecorrido.remove(vertice); // Eliminar de la lista de recorrido
         return false;

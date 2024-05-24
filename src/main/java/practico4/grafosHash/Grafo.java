@@ -1,4 +1,5 @@
-package practico4;
+package practico4.grafosHash;
+
 import java.util.Iterator;
 
 public interface Grafo<T> {

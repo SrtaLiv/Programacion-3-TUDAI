@@ -1,4 +1,4 @@
-package practico4;
+package practico4.grafoListaAdy;
 
 import java.util.Iterator;
 

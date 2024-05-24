@@ -1,7 +1,6 @@
 package practico4.ej2;
 
-import practico4.Grafo;
-import practico4.GrafoDirigido;
+import practico4.grafoListaAdy.GrafoDirigido;
 
 import java.util.*;
 
@@ -15,15 +14,15 @@ public class ServicioDFS {
         this.verticesVisitados = verticesVisitados;
     }
 
-    public ArrayList<Integer> dfs() {
+    /*public ArrayList<Integer> dfs() {
         ArrayList<Integer> caminoCompleto = new ArrayList<>();
         Iterator<Integer> itr = grafoDirigido.obtenerVertices();
         while (itr.hasNext()) {
             recorrerDFS(vertice);
         }
 
-    }
-
+    }*/
+/*
     public ArrayList<Integer> recorrerDFS(GrafoDirigido.Vertice vertice){
 
             if (vertice.getAdyacentes().size() == 0) {
@@ -42,7 +41,7 @@ public class ServicioDFS {
             verticesVisitados.remove(vertice);
 
 
-    }
+    }*/
 
 
 }
