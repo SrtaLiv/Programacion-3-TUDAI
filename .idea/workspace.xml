@@ -4,41 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="SERVICIO DFS Y BFS">
-      <change afterPath="$PROJECT_DIR$/src/main/java/practico4/grafosHash/Arco.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practico4/grafosHash/Grafo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practico4/grafosHash/GrafoNoDirigido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practico4/grafosHash/Main.java" afterDir="false" />
+    <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="Grafo Dirigido con Hash implementado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/Arco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/grafoListaAdy/Arco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/Grafo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/grafoListaAdy/Grafo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/GrafoDirigido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/grafoListaAdy/GrafoDirigido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/GrafoDirigidoHASH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/grafosHash/GrafoDirigidoHASH.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/GrafoDirigidoMatriz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/grafoListaAdy/GrafoDirigidoMatriz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/GrafoNoDirigido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/grafoListaAdy/GrafoNoDirigido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/grafoListaAdy/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/RecorridoSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/grafoListaAdy/RecorridoSimple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/practico4/ej2/ServicioBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/ej2/ServicioBFS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/practico4/ej2/ServicioDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/ej2/ServicioDFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/ej3/GrafoTieneCiclo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/ej3/GrafoTieneCiclo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ejyoutube/Palindromo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ejyoutube/Palindromo/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/programacion3javatudai/ListaVinculada/MySimpleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/programacion3javatudai/ListaVinculada/MySimpleLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej1/MySimpleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej1/MySimpleLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej4/MySimpleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej4/MySimpleLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej5/MySimpleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej5/MySimpleLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej6/MySimpleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej6/MySimpleLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico2/ej1/AlgoritmoN.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2/ej1/AlgoritmoN.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico2/ej2/AlgoritmoRecursivo2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2/ej2/AlgoritmoRecursivo2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico2/ej3/NumeroABinario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2/ej3/NumeroABinario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico2/ej5/Algoritmo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2/ej5/Algoritmo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico2/ej7/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2/ej7/MergeSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico2_1/ej1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2_1/ej1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico2_1/ej1/Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2_1/ej1/Tree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4/GrafoDirigidoMatriz.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico4/GrafoDirigidoMatriz.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4/IteradorArcos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4/IteradorVertices.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico4/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/grafosHash/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/grafosHash/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +23,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="upstream/branch-santi" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -310,7 +293,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716417487043</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Grafo Dirigido con Hash implementado">
+      <option name="closed" value="true" />
+      <created>1716559168755</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716559168755</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Grafo Dirigido con Hash implementado">
+      <option name="closed" value="true" />
+      <created>1716559182178</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716559182178</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,7 +332,8 @@
     <MESSAGE value="agregue tp grafos" />
     <MESSAGE value="Grafo Dirigido con Lista de Adyacencia" />
     <MESSAGE value="SERVICIO DFS Y BFS" />
-    <option name="LAST_COMMIT_MESSAGE" value="SERVICIO DFS Y BFS" />
+    <MESSAGE value="Grafo Dirigido con Hash implementado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Grafo Dirigido con Hash implementado" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

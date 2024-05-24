@@ -1,47 +1,24 @@
 package practico4.ej2;
 
-import practico4.grafoListaAdy.GrafoDirigido;
+import practico4.grafosHash.GrafoDirigidoHASH;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Iterator;
+
 
 public class ServicioDFS {
-    GrafoDirigido<?> grafoDirigido;
 
-    ArrayList<GrafoDirigido.Vertice> verticesVisitados;
+    public static void dfsRecursivo(GrafoDirigidoHASH<String> grafo, int verticeActual, HashSet<Integer> visitados) {
+        visitados.add(verticeActual);
+        System.out.println("Visitando vértice: " + verticeActual);
 
-    public ServicioDFS(GrafoDirigido<?> grafoDirigido, ArrayList<GrafoDirigido.Vertice> verticesVisitados) {
-        this.grafoDirigido = grafoDirigido;
-        this.verticesVisitados = verticesVisitados;
-    }
-
-    /*public ArrayList<Integer> dfs() {
-        ArrayList<Integer> caminoCompleto = new ArrayList<>();
-        Iterator<Integer> itr = grafoDirigido.obtenerVertices();
-        while (itr.hasNext()) {
-            recorrerDFS(vertice);
+        Iterator<Integer> adyacentes = grafo.obtenerAdyacentes(verticeActual);
+        while (adyacentes.hasNext()) {
+            int adyacente = adyacentes.next();
+            if (!visitados.contains(adyacente)) {
+                dfsRecursivo(grafo, adyacente, visitados);
+            }
         }
-
-    }*/
-/*
-    public ArrayList<Integer> recorrerDFS(GrafoDirigido.Vertice vertice){
-
-            if (vertice.getAdyacentes().size() == 0) {
-                ArrayList<Integer> camino = new ArrayList<>();
-                camino.add(vertice.getId());
-                return camino;
-            }
-
-            if (verticesVisitados.contains(vertice)) {
-                //return new ArrayList<>();
-                return null;
-            }
-
-            verticesVisitados.add(vertice);
-            recorrerDFS(vertice);
-            verticesVisitados.remove(vertice);
-
-
-    }*/
-
+    }
 
 }
