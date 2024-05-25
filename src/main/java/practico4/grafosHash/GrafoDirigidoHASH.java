@@ -11,12 +11,13 @@ public class GrafoDirigidoHASH<T> implements Grafo<T> {
         vertices = new Hashtable<>();
     }
 
+
     @Override
     public void agregarVertice(int verticeId) {
         vertices.putIfAbsent(verticeId, new HashSet<>()); //solo agrega el vertice si no existe
     }
 
-    @Override
+    /*@Override
     public void borrarVertice(int verticeId) {
         if (vertices.containsKey(verticeId)){
             vertices.remove(verticeId); //Si lo dejara asi, faltarian borrar los arcos
@@ -26,6 +27,16 @@ public class GrafoDirigidoHASH<T> implements Grafo<T> {
             while (arcos.hasNext()) {
                 arcos.next();
                 arcos.remove();
+            }
+        }
+    }*/
+
+    @Override
+    public void borrarVertice(int verticeId) {
+        if (vertices.containsKey(verticeId)) {
+            vertices.remove(verticeId);
+            for (HashSet<Arco<T>> arcos : vertices.values()) {
+                arcos.removeIf(arco -> arco.getVerticeDestino() == verticeId);
             }
         }
     }

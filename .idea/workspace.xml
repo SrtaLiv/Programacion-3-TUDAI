@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="Grafo Dirigido con Hash implementado">
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico4/ej4/CaminoMayorLongitud.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/ej2/ServicioBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/ej2/ServicioBFS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/practico4/ej2/ServicioDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/ej2/ServicioDFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/ej3/GrafoTieneCiclo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/ej3/GrafoTieneCiclo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/grafosHash/GrafoDirigidoHASH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/grafosHash/GrafoDirigidoHASH.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/practico4/grafosHash/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/grafosHash/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4/ej2/ServicioDFS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico4/ej2/ServicioDFS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4/grafosHash/GrafoDirigidoHASH.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico4/grafosHash/GrafoDirigidoHASH.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4/grafosHash/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico4/grafosHash/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

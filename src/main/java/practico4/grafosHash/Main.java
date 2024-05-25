@@ -1,10 +1,7 @@
 package practico4.grafosHash;
 
-import java.util.HashSet;
-import java.util.Iterator;
-
-import static practico4.ej2.ServicioBFS.bfsRecursivo;
-import static practico4.ej2.ServicioDFS.dfsRecursivo;
+import practico4.ej2.ServicioDFS;
+import practico4.ej3.GrafoTieneCiclo;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,10 +10,16 @@ public class Main {
         grafo.agregarVertice(1);
         grafo.agregarVertice(2);
         grafo.agregarVertice(3);
+        grafo.agregarVertice(4);
+        grafo.agregarVertice(5);
 
         grafo.agregarArco(1, 2, "ruta 3");
-        grafo.agregarArco(2, 3, "ruta 4");
-        grafo.agregarArco(1, 2, "ruta 4");
+        grafo.agregarArco(1, 3, "ruta 4");
+        grafo.agregarArco(2, 1, "ruta 4");
+
+        //grafo.agregarArco(2, 5, "ruta 4");
+        //grafo.agregarArco(3, 5, "ruta 4");
+        //grafo.agregarArco(5, 1, "ruta 4");
 
         /*System.out.println("Cantidad de vértices: " + grafo.cantidadVertices());
         System.out.println("Cantidad de arcos: " + grafo.cantidadArcos());
@@ -31,9 +34,14 @@ public class Main {
             System.out.print(vertices.next() + " | ");
         }*/
 
-        HashSet<Integer> visitados = new HashSet<>();
-        bfsRecursivo(grafo, 1, visitados);
-        dfsRecursivo(grafo, 1, visitados);
+        //HashSet<Integer> visitados = new HashSet<>();
+        ServicioDFS sdfs = new ServicioDFS();
+        //bfsRecursivo(grafo, 1, visitados);
+        sdfs.dfsRecursivo(grafo, 2);
+
+        GrafoTieneCiclo consigna3 = new GrafoTieneCiclo();
+        boolean ciclo = consigna3.tieneCiclo(grafo);
+        System.out.println(ciclo);
 
 
     }
