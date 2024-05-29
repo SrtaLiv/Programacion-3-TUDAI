@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="Grafo Dirigido con Hash implementado">
-      <change afterPath="$PROJECT_DIR$/src/main/java/practico4/ej4/CaminoMayorLongitud.java" afterDir="false" />
+    <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="tiene ciclo">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_5_2024_15_18_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_5_2024_15_18__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/ej2/ServicioDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/ej2/ServicioDFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/ej3/GrafoTieneCiclo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/ej3/GrafoTieneCiclo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/ej4/CaminoMayorLongitud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/ej4_camino/CaminoMayorLongitud.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/grafoListaAdy/GrafoDirigido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/grafoListaAdy/GrafoDirigido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/practico4/grafosHash/GrafoDirigidoHASH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/grafosHash/GrafoDirigidoHASH.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico4/grafosHash/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4/grafosHash/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4/ej2/ServicioDFS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico4/ej2/ServicioDFS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4/grafosHash/GrafoDirigidoHASH.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico4/grafosHash/GrafoDirigidoHASH.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4/grafosHash/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico4/grafosHash/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4/ej3/GrafoTieneCiclo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico4/ej3/GrafoTieneCiclo.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,45 +72,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Algoritmo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AlgoritmoN.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AlgoritmoRecursivo2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AlgoritmosOrdenamiento.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BusquedaRecursiva.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Fibonacci.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MergeSort.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NumeroABinario.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Palindromo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Tree.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ejyoutube.EliminarDuplicados.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.practico1.ej5.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.practico1.ej6.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.practico4.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.practico4.grafosHash.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Liv/IdeaProjects/Programacion-3-JAVA-TUDAI/src/main/java/practico4/grafosHash&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Algoritmo.executor": "Run",
+    "Application.AlgoritmoN.executor": "Run",
+    "Application.AlgoritmoRecursivo2.executor": "Run",
+    "Application.AlgoritmosOrdenamiento.executor": "Run",
+    "Application.BusquedaRecursiva.executor": "Run",
+    "Application.Fibonacci.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MergeSort.executor": "Run",
+    "Application.NumeroABinario.executor": "Run",
+    "Application.Palindromo.executor": "Run",
+    "Application.Tree.executor": "Run",
+    "Application.ejyoutube.EliminarDuplicados.Main.executor": "Run",
+    "Application.main.executor": "Run",
+    "Application.practico1.ej5.Main.executor": "Run",
+    "Application.practico1.ej6.Main.executor": "Run",
+    "Application.practico4.Main.executor": "Run",
+    "Application.practico4.grafoListaAdy.Main.executor": "Run",
+    "Application.practico4.grafosHash.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Liv/IdeaProjects/Programacion-3-JAVA-TUDAI/src/main/java/practico4/grafosHash",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="practico2_1.ej1" />
@@ -137,7 +136,7 @@
       <recent name="practico1.ej6" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.practico4.grafosHash.Main">
+  <component name="RunManager" selected="Application.practico4.grafoListaAdy.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="practico2_1.ej1.Main" />
       <module name="Programacion-3-JAVA-TUDAI" />
@@ -200,8 +199,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.practico4.grafosHash.Main" />
         <item itemvalue="Application.practico4.grafoListaAdy.Main" />
+        <item itemvalue="Application.practico4.grafosHash.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.main" />
         <item itemvalue="Application.Tree" />
@@ -314,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716559182178</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="tiene ciclo">
+      <option name="closed" value="true" />
+      <created>1716666223296</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1716666223296</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +345,8 @@
     <MESSAGE value="Grafo Dirigido con Lista de Adyacencia" />
     <MESSAGE value="SERVICIO DFS Y BFS" />
     <MESSAGE value="Grafo Dirigido con Hash implementado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Grafo Dirigido con Hash implementado" />
+    <MESSAGE value="tiene ciclo" />
+    <option name="LAST_COMMIT_MESSAGE" value="tiene ciclo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

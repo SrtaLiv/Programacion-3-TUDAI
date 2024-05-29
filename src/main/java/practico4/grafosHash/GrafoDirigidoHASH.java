@@ -7,8 +7,11 @@ import java.util.*;
 public class GrafoDirigidoHASH<T> implements Grafo<T> {
 
     private Hashtable<Integer, HashSet<Arco<T>>> vertices;
+    private ArrayList<Integer> visitados;
+
     public GrafoDirigidoHASH() {
         vertices = new Hashtable<>();
+        visitados = new ArrayList<>();
     }
 
 
@@ -16,20 +19,6 @@ public class GrafoDirigidoHASH<T> implements Grafo<T> {
     public void agregarVertice(int verticeId) {
         vertices.putIfAbsent(verticeId, new HashSet<>()); //solo agrega el vertice si no existe
     }
-
-    /*@Override
-    public void borrarVertice(int verticeId) {
-        if (vertices.containsKey(verticeId)){
-            vertices.remove(verticeId); //Si lo dejara asi, faltarian borrar los arcos
-
-            //Toca recorrer para eliminar arcos.
-            Iterator<Arco<T>> arcos = obtenerArcos(verticeId);
-            while (arcos.hasNext()) {
-                arcos.next();
-                arcos.remove();
-            }
-        }
-    }*/
 
     @Override
     public void borrarVertice(int verticeId) {
@@ -51,17 +40,6 @@ public class GrafoDirigidoHASH<T> implements Grafo<T> {
         }
     }
 
-
-
-    /*@Override
-    public void agregarArco(int verticeId1, int verticeId2, T etiqueta) {
-        if (vertices.containsKey(verticeId1) && vertices.containsKey(verticeId2)) {
-            Arco<T> arco = new Arco<>(verticeId1, verticeId2, etiqueta);
-            vertices.get(verticeId1).add(arco);
-        }
-    }*/
-
-
     @Override //vertice1.getDestino == verticeId2 si mi vertice tiene de destino v2 lo borro
     public void borrarArco(int verticeId1, int verticeId2) {
        if (vertices.containsKey(verticeId1)){
@@ -74,15 +52,6 @@ public class GrafoDirigidoHASH<T> implements Grafo<T> {
            }
        }
     }
-
-    /*
-    @Override
-    public void borrarArco(int verticeId1, int verticeId2) {
-        if (vertices.containsKey(verticeId1)) {
-            vertices.get(verticeId1).removeIf(arco -> arco.getVerticeDestino() == verticeId2);
-        }
-    }*/
-
     @Override
     public boolean contieneVertice(int verticeId) {
         return vertices.containsKey(verticeId);
@@ -102,19 +71,6 @@ public class GrafoDirigidoHASH<T> implements Grafo<T> {
         }
         return false;
     }
-
-
-/*    @Override
-    public boolean existeArco(int verticeId1, int verticeId2) {
-        if (vertices.containsKey(verticeId1)) {
-            for (Arco<T> arco : vertices.get(verticeId1)) {
-                if (arco.getVerticeDestino() == verticeId2) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }*/
 
     @Override
     public Arco<T> obtenerArco(int verticeId1, int verticeId2) {
@@ -179,4 +135,32 @@ public class GrafoDirigidoHASH<T> implements Grafo<T> {
         }
         return Collections.emptyIterator();
     }
+
+    //EJERCICIO 4:
+    public ArrayList<Integer> caminoMayor(int origen, int destino) {
+        ArrayList<Integer> caminoMayor = new ArrayList<Integer>();
+        this.visitados.add(origen);
+
+        if (origen == destino) {
+            caminoMayor.add(origen);
+        } else {
+            Iterator<Integer> it_ady = this.obtenerAdyacentes(origen);
+            while (it_ady.hasNext()) {
+                Integer ady = it_ady.next();
+                if (!this.visitados.contains(ady)) {
+                    ArrayList<Integer> camino = caminoMayor(ady, destino);
+
+                    if (!camino.isEmpty() && (camino.size() >= caminoMayor.size())) {
+                        caminoMayor.clear();
+                        caminoMayor.add(origen);
+                        caminoMayor.addAll(camino);
+                    }
+                }
+            }
+        }
+
+        this.visitados.remove(origen);
+        return caminoMayor ;
+    }
+
 }

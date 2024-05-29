@@ -6,7 +6,8 @@ import java.util.Iterator;
 //puedo hacer los get y set de mis vertices?
 public class GrafoDirigido<T> implements Grafo<T> {
     //GRAFO DIRIGIDO CON LISTA DE ADYACENCIA
-    private ArrayList<Vertice> vertices;
+    private ArrayList<Vertice> vertices; //Para mejorarlo podria ser una lista de nodos
+    //La ventaja de la lista de nodos es q no debes conocer la cantidad de vertices previamente
 
     //Arcos?
     public GrafoDirigido() {
@@ -21,7 +22,7 @@ public class GrafoDirigido<T> implements Grafo<T> {
 
         protected boolean visitado;
         protected int id;
-        protected ArrayList<Arco<T>> adyacentes;
+        protected ArrayList<Arco<T>> adyacentes; //Vertices o arcos?
 
         public boolean isVisitado() {
             return visitado;
