@@ -119,5 +119,50 @@ public class Servicios {
         }
         return nivelPrioridad;
     }
-    
+
+
+
+
+
+
+
+    public void backtracki(List<Tarea> tareas, List<Procesador> procesadores){
+
+        List<List<Tarea>> mejorSolucion = new ArrayList<>();
+
+        for(int i = 0; i < this.tareas.size(); i++){
+            this.backtrack(i);
+        }
+
+
+        return;
+    }
+
+
+
+    private void backtrack(int idx){
+
+
+
+        this.backtrack(idx + 1);
+
+        return;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
