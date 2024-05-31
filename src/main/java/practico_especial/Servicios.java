@@ -15,6 +15,10 @@ public class Servicios {
     private List<Tarea> tareasCriticas;
     private List<Tarea> tareasNoCriticas;
 
+    //List<List<Tarea>> mejorSolucion = new ArrayList<>();
+
+    private HashMap<Procesador, List<Tarea>> mejorSolucion;
+
     //Completar con las estructuras y métodos privados que se requieran.
     /*
      * Expresar la complejidad temporal del constructor.
@@ -27,6 +31,8 @@ public class Servicios {
 
         this.cargarProcesadores(pathProcesadores);
         this.cargarTareas(pathTareas);
+
+        this.mejorSolucion = new HashMap<>();
 
     }
 
@@ -126,31 +132,55 @@ public class Servicios {
 
 
 
-    public void backtracki(List<Tarea> tareas, List<Procesador> procesadores){
+    public void backtrack(){
 
-        List<List<Tarea>> mejorSolucion = new ArrayList<>();
 
-        for(int i = 0; i < this.tareas.size(); i++){
-            this.backtrack(i);
+        this.backtrack(mejorSolucion, 0);
+
+
+
+        return;
+    }
+
+    // solucion = [ [ t0 ], [ ], [ ] ];
+
+
+    private void backtrack(HashMap<Procesador, List<Tarea>> solucionParcial, int idxTarea){
+
+        if(idxTarea+1 == this.tareas.size()){                     // llegamos al final de la lista de tareas
+
+
+
+
+            return;
         }
 
 
+        Tarea t = this.tareas.get(idxTarea);                    // toma una tarea del servicio
+
+        for(Procesador p : this.procesadores) {
+
+            solucionParcial.put(p, t);
+            List<Tarea> tareasCpu =
+
+            this.backtrack(solucionParcial, idxTarea + 1);
+
+            solucionParcial.remove(p, t);
+        }
         return;
     }
 
 
+    private boolean esSolucionValida(HashMap<Procesador, Tarea> solucion){
 
-    private void backtrack(int idx){
+        for(Procesador p : this.procesadores){
+
+            List<Tarea> tareas = solucion.get(p);
+
+        }
 
 
-
-        this.backtrack(idx + 1);
-
-        return;
     }
-
-
-
 
 
 
