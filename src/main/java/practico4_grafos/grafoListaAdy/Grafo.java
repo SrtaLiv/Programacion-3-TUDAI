@@ -1,4 +1,4 @@
-package practico4.grafoListaAdy;
+package practico4_grafos.grafoListaAdy;
 import java.util.Iterator;
 
 public interface Grafo<T> {

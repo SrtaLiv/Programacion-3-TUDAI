@@ -1,4 +1,4 @@
-package practico4.grafosHash;
+package practico4_grafos.grafosHash;
 
 import java.util.Iterator;
 

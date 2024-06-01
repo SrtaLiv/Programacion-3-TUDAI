@@ -1,4 +1,4 @@
-package practico4.grafoListaAdy;
+package practico4_grafos.grafoListaAdy;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -6,7 +6,8 @@ import java.util.Iterator;
 //puedo hacer los get y set de mis vertices?
 public class GrafoDirigido<T> implements Grafo<T> {
     //GRAFO DIRIGIDO CON LISTA DE ADYACENCIA
-    private ArrayList<Vertice> vertices;
+    private ArrayList<Vertice> vertices; //Para mejorarlo podria ser una lista de nodos
+    //La ventaja de la lista de nodos es q no debes conocer la cantidad de vertices previamente
 
     //Arcos?
     public GrafoDirigido() {

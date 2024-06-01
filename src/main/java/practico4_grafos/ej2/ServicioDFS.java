@@ -1,9 +1,7 @@
-package practico4.ej2;
+package practico4_grafos.ej2;
 
-import practico4.grafosHash.GrafoDirigidoHASH;
+import practico4_grafos.grafosHash.GrafoDirigidoHASH;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 

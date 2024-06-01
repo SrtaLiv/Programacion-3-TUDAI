@@ -1,12 +1,9 @@
-package practico4.ej2;
+package practico4_grafos.ej2;
 
-import practico4.grafosHash.Arco;
-import practico4.grafosHash.GrafoDirigidoHASH;
+import practico4_grafos.grafosHash.GrafoDirigidoHASH;
 
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Queue;
 
 public class ServicioBFS {
     //(Breadth-First Search) - Recorrido en Amplitud
