@@ -1,4 +1,4 @@
-package practico4.grafoListaAdy;
+package practico4_grafos.grafoListaAdy;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -22,7 +22,7 @@ public class GrafoDirigido<T> implements Grafo<T> {
 
         protected boolean visitado;
         protected int id;
-        protected ArrayList<Arco<T>> adyacentes; //Vertices o arcos?
+        protected ArrayList<Arco<T>> adyacentes;
 
         public boolean isVisitado() {
             return visitado;

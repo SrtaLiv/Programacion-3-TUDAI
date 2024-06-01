@@ -1,17 +1,16 @@
-package practico4.grafosHash;
-
-import javafx.scene.shape.Arc;
+package practico4_grafos.grafosHash;
 
 import java.util.*;
 
 public class GrafoDirigidoHASH<T> implements Grafo<T> {
 
     private Hashtable<Integer, HashSet<Arco<T>>> vertices;
-    private ArrayList<Integer> visitados;
+    private Hashtable<Integer,HashSet<Arco<T>>> visitados;
+    private HashSet<Integer> caminoAlDestino;
 
     public GrafoDirigidoHASH() {
         vertices = new Hashtable<>();
-        visitados = new ArrayList<>();
+        visitados = new Hashtable<>();
     }
 
 
@@ -136,21 +135,30 @@ public class GrafoDirigidoHASH<T> implements Grafo<T> {
         return Collections.emptyIterator();
     }
 
+    public void marcarVisitado(int indice){
+        this.visitados.put(indice, new HashSet<>());
+    }
+
+    public void desmarcarVisitado(int indice){
+        this.visitados.remove(indice, new HashSet<>());
+    }
+
     //EJERCICIO 4:
     public ArrayList<Integer> caminoMayor(int origen, int destino) {
         ArrayList<Integer> caminoMayor = new ArrayList<Integer>();
-        this.visitados.add(origen);
+        this.visitados.put(origen,new HashSet<>()); //Se utiliza una lista visitados para realizar un seguimiento de los vértices visitados y evitar ciclos en el grafo.
 
         if (origen == destino) {
             caminoMayor.add(origen);
         } else {
             Iterator<Integer> it_ady = this.obtenerAdyacentes(origen);
+
             while (it_ady.hasNext()) {
                 Integer ady = it_ady.next();
-                if (!this.visitados.contains(ady)) {
+                if (!this.visitados.containsKey(ady)) { //Si el vértice adyacente no ha sido visitado, se procede a explorar ese vértice recursivamente.
                     ArrayList<Integer> camino = caminoMayor(ady, destino);
 
-                    if (!camino.isEmpty() && (camino.size() >= caminoMayor.size())) {
+                    if (!camino.isEmpty() && (camino.size() >= caminoMayor.size())) { //Si el camino encontrado no está vacío y es más largo que el camino más largo actual (caminoMayor), se actualiza caminoMayor.
                         caminoMayor.clear();
                         caminoMayor.add(origen);
                         caminoMayor.addAll(camino);
@@ -159,8 +167,42 @@ public class GrafoDirigidoHASH<T> implements Grafo<T> {
             }
         }
 
-        this.visitados.remove(origen);
+        this.visitados.remove(origen); //Una vez que se han explorado todos los adyacentes del vértice de origen, se elimina el vértice de origen de la lista visitados.
         return caminoMayor ;
     }
+
+    public ArrayList<Integer> verticesQueLleguenADestino(int actual, int destino, GrafoDirigidoHASH grafo){
+        ArrayList<Integer> verticesQueCumple = new ArrayList<>();
+        //grafo.visitados.clear();
+
+        Iterator<Integer> todosLosVertices = obtenerVertices();
+        while (todosLosVertices.hasNext()){
+            Integer v = todosLosVertices.next();
+            grafo.visitados.clear(); // Clear visitados for each new start point
+
+            if (verticesQueLleguenADestinoDFS(v, destino, grafo)) {
+                verticesQueCumple.add(v);
+            }
+        }
+        return verticesQueCumple;
+    }
+
+
+    private boolean verticesQueLleguenADestinoDFS(int actual, int destino, GrafoDirigidoHASH grafo){
+        if (actual == destino){
+            return true;
+        }
+        grafo.visitados.put(actual, new HashSet<>());
+        Iterator<Integer> it = grafo.obtenerAdyacentes(actual);
+
+        while (it!=null && it.hasNext()){
+            Integer vAdy = it.next();
+            if (!grafo.visitados.containsKey(vAdy) && verticesQueLleguenADestinoDFS(vAdy, destino, grafo)){
+                return true;
+            }
+        }
+        return false;
+    }
+
 
 }

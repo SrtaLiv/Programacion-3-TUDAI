@@ -137,8 +137,6 @@ public class Servicios {
 
         this.backtrack(mejorSolucion, 0);
 
-
-
         return;
     }
 
@@ -149,23 +147,18 @@ public class Servicios {
 
         if(idxTarea+1 == this.tareas.size()){                     // llegamos al final de la lista de tareas
 
-
-
-
             return;
         }
-
 
         Tarea t = this.tareas.get(idxTarea);                    // toma una tarea del servicio
 
         for(Procesador p : this.procesadores) {
+            if (esSolucionValida()){
+                solucionParcial.put(p, t);
 
-            solucionParcial.put(p, t);
-            List<Tarea> tareasCpu =
-
-            this.backtrack(solucionParcial, idxTarea + 1);
-
-            solucionParcial.remove(p, t);
+                List<Tarea> tareasCpu = this.backtrack(solucionParcial, idxTarea + 1);
+                solucionParcial.remove(p, t);
+            }
         }
         return;
     }
@@ -174,7 +167,6 @@ public class Servicios {
     private boolean esSolucionValida(HashMap<Procesador, Tarea> solucion){
 
         for(Procesador p : this.procesadores){
-
             List<Tarea> tareas = solucion.get(p);
 
         }

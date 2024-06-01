@@ -1,8 +1,4 @@
-package practico4.ej4_camino;
-
-import practico4.grafosHash.GrafoDirigidoHASH;
-
-import java.util.ArrayList;
+package practico4_grafos.ej4_camino;
 
 public class CaminoMayorLongitud {
 
