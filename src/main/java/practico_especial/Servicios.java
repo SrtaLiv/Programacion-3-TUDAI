@@ -13,25 +13,28 @@ public class Servicios {
     private List<Tarea> tareasCriticas;                             // para servicio2
     private List<Tarea> tareasNoCriticas;                           // para servicio2
 
-    private Solucion mejorSolucion;
+    private Solucion mejorSolucion;                                 // para llevar registro de la mejor solucion encontrada
     private int maxTiempoEjecucion;
+
+    private List<Integer> otrosTiempos;                             // solo para mostrar los tiempos de otras soluciones
 
     public Servicios(String pathProcesadores, String pathTareas) {
 
-        this.procesadores = new ArrayList<>();
-        this.tareas = new ArrayList<>();
+        this.procesadores = new ArrayList<>();                      // init lista cpus
+        this.tareas = new ArrayList<>();                            // init lista tareas
 
-        this.hashmapTareas = new HashMap<>();
-        //this.hasmapProcesadores = new HashMap<>();
+        this.hashmapTareas = new HashMap<>();                       // init hasmap para servicio1
 
-        this.tareasCriticas = new ArrayList<>();
+        this.tareasCriticas = new ArrayList<>();                    // init listas auxiliares para servicio2
         this.tareasNoCriticas = new ArrayList<>();
 
-        this.readProcessors(pathProcesadores);
-        this.readTasks(pathTareas);
+        this.readProcessors(pathProcesadores);                      // cargar procesadores
+        this.readTasks(pathTareas);                                 // cargar tareas
 
         this.maxTiempoEjecucion = 75; // temporal;
-        //this.mejorSolucion = new Solucion(this.procesadores, maxTiempoEjecucion);
+        this.mejorSolucion = new Solucion(this.procesadores, maxTiempoEjecucion);
+
+        this.otrosTiempos = new ArrayList<>();
 
     }
 
@@ -140,48 +143,44 @@ public class Servicios {
     }
 
     public Solucion backtrack(){
+        Solucion parcial = new Solucion(this.procesadores, this.maxTiempoEjecucion);        // new solucion parcial vacia inicial
+        this.backtrack(parcial, 0);                                                 // magia
 
-        Solucion parcial = new Solucion(this.procesadores, this.maxTiempoEjecucion);
-        this.backtrack(parcial, 0);
-        return this.mejorSolucion.getCopy();
+        if(mejorSolucion.isEmpty()){
+            System.out.println("No hay solucion.");
+            return null;
+        }
+
+        System.out.print("\nOtros tiempos encontrados: ");
+        Collections.sort(this.otrosTiempos);
+        System.out.println(this.otrosTiempos);
+
+        this.mejorSolucion.show();
+        return this.mejorSolucion;                                                          // return mejor solucion encontrada
     }
 
-    // solucion = [ [ t0 ], [ ], [ ] ];
+    // solucion = [ [ t0 ], [ t1 ], [ t2 ] ];
 
     private void backtrack(Solucion parcial, int idxTarea){
 
-        if( idxTarea+1 == this.tareas.size()){                     // llegamos al final de la lista de tareas
+        if( idxTarea+1 == this.tareas.size()){                                              // llegamos al final de la lista de tareas (leaf)
+            if(parcial.esValida()) {                                                        // es solucion valida? (cumple con las restricciones)
+                this.otrosTiempos.add(parcial.getTiempoMaximo());                           // agrego el tiempo maximo de la solucion encontrada, solo para comparar tiempos
+                if (parcial.getTiempoMaximo() <= mejorSolucion.getTiempoMaximo()) {         // la solucion encontrada es mejor que la solucion previa?
 
-            if(parcial.esValida()){
-
-                if(mejorSolucion == null){
-                    mejorSolucion = parcial.getCopy();
-                }else {
-
-
-                    if (parcial.getTiempoMaximo() <= this.mejorSolucion.getTiempoMaximo()) {
-                        this.mejorSolucion = parcial.getCopy();
-
-                        System.out.println(parcial.getTiempoMaximo());
-                        System.out.println(parcial);
-
-                    }
-
+                    mejorSolucion = parcial.getCopy();                                      // shallow copy de la nueva solucion
                 }
             }
             return;
-
         }
 
-        Tarea t = this.tareas.get(idxTarea);                        // toma una tarea del servicio
-        for(Procesador p : this.procesadores) {
-
-            parcial.add(p, t);
-            this.backtrack(parcial, idxTarea + 1);
-            parcial.remove(p, t);
-
+        Tarea t = this.tareas.get(idxTarea);                                                // toma una tarea de la lista de tareas por indice
+        for(Procesador p : this.procesadores) {                                             // itero sobre cada cpu
+            parcial.add(p, t);                                                              // agrego la tarea a la solucion parcial
+            this.backtrack(parcial, idxTarea + 1);                                  // magia x2
+            parcial.remove(p, t);                                                           // remuevo la tarea de la solucion parcial
         }
-        //return;
+
     }
 
 }

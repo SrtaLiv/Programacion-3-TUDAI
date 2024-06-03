@@ -10,8 +10,7 @@ public class Main {
         );
 
         //servicios.setMaxTiempoEjecucion(75);
-        servicios.backtrack();
-        //System.out.println(s);
+        Solucion s = servicios.backtrack();
 
     }
 
