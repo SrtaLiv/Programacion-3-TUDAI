@@ -9,8 +9,9 @@ public class Main {
                 "./src/main/java/practico_especial/datasets/Tareas.csv"
         );
 
-        servicios.setMaxTiempoEjecucion(75);
-        servicios.ejecutarTareas();
+        //servicios.setMaxTiempoEjecucion(75);
+        servicios.backtrack();
+        //System.out.println(s);
 
     }
 

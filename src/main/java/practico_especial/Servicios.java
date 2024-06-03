@@ -8,13 +8,13 @@ public class Servicios {
     private List<Tarea> tareas;
     private List<Procesador> procesadores;
 
-    //private HashMap<String, Procesador> hasmapProcesadores;
     private HashMap<String, Tarea> hashmapTareas;                   // para servicio1
 
     private List<Tarea> tareasCriticas;                             // para servicio2
     private List<Tarea> tareasNoCriticas;                           // para servicio2
 
-    private Integer maxTiempoEjecucion;                             // para cpu no refrigerado
+    private Solucion mejorSolucion;
+    private int maxTiempoEjecucion;
 
     public Servicios(String pathProcesadores, String pathTareas) {
 
@@ -30,7 +30,8 @@ public class Servicios {
         this.readProcessors(pathProcesadores);
         this.readTasks(pathTareas);
 
-        this.maxTiempoEjecucion = 0;
+        this.maxTiempoEjecucion = 75; // temporal;
+        //this.mejorSolucion = new Solucion(this.procesadores, maxTiempoEjecucion);
 
     }
 
@@ -111,66 +112,6 @@ public class Servicios {
         return lines;
     }
 
-    {
-    /*private List<String> leerArchivo(String path) {
-        List<String> lines = new ArrayList<>();                                         // lista vacia
-        try (BufferedReader br = new BufferedReader(new FileReader(path))) {            // creo BufferReader con path
-            String line;                                                                // temp string
-            while ((line = br.readLine()) != null) {                                    // leo linea por linea si no es null
-                lines.add(line);                                                        // la agrego a la lista de lineas
-            }
-        } catch (IOException e) {
-            return null;                                                                // return null si hay error
-        }
-        return lines;                                                                   // return lista de lineas
-    }
-
-    private void cargarTareas(String pathTareas) {
-
-        List<String> csv = this.leerArchivo(pathTareas);                                // leo el archivo csv
-
-        for(String line: csv) {                                                         // recorro linea x linea
-
-            String[] datos = line.split(";");                                     // split de las columnas en cada ;
-
-            String idTarea =            datos[0];
-            String nombreTarea =        datos[1];
-            double tiempoEjecucion =    Double.parseDouble(datos[2]);
-            Boolean esCritica =         Boolean.parseBoolean(datos[3]);
-            int nievlPrioridad =        Integer.parseInt(datos[4]);
-
-            Tarea t = new Tarea(idTarea, nombreTarea, tiempoEjecucion, esCritica, nievlPrioridad);
-
-            this.tareas.add(t);                             // agrego tarea a la lista simple
-            hashmapTareas.put(t.getId(), t);                // agergo tarea al hashmap con clave tarea.id
-
-            if(t.esCritica()){
-                tareasCriticas.add(t);                     // agrego a lista de critica o NOcritica
-            }else{
-                tareasNoCriticas.add(t);
-            }
-
-        }
-    }
-
-    private void cargarProcesadores(String pathProcesadores) {
-
-        List<String> csv = this.leerArchivo(pathProcesadores);
-
-        for(String line: csv) {
-
-            String[] datos = line.split(";");
-
-            int idProcesador =          Integer.parseInt(datos[0]);
-            int codigoProcesador =      Integer.parseInt(datos[1]);
-            Boolean estaRefrigerado =   Boolean.parseBoolean(datos[3]);
-            int anioFuncionamiento =    Integer.parseInt(datos[4]);
-
-            this.procesadores.add(new Procesador(idProcesador, codigoProcesador, estaRefrigerado, anioFuncionamiento));
-        }
-    }*/
-    } // old implementation
-
     // GET TAREA BY idTarea, COMPLEJIDAD O(1)
     public Tarea servicio1(String ID) {
        return hashmapTareas.get(ID);
@@ -194,63 +135,53 @@ public class Servicios {
         return rangoTareas;
     }
 
-    public void setMaxTiempoEjecucion(Integer m){
-        this.maxTiempoEjecucion = m;
+    public void setMaxTiempoEjecucion(int max){
+        this.maxTiempoEjecucion = max;
     }
 
-    public void ejecutarTareas(){
+    public Solucion backtrack(){
 
-        System.out.println("\nTiempo ejecucion maximo CPU NO refrigerado: "+this.maxTiempoEjecucion+"s");
-        System.out.println("===========================================================\n");
-
-        for(Tarea t : this.tareas){                                             // por cada tarea
-
-            Procesador p = this.getBestCPU(t);                                  // busco el mejor cpu asignable
-            p.pushTarea(t);                                                     // asigno la tarea a ese cpu
-
-            // print tareas
-            String crit = t.esCritica()?"SI":"NO";
-            System.out.println(t.getNombre()+" - (critica: "+crit+", tiempo: "+t.getTiempoEjecucion()+"s) \t\t\tasignada a CPU '"+p.getId()+"'");
-
-        }
-
-        // print procesadores
-        System.out.println("\n===========================================================\n");
-        for(Procesador p : this.procesadores){
-            String ref = p.esRefrigerado()?"SI":"NO";
-            System.out.println("CPU "+p.getId()+" - (refrigerado: "+ref+")\t\t\tTiempo total: "+p.getTiempoEjecucionAcumulado()+" s");
-        }
-
+        Solucion parcial = new Solucion(this.procesadores, this.maxTiempoEjecucion);
+        this.backtrack(parcial, 0);
+        return this.mejorSolucion.getCopy();
     }
 
-    public boolean esAsignable(Procesador p, Tarea t){
-        // si no es refrigerado, verifico que no sobrepase el max tiempo de ejecucion
-        if(!p.esRefrigerado() && t.getTiempoEjecucion() > this.maxTiempoEjecucion){
-            return false;
+    // solucion = [ [ t0 ], [ ], [ ] ];
+
+    private void backtrack(Solucion parcial, int idxTarea){
+
+        if( idxTarea+1 == this.tareas.size()){                     // llegamos al final de la lista de tareas
+
+            if(parcial.esValida()){
+
+                if(mejorSolucion == null){
+                    mejorSolucion = parcial.getCopy();
+                }else {
+
+
+                    if (parcial.getTiempoMaximo() <= this.mejorSolucion.getTiempoMaximo()) {
+                        this.mejorSolucion = parcial.getCopy();
+
+                        System.out.println(parcial.getTiempoMaximo());
+                        System.out.println(parcial);
+
+                    }
+
+                }
+            }
+            return;
+
         }
 
-        // si es critica, verifico que la ultima tarea asignada no sea critica (lo sacaron del tpe?)
-        /*if(p.tieneTareas()){
-            Tarea ultimaTarea = p.getUltimaTarea();
-            if(ultimaTarea.esCritica() && t.esCritica())
-                return false;
-        }*/
+        Tarea t = this.tareas.get(idxTarea);                        // toma una tarea del servicio
+        for(Procesador p : this.procesadores) {
 
-        return true;
-    }
+            parcial.add(p, t);
+            this.backtrack(parcial, idxTarea + 1);
+            parcial.remove(p, t);
 
-    // obtengo el proximo mejor cpu:
-    // itero sobre los procesadores y busco el que tenga menos tiempo de ejecucion acumulada
-    // y que la tarea se pueda asignar a ese cpu
-    public Procesador getBestCPU(Tarea t){
-        Procesador best = this.procesadores.get(0);
-        for(Procesador p : this.procesadores){
-            if(p.getTiempoEjecucionAcumulado() < best.getTiempoEjecucionAcumulado())
-                if(esAsignable(p, t))
-                    best = p;
         }
-        return best;
-
+        //return;
     }
 
 }

@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="SERVICIO DFS Y BFS">
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico_especial/Solucion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_5_2024_15_18_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_5_2024_15_18__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_5_2024_15_18__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_5_2024_15_18__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practico_especial/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico_especial/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practico_especial/Servicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico_especial/Servicios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico_especial/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico_especial/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico_especial/Servicios.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico_especial/Servicios.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,6 +217,9 @@
       <workItem from="1716421859511" duration="9001000" />
       <workItem from="1716438277033" duration="1756000" />
       <workItem from="1716514071600" duration="534000" />
+      <workItem from="1717199638993" duration="2096000" />
+      <workItem from="1717271529031" duration="4264000" />
+      <workItem from="1717390222613" duration="1077000" />
     </task>
     <task id="LOCAL-00001" summary="git add .">
       <option name="closed" value="true" />
