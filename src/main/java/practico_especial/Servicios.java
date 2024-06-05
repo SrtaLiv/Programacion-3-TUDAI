@@ -153,38 +153,25 @@ public class Servicios {
         Tarea t = this.tareas.get(idxTarea);                    // toma una tarea del servicio
 
         for(Procesador p : this.procesadores) {
-            if (esSolucionValida()){
-                solucionParcial.put(p, t);
+         //   if (esSolucionValida()){
+           //     solucionParcial.put(p, t);
 
-                List<Tarea> tareasCpu = this.backtrack(solucionParcial, idxTarea + 1);
+              //  List<Tarea> tareasCpu = this.backtrack(solucionParcial, idxTarea + 1);
                 solucionParcial.remove(p, t);
             }
         }
-        return;
+
     }
 
 
-    private boolean esSolucionValida(HashMap<Procesador, Tarea> solucion){
+  /*  private boolean esSolucionValida(HashMap<Procesador, Tarea> solucion){
 
         for(Procesador p : this.procesadores){
-            List<Tarea> tareas = solucion.get(p);
+            //List<Tarea> tareas = solucion.get(p);
 
         }
+return true;
+
+    }*/
 
 
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
