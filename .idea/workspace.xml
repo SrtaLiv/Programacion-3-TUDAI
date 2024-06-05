@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="SERVICIO DFS Y BFS">
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico_especial/SolucionGreedy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/practico_especial/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico_especial/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/practico_especial/Servicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico_especial/Servicios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico_especial/Solucion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico_especial/Solucion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practico_especial/Solucion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico_especial/SolucionBacktrack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/practico_especial/datasets/Tareas.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico_especial/datasets/Tareas.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -216,7 +217,8 @@
       <workItem from="1717199638993" duration="2096000" />
       <workItem from="1717271529031" duration="4264000" />
       <workItem from="1717390222613" duration="1077000" />
-      <workItem from="1717428273729" duration="5685000" />
+      <workItem from="1717428273729" duration="5752000" />
+      <workItem from="1717622228673" duration="3946000" />
     </task>
     <task id="LOCAL-00001" summary="git add .">
       <option name="closed" value="true" />

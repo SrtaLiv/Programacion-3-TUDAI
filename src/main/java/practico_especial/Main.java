@@ -1,5 +1,7 @@
 package practico_especial;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String args[]) {
@@ -10,7 +12,9 @@ public class Main {
         );
 
         //servicios.setMaxTiempoEjecucion(75);
-        Solucion s = servicios.backtrack();
+
+        SolucionBacktrack sb = servicios.backtrack();
+        SolucionGreedy sg = servicios.greedy();
 
     }
 

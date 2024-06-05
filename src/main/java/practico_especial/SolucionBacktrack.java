@@ -5,13 +5,13 @@ import java.util.HashMap;
 import java.util.List;
 
 
-public class Solucion {
+public class SolucionBacktrack {
 
     private HashMap<Procesador, List<Tarea>> solucion;
     private List<Procesador> procesadores;
     private int maxTiempoEjecucion;
 
-    public Solucion(List<Procesador> procesadores, int maxTiempoEjecucion){
+    public SolucionBacktrack(List<Procesador> procesadores, int maxTiempoEjecucion){
 
         this.procesadores = procesadores;
         this.maxTiempoEjecucion = maxTiempoEjecucion;
@@ -40,9 +40,9 @@ public class Solucion {
     // shallow copy del hashmap con sus tareas
     // esto es necesario para poder reasignar la mejorSolucion con la nueva solucion parcial encontrada
     // si no, cuando hagamos parcial.remove(), tambien estariamos borrando de la mejorSolucion referenciada
-    public Solucion getCopy() {
+    public SolucionBacktrack getCopy() {
 
-        Solucion copia = new Solucion(procesadores, maxTiempoEjecucion);            // creo nueva instancia de Solucion
+        SolucionBacktrack copia = new SolucionBacktrack(procesadores, maxTiempoEjecucion);            // creo nueva instancia de Solucion
         HashMap<Procesador, List<Tarea>> copiaHashmap = new HashMap<>();            // creo un nuevo hashmap
         for(Procesador p : procesadores){                                           // itero los procesadores
             List<Tarea> tareas = new ArrayList<>(this.solucion.get(p));             // clono la lista de tareas de cada cpu
@@ -147,7 +147,7 @@ public class Solucion {
             System.out.println(data);
 
         }
-        System.out.println("\n[ Tiempo maximo: "+getTiempoMaximo()+"s ]");
+        System.out.println("\n[ Tiempo maximo: "+getTiempoMaximo()+"s ]\n");
     }
 
 

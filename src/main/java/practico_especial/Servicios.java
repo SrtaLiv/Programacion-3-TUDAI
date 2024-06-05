@@ -13,7 +13,8 @@ public class Servicios {
     private List<Tarea> tareasCriticas;                             // para servicio2
     private List<Tarea> tareasNoCriticas;                           // para servicio2
 
-    private Solucion mejorSolucion;                                 // para llevar registro de la mejor solucion encontrada
+    private SolucionBacktrack mejorSolucionBacktrack;               // para llevar registro de la mejor solucion encontrada
+    private SolucionGreedy mejorSolucionGreedy;
     private int maxTiempoEjecucion;
 
     private List<Integer> otrosTiempos;                             // solo para mostrar los tiempos de otras soluciones
@@ -31,8 +32,22 @@ public class Servicios {
         this.readProcessors(pathProcesadores);                      // cargar procesadores
         this.readTasks(pathTareas);                                 // cargar tareas
 
-        this.maxTiempoEjecucion = 75; // temporal;
-        this.mejorSolucion = new Solucion(this.procesadores, maxTiempoEjecucion);
+        //this.maxTiempoEjecucion = 75; // temporal;
+
+        Scanner reader = new Scanner(System.in);
+        int input = 0;
+        while(input <= 0) {
+            System.out.print("Ingrese tiempo de ejecucion maxima para CPUs NO refrigerados: ");
+            input = reader.nextInt();
+            if(input <= 0) {
+                System.out.println("Ingrese un numero mayor a 0");
+            }
+        }
+        this.maxTiempoEjecucion = input;
+
+
+        this.mejorSolucionBacktrack = new SolucionBacktrack(this.procesadores, maxTiempoEjecucion);
+        this.mejorSolucionGreedy = new SolucionGreedy(this.procesadores, maxTiempoEjecucion);
 
         this.otrosTiempos = new ArrayList<>();
 
@@ -142,12 +157,13 @@ public class Servicios {
         this.maxTiempoEjecucion = max;
     }
 
-    public Solucion backtrack(){
-        Solucion parcial = new Solucion(this.procesadores, this.maxTiempoEjecucion);        // new solucion parcial vacia inicial
-        this.backtrack(parcial, 0);                                                 // magia
+    public SolucionBacktrack backtrack(){
+        System.out.println("[ Solucion Backtrack ]");
+        SolucionBacktrack parcial = new SolucionBacktrack(this.procesadores, this.maxTiempoEjecucion);        // new solucion parcial vacia inicial
+        this.backtrack(parcial, 0);     // magia
 
-        if(mejorSolucion.isEmpty()){
-            System.out.println("No hay solucion.");
+        if(mejorSolucionBacktrack.isEmpty()){
+            System.out.println("Backtrack: No hay solucion :(");
             return null;
         }
 
@@ -155,32 +171,71 @@ public class Servicios {
         Collections.sort(this.otrosTiempos);
         System.out.println(this.otrosTiempos);
 
-        this.mejorSolucion.show();
-        return this.mejorSolucion;                                                          // return mejor solucion encontrada
+        this.mejorSolucionBacktrack.show();
+        return this.mejorSolucionBacktrack;         // return mejor solucion encontrada
     }
 
-    // solucion = [ [ t0 ], [ t1 ], [ t2 ] ];
+    /*
 
-    private void backtrack(Solucion parcial, int idxTarea){
+    En este enfoque, suponiendo que tenemos una lista con 3 procesadores, y una lista con n tareas,
+    una representacion visual de la estructura seria algo asi [ [ t0 ], [ t1 ], [ t2 ] ]
+    donde la lista padre es la solucion, y cada sub-lista es una lista de tareas asignada a cada cpu.
 
-        if( idxTarea+1 == this.tareas.size()){                                              // llegamos al final de la lista de tareas (leaf)
-            if(parcial.esValida()) {                                                        // es solucion valida? (cumple con las restricciones)
-                this.otrosTiempos.add(parcial.getTiempoMaximo());                           // agrego el tiempo maximo de la solucion encontrada, solo para comparar tiempos
-                if (parcial.getTiempoMaximo() <= mejorSolucion.getTiempoMaximo()) {         // la solucion encontrada es mejor que la solucion previa?
+    Con este algorimo de backtracking, generamos todas las posibles combinaciones y permutaciones de estas 3 listas
+    sin repetir la misma tarea en mas de 1 procesador distinto.
 
-                    mejorSolucion = parcial.getCopy();                                      // shallow copy de la nueva solucion
+    Cuando llegamos a un caso base (hoja), verificamos que esta solucion sea valida, es decir que cada sub-lista
+    de tareas cumpla con las restricciones de su procesador, y si es una solucion valida, comparamos con la
+    solucion previamente encontrada (si es que hay una), y si es mejor, se reemplaza por la nueva.
+
+    */
+
+    private void backtrack(SolucionBacktrack parcial, int idxTarea){
+
+        if( idxTarea+1 == this.tareas.size()){                                                      // llegamos al final de la lista de tareas (leaf)
+            if(parcial.esValida()) {                                                                // es solucion valida? (cumple con las restricciones)
+                this.otrosTiempos.add(parcial.getTiempoMaximo());                                   // agrego el tiempo maximo de la solucion encontrada, solo para comparar tiempos
+                if (parcial.getTiempoMaximo() <= mejorSolucionBacktrack.getTiempoMaximo()) {        // la solucion encontrada es mejor que la solucion previa
+                    mejorSolucionBacktrack = parcial.getCopy();                                     // shallow copy de la nueva solucion
                 }
             }
             return;
         }
 
         Tarea t = this.tareas.get(idxTarea);                                                // toma una tarea de la lista de tareas por indice
-        for(Procesador p : this.procesadores) {                                             // itero sobre cada cpu
+        for(Procesador p : this.procesadores) {
             parcial.add(p, t);                                                              // agrego la tarea a la solucion parcial
             this.backtrack(parcial, idxTarea + 1);                                  // magia x2
             parcial.remove(p, t);                                                           // remuevo la tarea de la solucion parcial
         }
 
     }
+
+    /*
+    En este otro enfoque, utilizamos un algoritmo Greedy,
+    iteramos sobre cada tarea, y elegimos el procesador al que mejor se adapte en ese momento.
+
+    Por cada tarea, se busca el proximo mejor procesador, se verifica que la tarea sea asignable a ese procesador,
+    es decir que cumpla con las restricciones del mismo, y si es valido, se agrega.
+    Continuamos asi hasta acabar con las tareas
+    */
+
+    public SolucionGreedy greedy(){
+        System.out.println("[ Solucion Greedy ]");
+        for(Tarea t : this.tareas){
+
+            Procesador p = mejorSolucionGreedy.getMejorProcesador(t);
+            if(p == null) {
+                System.out.println("Greedy: No hay solucion :(");
+                return null;
+            }
+            mejorSolucionGreedy.add(p, t);
+
+        }
+        mejorSolucionGreedy.show();
+        return mejorSolucionGreedy;
+    }
+
+
 
 }
