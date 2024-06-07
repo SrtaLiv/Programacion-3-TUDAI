@@ -4,20 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="comenzando Backtracking con Grafo">
-      <change afterPath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej1/Puerta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej1/Sala.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej2/Matriz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="ej1 de back">
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej2/BacktrackingLaberinto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej2/Camino.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej2/Casillero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_5_2024_14_24__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_5_2024_14_24__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej1/ej1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej1/GrafoDirigido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico_especial/Servicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico_especial/Servicios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4/ej2/ServicioBFS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4/ej2/ServicioDFS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4/ej3/GrafoTieneCiclo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico_especial/Servicios.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico_especial/Servicios.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej2/Matriz.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,29 +26,17 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <favorite-branches>
-      <branch-storage>
-        <map>
-          <entry type="REMOTE">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="upstream/branch-santi" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="branch-santi" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
-  &quot;history&quot;: [
-    {
-      &quot;state&quot;: &quot;OPEN&quot;
-    }
-  ],
   &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SrtaLiv&quot;
   }
 }</component>
   <component name="GithubPullRequestsUISettings">
@@ -100,16 +82,15 @@
     "Application.practico1.ej5.Main.executor": "Run",
     "Application.practico1.ej6.Main.executor": "Run",
     "Application.practico4.Main.executor": "Run",
-    "Application.practico4.grafoListaAdy.Main.executor": "Run",
-    "Application.practico4.grafosHash.Main.executor": "Run",
-    "Application.practico5_backtracking.ej1.Main.executor": "Run",
+    "Application.practico5_backtracking.ej2.Main.executor": "Run",
+    "Application.practico_especial.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "rama-grafos",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Liv/IdeaProjects/Programacion-3-JAVA-TUDAI/src/main/java/practico4/grafosHash",
+    "last_opened_file_path": "D:/Web/Spring Boot/primero",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -125,17 +106,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="practico5_backtracking.ej1" />
+      <recent name="practico_especial" />
       <recent name="practico2_1.ej1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Liv\IdeaProjects\Programacion-3-JAVA-TUDAI\src\main\java\practico4\grafosHash" />
       <recent name="C:\Users\Liv\IdeaProjects\Programacion-3-JAVA-TUDAI\src\main\java\practico1" />
       <recent name="C:\Users\Liv\IdeaProjects\Programacion-3-JAVA-TUDAI\src\main\java\practico1\ej4" />
       <recent name="C:\Users\Liv\IdeaProjects\Programacion-3-JAVA-TUDAI\src\main\java\practico1\ej5" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Liv\IdeaProjects\Programacion-3-JAVA-TUDAI\src\main\java\practico5_backtracking\ej1" />
       <recent name="C:\Users\Liv\IdeaProjects\Programacion-3-JAVA-TUDAI\src\main\java\practico1" />
       <recent name="C:\Users\Liv\IdeaProjects\Programacion-3-JAVA-TUDAI\src\main\java\org\example\programacion3javatudai\ListaVinculada" />
     </key>
@@ -149,20 +128,7 @@
       <recent name="practico1.ej6" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.practico5_backtracking.ej1.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practico2_1.ej1.Main" />
-      <module name="Programacion-3-JAVA-TUDAI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="practico2_1.ej1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.practico5_backtracking.ej2.Main">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="practico2_1.ej1e.main" />
       <module name="Programacion-3-JAVA-TUDAI" />
@@ -215,12 +181,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="practico5_backtracking.ej2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practico5_backtracking.ej2.Main" />
+      <module name="Programacion-3-JAVA-TUDAI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practico5_backtracking.ej2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.practico5_backtracking.ej2.Main" />
         <item itemvalue="Application.practico5_backtracking.ej1.Main" />
-        <item itemvalue="Application.practico4.grafoListaAdy.Main" />
         <item itemvalue="Application.practico4.grafosHash.Main" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.practico4.grafoListaAdy.Main" />
         <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
@@ -242,6 +221,14 @@
       <updated>1711456479214</updated>
       <workItem from="1715921314869" duration="1436000" />
       <workItem from="1715922766726" duration="1000" />
+      <workItem from="1716417547411" duration="1404000" />
+      <workItem from="1716421859511" duration="9001000" />
+      <workItem from="1716438277033" duration="1756000" />
+      <workItem from="1716514071600" duration="534000" />
+      <workItem from="1717199638993" duration="2096000" />
+      <workItem from="1717271529031" duration="4264000" />
+      <workItem from="1717390222613" duration="1077000" />
+      <workItem from="1717428273729" duration="5685000" />
     </task>
     <task id="LOCAL-00001" summary="git add .">
       <option name="closed" value="true" />
@@ -299,55 +286,7 @@
       <option name="project" value="LOCAL" />
       <updated>1715366038327</updated>
     </task>
-    <task id="LOCAL-00008" summary="SERVICIO DFS Y BFS">
-      <option name="closed" value="true" />
-      <created>1716417468206</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1716417468206</updated>
-    </task>
-    <task id="LOCAL-00009" summary="SERVICIO DFS Y BFS">
-      <option name="closed" value="true" />
-      <created>1716417487043</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1716417487043</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Grafo Dirigido con Hash implementado">
-      <option name="closed" value="true" />
-      <created>1716559168755</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1716559168755</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Grafo Dirigido con Hash implementado">
-      <option name="closed" value="true" />
-      <created>1716559182178</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1716559182178</updated>
-    </task>
-    <task id="LOCAL-00012" summary="tiene ciclo">
-      <option name="closed" value="true" />
-      <created>1716666223296</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1716666223296</updated>
-    </task>
-    <task id="LOCAL-00013" summary="comenzando Backtracking con Grafo">
-      <option name="closed" value="true" />
-      <created>1717238505079</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1717238505079</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,10 +309,7 @@
     <MESSAGE value="agregue tp grafos" />
     <MESSAGE value="Grafo Dirigido con Lista de Adyacencia" />
     <MESSAGE value="SERVICIO DFS Y BFS" />
-    <MESSAGE value="Grafo Dirigido con Hash implementado" />
-    <MESSAGE value="tiene ciclo" />
-    <MESSAGE value="comenzando Backtracking con Grafo" />
-    <option name="LAST_COMMIT_MESSAGE" value="comenzando Backtracking con Grafo" />
+    <option name="LAST_COMMIT_MESSAGE" value="SERVICIO DFS Y BFS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
