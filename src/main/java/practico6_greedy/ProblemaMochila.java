@@ -13,5 +13,6 @@ public class ProblemaMochila {
      * pseudocódigo en Java.
      */
 
+    private ArrayList<>
 
 }
