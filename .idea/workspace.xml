@@ -4,14 +4,74 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="ej1 de back">
-      <change afterPath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej2/BacktrackingLaberinto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej2/Camino.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej2/Casillero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_5_2024_14_24__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_5_2024_14_24__Changes_.xml" afterDir="false" />
+    <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="laberinto, complicadito">
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej3/BackSuma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej4/BackParticionConjunto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej6/CaballoAtila.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej7/Backtracking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico6_greedy/CambioMonedas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico6_greedy/ProblemaMochila.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practico4_grafos/ej2/ServicioDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico4_grafos/ej2/ServicioDFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej2/BacktrackingLaberinto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej2/BacktrackingLaberinto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej2/Camino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej2/Camino.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej2/Matriz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ejyoutube/BusquedaBinaria/BusquedaRecursiva.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ejyoutube/BusquedaBinaria/BusquedaRecursiva.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ejyoutube/EliminarDuplicados/ListaVinculada.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ejyoutube/EliminarDuplicados/ListaVinculada.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ejyoutube/EliminarDuplicados/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ejyoutube/EliminarDuplicados/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ejyoutube/EliminarDuplicados/MyIterador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ejyoutube/EliminarDuplicados/MyIterador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ejyoutube/EliminarDuplicados/Nodo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ejyoutube/EliminarDuplicados/Nodo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ejyoutube/Palindromo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ejyoutube/Palindromo/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ejyoutube/Palindromo/Palind.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ejyoutube/Palindromo/Palind.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/programacion3javatudai/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/programacion3javatudai/HelloApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/programacion3javatudai/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/programacion3javatudai/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/programacion3javatudai/ListaVinculada/MySimpleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/programacion3javatudai/ListaVinculada/MySimpleLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/programacion3javatudai/ListaVinculada/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/programacion3javatudai/ListaVinculada/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej1/Ejercicio1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej1/Ejercicio1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej1/MySimpleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej1/MySimpleLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej1/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej1/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej4/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej4/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej4/MyIterador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej4/MyIterador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej4/MySimpleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej4/MySimpleLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej4/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej4/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej5/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej5/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej5/MyIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej5/MyIterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej5/MySimpleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej5/MySimpleLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej5/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej5/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej6/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej6/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej6/MyIterador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej6/MyIterador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej6/MySimpleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej6/MySimpleLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej6/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej6/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico2/ej1/AlgoritmoN.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2/ej1/AlgoritmoN.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico2/ej2/AlgoritmoRecursivo2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2/ej2/AlgoritmoRecursivo2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico2/ej3/NumeroABinario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2/ej3/NumeroABinario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico2/ej4/Fibonacci.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2/ej4/Fibonacci.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico2/ej5/Algoritmo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2/ej5/Algoritmo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico2/ej6/AlgoritmosOrdenamiento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2/ej6/AlgoritmosOrdenamiento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico2/ej7/AlgoritmosOrdenamiento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2/ej7/AlgoritmosOrdenamiento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico2/ej7/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2/ej7/MergeSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico2_1/ej1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2_1/ej1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico2_1/ej1/Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2_1/ej1/Tree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico2_1/ej1/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2_1/ej1/TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico3/ej1/Hashing$Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico3/ej1/Hashing$Entry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico3/ej1/Hashing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico3/ej1/Hashing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4/grafoListaAdy/Arco.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4/grafoListaAdy/Grafo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4/grafoListaAdy/GrafoDirigido$Vertice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4/grafoListaAdy/GrafoDirigido.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4/grafoListaAdy/GrafoDirigidoMatriz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4/grafoListaAdy/GrafoNoDirigido.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4/grafoListaAdy/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4/grafoListaAdy/RecorridoSimple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4/grafosHash/Arco.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4/grafosHash/Grafo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4/grafosHash/GrafoDirigidoHASH.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4/grafosHash/GrafoNoDirigido.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4/grafosHash/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico_especial/Procesador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico_especial/Procesador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico_especial/Servicios.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico_especial/Servicios.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico_especial/Tarea.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico_especial/Tarea.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +130,9 @@
     "Application.AlgoritmoN.executor": "Run",
     "Application.AlgoritmoRecursivo2.executor": "Run",
     "Application.AlgoritmosOrdenamiento.executor": "Run",
+    "Application.BackSuma.executor": "Run",
     "Application.BusquedaRecursiva.executor": "Run",
+    "Application.CambioMonedas.executor": "Run",
     "Application.Fibonacci.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.MergeSort.executor": "Run",
@@ -106,6 +168,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="practico5_backtracking.ej6.PosibleSolucion" />
       <recent name="practico_especial" />
       <recent name="practico2_1.ej1" />
     </key>
@@ -128,13 +191,13 @@
       <recent name="practico1.ej6" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.practico5_backtracking.ej2.Main">
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practico2_1.ej1e.main" />
+  <component name="RunManager" selected="Application.CambioMonedas">
+    <configuration name="BackSuma" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practico5_backtracking.ej3.BackSuma" />
       <module name="Programacion-3-JAVA-TUDAI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="practico2_1.ej1e.*" />
+          <option name="PATTERN" value="practico5_backtracking.ej3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,12 +205,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="practico4.grafoListaAdy.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practico4.grafoListaAdy.Main" />
+    <configuration name="CambioMonedas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practico6_greedy.CambioMonedas" />
       <module name="Programacion-3-JAVA-TUDAI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="practico4.ej2.*" />
+          <option name="PATTERN" value="practico6_greedy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,12 +218,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="practico4.grafosHash.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practico4.grafosHash.Main" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practico5_backtracking.ej6.PosibleSolucion.Main" />
       <module name="Programacion-3-JAVA-TUDAI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="practico4.grafosHash.*" />
+          <option name="PATTERN" value="practico5_backtracking.ej6.PosibleSolucion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -196,11 +259,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CambioMonedas" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.BackSuma" />
         <item itemvalue="Application.practico5_backtracking.ej2.Main" />
         <item itemvalue="Application.practico5_backtracking.ej1.Main" />
-        <item itemvalue="Application.practico4.grafosHash.Main" />
-        <item itemvalue="Application.practico4.grafoListaAdy.Main" />
-        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
@@ -286,7 +349,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715366038327</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="laberinto, complicadito">
+      <option name="closed" value="true" />
+      <created>1717722833969</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717722833969</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +380,8 @@
     <MESSAGE value="agregue tp grafos" />
     <MESSAGE value="Grafo Dirigido con Lista de Adyacencia" />
     <MESSAGE value="SERVICIO DFS Y BFS" />
-    <option name="LAST_COMMIT_MESSAGE" value="SERVICIO DFS Y BFS" />
+    <MESSAGE value="laberinto, complicadito" />
+    <option name="LAST_COMMIT_MESSAGE" value="laberinto, complicadito" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -18,19 +18,21 @@ public class BacktrackingLaberinto {
     private Casillero casillero;
     //Camino visitados = new Camino();
     Camino mejorCamino = new Camino();
-    ArrayList<Casillero> visitados = new ArrayList<>();
+    Camino visitados = new Camino();
     Casillero[][] matriz = new Casillero[4][4];
 
     public Camino getMejorCamino(Casillero c1, Casillero c2) {
         Camino caminoParcial = new Camino(); //Estado inicial, agregar casilleros
-        backtracking2(0, 0, c1, c2, caminoParcial);
+
+        caminoParcial.agregarAlCamino(c1);
+        visitados.agregarAlCamino(c1);
+
+        backtracking2(c1,c2,caminoParcial);
         return mejorCamino;
     }
 
-    private void backtracking2(int pos, int posC, Casillero origen, Casillero destino, Camino caminoParcial) {
-        Casillero cc = matriz[pos][posC];
-
-        if (cc.equals(destino)) {
+    private void backtracking2(Casillero origen, Casillero destino, Camino caminoParcial) {
+        if (origen.equals(destino)) {
             if (mejorCamino.getCamino().isEmpty() || caminoParcial.getCostoTotal() < mejorCamino.getCostoTotal()) {
                 ArrayList<Casillero> copia =  new ArrayList<>(caminoParcial.getCamino());
                 mejorCamino.setCamino(copia);
@@ -38,28 +40,19 @@ public class BacktrackingLaberinto {
             return;
         }
 
-        if (!visitados.contains(cc)){
-            visitados.add(cc);
-            caminoParcial.agregarAlCamino(cc);
+        for (Casillero vecino : origen.getVecinos()) {
+            if (!visitados.getCamino().contains(vecino)) {
+                caminoParcial.agregarAlCamino(vecino);
+                visitados.agregarAlCamino(vecino);
+                System.out.println(vecino.getCosto());
+                backtracking2(vecino, destino, caminoParcial);
 
-
-            if (pos > 0 && cc.up) {
-                backtracking2(pos - 1, posC, origen, destino, caminoParcial);
+                caminoParcial.eliminarUltimoDelCamino();
+                visitados.eliminarUltimoDelCamino();
             }
-            if (posC < matriz.length - 1 && cc.right) {
-                backtracking2(pos, posC + 1, origen, destino, caminoParcial);
-            }
-            if (pos < matriz.length - 1 && cc.down) {
-                backtracking2(pos + 1, posC, origen, destino, caminoParcial);
-            }
-            if (posC > 0 && cc.left) {
-                backtracking2(pos, posC - 1, origen, destino, caminoParcial);
-            }
-            caminoParcial.eliminarCasillero(cc);
-            visitados.remove(cc);
         }
-
     }
-}
+    }
+
 
 //D: P E N S A R ! !

@@ -34,9 +34,9 @@ public class Camino {
         this.camino.addAll(camino);
     }
 
-    public void eliminarCasillero(Casillero cc) {
-        this.camino.remove(cc);
-        costoTotal -= cc.getCosto();
+    public void eliminarUltimoDelCamino() {
+        Casillero ultimo = camino.remove(camino.size() - 1);
+        costoTotal -= ultimo.costo;
     }
 
     public int getCostoTotal() {
