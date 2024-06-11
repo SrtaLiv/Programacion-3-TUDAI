@@ -16,23 +16,16 @@ public class ServicioDFS {
 
     public void dfsRecursivo(GrafoDirigidoHASH gr, int vertice){
         if (this.visitados.contains(vertice)){
-            System.out.print("("+vertice+") > ");
             return;
         }
 
         visitados.add(vertice);
-
-        //obtengo adyacentes de mi vertice
-        //Iterar por ady
-        //recursivamente llamar dfs
-
         System.out.print(vertice+" > ");
 
         Iterator<Integer> vertices = gr.obtenerAdyacentes(vertice);
         while (vertices.hasNext()){
             Integer v = vertices.next();
             //visitados.add(v);                    <- ta mal :c
-
             dfsRecursivo(gr, v);
         }
 
