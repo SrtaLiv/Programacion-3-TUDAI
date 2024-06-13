@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="cambio monedas">
+      <change afterPath="$PROJECT_DIR$/src/main/java/parcial/CicloGrafo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/parcial/RecuEj1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico6_greedy/Ej3_Actividades.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico6_greedy/ej4/Ej4_Dijkstra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico6_greedy/ej4/Grafo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practico6_greedy/ej4/Vertice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_6_2024_18_48_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_6_2024_18_48__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_6_2024_18_36_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_6_2024_18_36__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practico6_greedy/CambioMonedas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico6_greedy/CambioMonedas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej6/CaballoAtila.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico5_backtracking/ej6/CaballoAtila.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practico6_greedy/ProblemaMochila.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practico6_greedy/ProblemaMochila.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico6_greedy/CambioMonedas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico6_greedy/CambioMonedas.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +90,7 @@
     &quot;Application.MergeSort.executor&quot;: &quot;Run&quot;,
     &quot;Application.NumeroABinario.executor&quot;: &quot;Run&quot;,
     &quot;Application.Palindromo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProblemaMochila.executor&quot;: &quot;Run&quot;,
     &quot;Application.Tree.executor&quot;: &quot;Run&quot;,
     &quot;Application.ejyoutube.EliminarDuplicados.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.main.executor&quot;: &quot;Run&quot;,
@@ -131,7 +144,7 @@
       <recent name="practico1.ej6" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CambioMonedas">
+  <component name="RunManager" selected="Application.ProblemaMochila">
     <configuration name="BackSuma" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="practico5_backtracking.ej3.BackSuma" />
       <module name="Programacion-3-JAVA-TUDAI" />
@@ -150,7 +163,7 @@
       <module name="Programacion-3-JAVA-TUDAI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="practico6_greedy.*" />
+          <option name="PATTERN" value="practico6_greedy.ej4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,12 +184,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="practico5_backtracking.ej1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practico5_backtracking.ej1.Main" />
+    <configuration name="ProblemaMochila" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practico6_greedy.ProblemaMochila" />
       <module name="Programacion-3-JAVA-TUDAI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="practico5_backtracking.ej1.*" />
+          <option name="PATTERN" value="practico6_greedy.ej4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -199,11 +212,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProblemaMochila" />
         <item itemvalue="Application.CambioMonedas" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.BackSuma" />
         <item itemvalue="Application.practico5_backtracking.ej2.Main" />
-        <item itemvalue="Application.practico5_backtracking.ej1.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -313,7 +326,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718119013241</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="cambio monedas">
+      <option name="closed" value="true" />
+      <created>1718130409369</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1718130409369</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
