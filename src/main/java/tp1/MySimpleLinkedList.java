@@ -88,4 +88,52 @@ elemento, o -1 si el elemento no existe en la lista.
     public Iterator<T> iterator() {
         return new MyIterator<>(this.first);
     }
+
+    /*
+    Ejercicio 5
+    Escriba un procedimiento que dadas dos listas construya otra con los elementos comunes,
+    suponiendo que:
+    a) Las listas están desordenadas y la lista resultante debe quedar ordenada.
+    b) Las listas están ordenadas y la lista resultante debe mantenerse ordenada.
+     */
+
+    // esta lista debe ordenarse si son letras o numeros?
+    public MySimpleLinkedList<T> construirOtraLista(MySimpleLinkedList<T> l1, MySimpleLinkedList<T> l2){
+        Iterator<T> tmp1 = l1.iterator();
+        Iterator<T> tmp2 = l2.iterator();
+        MySimpleLinkedList<T> result = new MySimpleLinkedList<>();
+
+        while (tmp1.hasNext()) {
+            T info1 = tmp1.next();
+            while (tmp2.hasNext()){
+                if (info1.equals(tmp2.next())){
+                    if (result.first.getInfo() == null ){
+                        result.insertFront(tmp2.next());
+                    }
+                    // Sino recorro hasta encontrar uno que sea mayor a Tmp.next()
+                    // Eejmplo lista guardada: 1, 2, 5
+                    // Tmp.info es  =  4
+                    // 1 es < 4? si, next. 2 es < 4 si, next. 5 < 4 NO, agrego ahi.
+                    for (int i = 0; i < result.size; i++){
+                        T infoTemp = result.get(i);
+                        if (infoTemp < tmp2.next()){
+                            tmp2.next();
+                        }
+                        else {
+                            // agrego el ej 4
+                        }
+                        }
+
+                }
+                tmp2.
+                }
+                tmp2.next();
+               tmp1.next();
+            }
+
+            if (info1.equals(info2)){
+                result.insertFront(info1);
+            }
+        }
+    }
 }

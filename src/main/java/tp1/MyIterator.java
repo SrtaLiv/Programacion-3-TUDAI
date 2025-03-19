@@ -15,7 +15,7 @@ public class MyIterator<T> implements java.util.Iterator<T> {
     }
 
     @Override
-    public T next() {
+    public T next() { // por que debe devolver un T y no un NODE
         T info = cursor.getInfo(); // Captura la info del cursor
         cursor = cursor.getNext(); // Pasa al siguiente
         return info;
