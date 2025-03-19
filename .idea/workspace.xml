@@ -8,6 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tp1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tp1/MySimpleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/MySimpleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tp1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tp1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tp1/MySimpleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tp1/MySimpleLinkedList.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +240,7 @@
       <workItem from="1717428273729" duration="5685000" />
       <workItem from="1742347435087" duration="2499000" />
       <workItem from="1742396292510" duration="7616000" />
-      <workItem from="1742418362762" duration="6081000" />
+      <workItem from="1742418362762" duration="7780000" />
     </task>
     <task id="LOCAL-00001" summary="git add .">
       <option name="closed" value="true" />

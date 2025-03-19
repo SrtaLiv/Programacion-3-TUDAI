@@ -21,17 +21,15 @@ public class MySimpleLinkedList<T extends Comparable<T>> implements Iterable<T> 
 
         // Caso 1: Lista vacia o el nuevo nodo es menor que el primero
         if (first == null || info.compareTo(first.getInfo()) == 0) {
-           this.insertFront(newNode.getInfo());
+            this.insertFront(newNode.getInfo());
         }
         else {
-            Iterator<T> iterador = this.iterator();
-            while (iterador.hasNext()) {
-                T tmp = iterador.next();
                 Node<T> aux = this.first;
                 // si no se quedo sin numeros y el siguiente es < a info
                 while (aux.getNext() != null && info.compareTo(aux.getNext().getInfo()) < 0) {
                     aux = aux.getNext();
-                    if (aux == null) { // si no hay proximo inserto ultimo al next aux
+                }
+                    if (aux.getNext() == null) { // si no hay proximo inserto ultimo al next aux
                         aux.setNext(newNode);
                     } else { // aux es < info
                         // al 4 le seteo el 5 como next, al 3 le seteo como proximo el 4
@@ -39,10 +37,8 @@ public class MySimpleLinkedList<T extends Comparable<T>> implements Iterable<T> 
                         aux.setNext(newNode);
                     }
                 }
-            }
-        }
-
     }
+
 
     // Inserta en el primer lugar, costo constante
     public void insertFront(T info) {

@@ -8,13 +8,19 @@ public class Main {
         Node<Integer> n1 = new Node<>(5, null);
         Node<Integer> n2 = new Node<>(2, null);
         Node<Integer> n3 = new Node<>(1, null);
-        Node<Integer> n4 = new Node<>(4, null);
-        Node<Integer> n5 = new Node<>(5, null);
-        Node<Integer> n6 = new Node<>(6, null);
+
+        MySimpleLinkedList<Integer> list2 = new MySimpleLinkedList<>();
+        Node<Integer> n4 = new Node<>(5, null);
+        Node<Integer> n5 = new Node<>(2, null);
+        Node<Integer> n6 = new Node<>(9, null);
 
         list.insertFront(n1.getInfo());
         list.insertFront(n2.getInfo());
         list.insertFront(n3.getInfo()); // n3, n2, n1 -> 1, 2,5
+
+        list2.insertFront(n4.getInfo());
+        list2.insertFront(n5.getInfo());
+        list2.insertFront(n6.getInfo());
        /*
         list.insertFront(n4.getInfo());
         list.insertFront(n5.getInfo());
@@ -30,6 +36,25 @@ public class Main {
             System.out.print(i + " - ");
 
         }
+
+        System.out.print("Lista 1: ");
+        for (Integer num : list) {
+            System.out.print(num + " - ");
+        }
+        System.out.println();
+
+        System.out.print("Lista 2: ");
+        for (Integer num : list2) {
+            System.out.print(num + " - ");
+        }
+        System.out.println();
+
+        MySimpleLinkedList<Integer> listResult = construirOtraLista(list2, list);
+
+        System.out.print("Lista Resultante: ");
+        for (Integer num : listResult) {
+            System.out.print(num + " - ");
+        }
     }
 
      /*
@@ -42,8 +67,7 @@ public class Main {
 
     // esta lista debe ordenarse si son letras o numeros?
     //implementar Comparator
-    public static MySimpleLinkedList<T> construirOtraLista(MySimpleLinkedList<T> l1,
-                                                                                     MySimpleLinkedList<T> l2) {
+    public static <T extends Comparable<T>> MySimpleLinkedList<T> construirOtraLista(MySimpleLinkedList<T> l1, MySimpleLinkedList<T> l2) {
         Iterator<T> tmp1 = l1.iterator();
         MySimpleLinkedList<T> result = new MySimpleLinkedList<>();
 
@@ -58,7 +82,6 @@ public class Main {
                 }
             }
         }
-        tmp1.next();
         return result;
     }
 }
