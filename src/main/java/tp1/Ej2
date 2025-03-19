@@ -1,0 +1,70 @@
+Considerando la implementación de la lista vinculada realizada en el ejercicio anterior, comparar la
+complejidad computacional contra un array en las siguientes operaciones:
+1. Insertar al principio.
+2. Buscar un elemento en una posición.
+3. Determinar la cantidad de elementos.
+4. Borrar un elemento de una posición determinada.
+
+1. ❌ el array al insertar tiene una complejidad O(1)
+✅ Corrección: O(n)
+Insertar al principio requiere desplazar todos los elementos existentes una posición a la derecha, lo que implica una complejidad lineal
+
+la lista O(n) pq debera recorrer n nodos hasta insertar en la ultima posicion
+
+2. Buscar elemento en una posicion
+Lista: O(n) ya que dependera de donde este el nodo
+Array: O(n) dependera de donde este el elemento que necesitamos, puede ser O(1) al usar get
+
+3. Array: O(1) ya que con el .lenght nos dice la cantidad de elemntos
+Listas: Segun su implementacion puede ser O(1) si agregamos un atributo Size a nuestra lista
+
+4. Array: O(1) con .remove(i)
+Listas: O(n)}
+
+CORRECCIONES:
+1. Insertar al principio
+Array:
+❌ Respuesta original: O(1)
+✅ Corrección: O(n)
+
+Insertar al principio requiere desplazar todos los elementos existentes una posición a la derecha,
+ lo que implica una complejidad lineal.
+
+Lista enlazada:
+❌ Respuesta original: O(n)
+✅ Corrección: O(1)
+
+En una lista enlazada, basta con crear un nuevo nodo y ajustar el puntero head sin necesidad de recorrer la lista.
+
+2. Buscar un elemento en una posición
+Array:
+✅ Respuesta original: O(1)
+Acceso directo por índice gracias a la localidad de memoria.
+
+Lista enlazada:
+✅ Respuesta original: O(n)
+Requiere recorrer los nodos desde el inicio hasta la posición deseada, operación lineal.
+
+3. Determinar la cantidad de elementos
+Array:
+✅ Respuesta original: O(1)
+Si se almacena el tamaño en un atributo (ej: length), es constante.
+
+Lista enlazada:
+✅ Respuesta original: O(1) (si hay un atributo size)
+Correcto. Mantener un contador actualizado permite obtener el tamaño en tiempo constante.
+
+4. Borrar un elemento de una posición determinada
+Array:
+❌ Respuesta original: O(1)
+✅ Corrección: O(n)
+Eliminar un elemento implica desplazar los elementos posteriores hacia la izquierda, operación lineal.
+
+Lista enlazada:
+✅ Respuesta original: O(n)
+Encontrar el nodo en la posición dada es O(n), pero la eliminación en sí es O(1) (ajustar punteros).
+ La complejidad total sigue siendo O(n).
+
+ Explicación adicional:
+ Arrays son eficientes en acceso aleatorio (O(1)) pero ineficientes en inserciones/eliminaciones intermedias debido a desplazamientos.
+ Listas enlazadas tienen inserción/eliminación en extremos en O(1) (si hay referencia al nodo), pero accesos y búsquedas en O(n)
