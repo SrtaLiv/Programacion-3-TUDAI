@@ -4,7 +4,8 @@ import Cursada2024.practico1.ej4.MyIterador;
 
 import java.util.Iterator;
 
-public class MySimpleLinkedList<T> implements Iterable<T>{
+// t extiende comparable
+public class MySimpleLinkedList<T extends Comparable<T>> implements Iterable<T> {
 
     private int size;
     private Node<T> first;
@@ -14,7 +15,36 @@ public class MySimpleLinkedList<T> implements Iterable<T>{
         this.size = 0;
     }
 
-    // Inserta en el primer lugar
+    // Insertar ordenando
+    public void insertarOrdenado(T info){
+        Node<T> newNode = new Node<>(info, null);
+
+        // Caso 1: Lista vacia o el nuevo nodo es menor que el primero
+        if (first == null || info.compareTo(first.getInfo()) == 0) {
+           this.insertFront(newNode.getInfo());
+        }
+        else {
+            Iterator<T> iterador = this.iterator();
+            while (iterador.hasNext()) {
+                T tmp = iterador.next();
+                Node<T> aux = this.first;
+                // si no se quedo sin numeros y el siguiente es < a info
+                while (aux.getNext() != null && info.compareTo(aux.getNext().getInfo()) < 0) {
+                    aux = aux.getNext();
+                    if (aux == null) { // si no hay proximo inserto ultimo al next aux
+                        aux.setNext(newNode);
+                    } else { // aux es < info
+                        // al 4 le seteo el 5 como next, al 3 le seteo como proximo el 4
+                        newNode.setNext(aux.getNext());
+                        aux.setNext(newNode);
+                    }
+                }
+            }
+        }
+
+    }
+
+    // Inserta en el primer lugar, costo constante
     public void insertFront(T info) {
         Node<T> tmp = new Node<>(info, null);
         tmp.setNext(first);
@@ -27,11 +57,7 @@ public class MySimpleLinkedList<T> implements Iterable<T>{
         if (first == null){
             return null;
         }
-        Node<T> eliminar = this.first;
-        System.out.println(eliminar.getInfo());
-
-        eliminar.setNext(eliminar.getNext().getNext());
-        eliminar.setInfo(eliminar.getNext().getInfo());
+      //    todo
         size -= 1;
         return this.first.getInfo();
     }
@@ -62,8 +88,7 @@ public class MySimpleLinkedList<T> implements Iterable<T>{
 
     @Override
     public String toString() {
-        String info = "" + this.first.getInfo();
-        return info;
+        return "" + this.first.getInfo();
     }
 
     /*A la implementación de la clase Lista realizada en el ejercicio 1, agregue un método
@@ -89,51 +114,6 @@ elemento, o -1 si el elemento no existe en la lista.
         return new MyIterator<>(this.first);
     }
 
-    /*
-    Ejercicio 5
-    Escriba un procedimiento que dadas dos listas construya otra con los elementos comunes,
-    suponiendo que:
-    a) Las listas están desordenadas y la lista resultante debe quedar ordenada.
-    b) Las listas están ordenadas y la lista resultante debe mantenerse ordenada.
-     */
 
-    // esta lista debe ordenarse si son letras o numeros?
-    public MySimpleLinkedList<T> construirOtraLista(MySimpleLinkedList<T> l1, MySimpleLinkedList<T> l2){
-        Iterator<T> tmp1 = l1.iterator();
-        Iterator<T> tmp2 = l2.iterator();
-        MySimpleLinkedList<T> result = new MySimpleLinkedList<>();
 
-        while (tmp1.hasNext()) {
-            T info1 = tmp1.next();
-            while (tmp2.hasNext()){
-                if (info1.equals(tmp2.next())){
-                    if (result.first.getInfo() == null ){
-                        result.insertFront(tmp2.next());
-                    }
-                    // Sino recorro hasta encontrar uno que sea mayor a Tmp.next()
-                    // Eejmplo lista guardada: 1, 2, 5
-                    // Tmp.info es  =  4
-                    // 1 es < 4? si, next. 2 es < 4 si, next. 5 < 4 NO, agrego ahi.
-                    for (int i = 0; i < result.size; i++){
-                        T infoTemp = result.get(i);
-                        if (infoTemp < tmp2.next()){
-                            tmp2.next();
-                        }
-                        else {
-                            // agrego el ej 4
-                        }
-                        }
-
-                }
-                tmp2.
-                }
-                tmp2.next();
-               tmp1.next();
-            }
-
-            if (info1.equals(info2)){
-                result.insertFront(info1);
-            }
-        }
-    }
 }

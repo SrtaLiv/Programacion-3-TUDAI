@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="laberinto, complicadito">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tp1/MyIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/MyIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tp1/MySimpleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/MySimpleLinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +51,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -91,7 +94,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/University/SEGUNDO ANIO/PROGRAMACION 3/Programacion-3-TUDAI",
+    "last_opened_file_path": "D:/universidad/Programacion-3-TUDAI",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -101,7 +104,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "preferences.editor",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -210,8 +213,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
       </set>
     </attachedChunks>
   </component>
@@ -235,6 +238,7 @@
       <workItem from="1717428273729" duration="5685000" />
       <workItem from="1742347435087" duration="2499000" />
       <workItem from="1742396292510" duration="7616000" />
+      <workItem from="1742418362762" duration="6081000" />
     </task>
     <task id="LOCAL-00001" summary="git add .">
       <option name="closed" value="true" />
