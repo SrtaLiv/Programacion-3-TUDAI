@@ -21,4 +21,6 @@ public class MyIterator<T> implements java.util.Iterator<T> {
         return info;
     }
 
+    // necesito poner un hasBack??
+
 }

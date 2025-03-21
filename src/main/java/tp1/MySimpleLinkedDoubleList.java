@@ -1,49 +1,28 @@
 package tp1;
 
-import Cursada2024.practico1.ej4.MyIterador;
-
 import java.util.Iterator;
 
 // t extiende comparable
-public class MySimpleLinkedList<T extends Comparable<T>> implements Iterable<T> {
+public class MySimpleLinkedDoubleList<T extends Comparable<T>> implements Iterable<T> {
 
     private int size;
     private Node<T> first;
+    private Node<T> last;
 
-    public MySimpleLinkedList() {
+    public MySimpleLinkedDoubleList() {
         this.first = null;
         this.size = 0;
+        this.last = null;
     }
-
-    // Insertar ordenando
-    public void insertarOrdenado(T info){
-        Node<T> newNode = new Node<>(info, null);
-
-        // Caso 1: Lista vacia o el nuevo nodo es menor que el primero
-        if (first == null || info.compareTo(first.getInfo()) == 0) {
-            this.insertFront(newNode.getInfo());
-        }
-        else {
-                Node<T> aux = this.first;
-                // si no se quedo sin numeros y el siguiente es < a info
-                while (aux.getNext() != null && info.compareTo(aux.getNext().getInfo()) < 0) {
-                    aux = aux.getNext();
-                }
-                    if (aux.getNext() == null) { // si no hay proximo inserto ultimo al next aux
-                        aux.setNext(newNode);
-                    } else { // aux es < info
-                        // al 4 le seteo el 5 como next, al 3 le seteo como proximo el 4
-                        newNode.setNext(aux.getNext());
-                        aux.setNext(newNode);
-                    }
-                }
-    }
-
 
     // Inserta en el primer lugar, costo constante
     public void insertFront(T info) {
-        Node<T> tmp = new Node<>(info, null);
+        Node<T> tmp = new Node<>(info, null, null);
         tmp.setNext(first);
+        if (first != null)
+            first.setBack(tmp);
+        else
+            last = tmp;
         first = tmp;
         size += 1;
     }
@@ -87,11 +66,6 @@ public class MySimpleLinkedList<T extends Comparable<T>> implements Iterable<T> 
         return "" + this.first.getInfo();
     }
 
-    /*A la implementación de la clase Lista realizada en el ejercicio 1, agregue un método
-int indexOf(T), que reciba un elemento y retorne el índice donde está almacenado ese
-elemento, o -1 si el elemento no existe en la lista.
-*
-     */
     public int indexOf(T info){
         Node<T> first = this.first;
         for (int i = 0 ; i < size ; i++){
