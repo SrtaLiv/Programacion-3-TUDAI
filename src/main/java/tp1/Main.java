@@ -4,65 +4,92 @@ import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args) {
-        MySimpleLinkedList<Integer> list = new MySimpleLinkedList<>();
-        Node<Integer> n1 = new Node<>(5, null);
-        Node<Integer> n2 = new Node<>(2, null);
-        Node<Integer> n3 = new Node<>(1, null);
-        Node<Integer> n9 = new Node<>(9, null);
-        Node<Integer> n10 = new Node<>(10, null);
+        MySimpleLinkedList<Integer> listA = new MySimpleLinkedList<>();
+        Node<Integer> na1 = new Node<>(-3, null);
+        Node<Integer> na2 = new Node<>(7, null);
+        Node<Integer> na3 = new Node<>(4, null);
+        Node<Integer> na4 = new Node<>(0, null);
+        Node<Integer> na5 = new Node<>(10, null);
 
-        MySimpleLinkedList<Integer> list2 = new MySimpleLinkedList<>();
-        Node<Integer> n4 = new Node<>(5, null);
-        Node<Integer> n5 = new Node<>(2, null);
-        Node<Integer> n6 = new Node<>(9, null);
-        Node<Integer> n8 = new Node<>(7, null);
+        MySimpleLinkedList<Integer> listB = new MySimpleLinkedList<>();
+        Node<Integer> nb1 = new Node<>(-3, null);
+        Node<Integer> nb2 = new Node<>(7, null);
+        Node<Integer> nb3 = new Node<>(5, null);
+        Node<Integer> nb4 = new Node<>(12, null);
 
-        list.insertFront(n1.getInfo());
-        list.insertFront(n2.getInfo());
-        list.insertFront(n3.getInfo()); // n3, n2, n1 -> 1, 2,5
-        list.insertFront(n9.getInfo()); // n3, n2, n1 -> 1, 2,5
-        list.insertFront(n10.getInfo()); // n3, n2, n1 -> 1, 2,5
+        listA.insertFront(na1.getInfo());
+        listA.insertFront(na2.getInfo());
+        listA.insertFront(na3.getInfo());
+        listA.insertFront(na4.getInfo());
+        listA.insertFront(na5.getInfo());
 
-        list2.insertFront(n4.getInfo());
-        list2.insertFront(n5.getInfo());
-        list2.insertFront(n6.getInfo());
-        list2.insertFront(n8.getInfo());
+        listB.insertFront(nb1.getInfo());
+        listB.insertFront(nb2.getInfo());
+        listB.insertFront(nb3.getInfo());
+        listB.insertFront(nb4.getInfo());
 
-        System.out.println("Nodo" + list.get(0));
-        System.out.println(list.indexOf(5)); // indice 2 -> info 5
+        System.out.println("Nodo" + listA.get(0));
+        System.out.println(listA.indexOf(5)); // indice 2 -> info 5
 
-        Iterator<Integer> iterator = list.iterator();
+        Iterator<Integer> iterator = listA.iterator();
         while (iterator.hasNext()) {
             Integer i = iterator.next();
             System.out.print(i + " - ");
-
         }
 
-        System.out.println("a");
+        System.out.println("---------------------------------------------------");
         System.out.print("Lista 1: ");
-        for (Integer num : list) {
+        for (Integer num : listA) {
             System.out.print(num + " - ");
         }
-        System.out.println();
+
+        System.out.println(" ");
 
         System.out.print("Lista 2: ");
-        for (Integer num : list2) {
+        for (Integer num : listB) {
             System.out.print(num + " - ");
         }
-        System.out.println();
+        System.out.println(" ");
 
-        MySimpleLinkedList<Integer> listResult = construirOtraLista(list2, list);
+        System.out.println("---------------------------------------------------");
 
-        System.out.print("Lista Resultante ejercicio 5: ");
+        System.out.print("Lista Resultante Ejercicio 5: ");
+        MySimpleLinkedList<Integer> listResult = construirOtraLista(listB, listA);
         for (Integer num : listResult) {
             System.out.print(num + " - ");
         }
 
-        MySimpleLinkedList<Integer> listResultEj6 = construirListaConElementosEnPrimeraYNoEnSegunda(list, list2);
+        System.out.println("---------------------------------------------------");
+
         System.out.print("Lista Resultante ejercicio 6: ");
+        MySimpleLinkedList<Integer> listResultEj6 = construirListaConElementosEnPrimeraYNoEnSegunda(listA, listB);
         for (Integer num : listResultEj6) {
             System.out.print(num + " - ");
         }
+
+        System.out.println("---------------------------------------------------");
+        System.out.println("Pruebas para la Lista Doblemente Vinculada");
+        MySimpleLinkedDoubleList<Integer> listDouble = new MySimpleLinkedDoubleList<>();
+
+        Node<Integer> na1b = new Node<>(-3, null, null);
+        Node<Integer> na2b = new Node<>(7, null, na1b);
+        Node<Integer> na3b = new Node<>(4, null, na2b);
+        Node<Integer> na4b = new Node<>(0, null, na3b);
+        Node<Integer> na5b = new Node<>(10, null, na4b);
+
+        listDouble.insertFront(na1b.getInfo());
+        listDouble.insertFront(na2b.getInfo());
+        listDouble.insertFront(na3b.getInfo());
+        listDouble.insertFront(na4b.getInfo());
+        listDouble.insertFront(na5b.getInfo());
+
+        Iterator<Integer> it = listDouble.iterator();
+        while (it.hasNext()){
+            System.out.println(it.next() + " - ");
+        }
+        System.out.println("back1" + na2b.getBack());
+        System.out.println("back2" + na4b.getBack());
+
     }
 
      /*

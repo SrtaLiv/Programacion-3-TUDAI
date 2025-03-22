@@ -32,9 +32,17 @@ public class MySimpleLinkedDoubleList<T extends Comparable<T>> implements Iterab
         if (first == null){
             return null;
         }
-      //    todo
         size -= 1;
         return this.first.getInfo();
+    }
+
+    // debe eliminar y devolver el ultimo elemento de la lista
+    public T extractLast() {
+        if (last == null){
+            return null;
+        }
+        size -= 1;
+        return this.last.getInfo();
     }
 
     public boolean isEmpty() {
@@ -61,11 +69,7 @@ public class MySimpleLinkedDoubleList<T extends Comparable<T>> implements Iterab
         return this.size;
     }
 
-    @Override
-    public String toString() {
-        return "" + this.first.getInfo();
-    }
-
+    // indice de cierta info
     public int indexOf(T info){
         Node<T> first = this.first;
         for (int i = 0 ; i < size ; i++){
@@ -82,5 +86,36 @@ public class MySimpleLinkedDoubleList<T extends Comparable<T>> implements Iterab
         return new MyIterator<>(this.first);
     }
 
+    public int getSize() {
+        return size;
+    }
 
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+    public Node<T> getFirst() {
+        return first;
+    }
+
+    public void setFirst(Node<T> first) {
+        this.first = first;
+    }
+
+    public Node<T> getLast() {
+        return last;
+    }
+
+    public void setLast(Node<T> last) {
+        this.last = last;
+    }
+
+    @Override
+    public String toString() {
+        return "MySimpleLinkedDoubleList{" +
+                "size=" + size +
+                ", first=" + first +
+                ", last=" + last +
+                '}';
+    }
 }
