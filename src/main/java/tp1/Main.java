@@ -157,4 +157,7 @@ public class Main {
         }
         return result;
     }
+
+    // si esya ordenada l2 podria,os cortar ANTES ya que lista1 es menor a lista2
+    // para mejorar podemos cambiar la estructura, usar iterdaores
 }
