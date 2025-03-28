@@ -18,5 +18,9 @@ public class Main {
         System.out.println(tiene);
         System.out.println("hola");
 
+        tree.delete(1);
+        boolean tiene2 = tree.hasElem(1);
+        System.out.println(tiene2);
+
     }
 }

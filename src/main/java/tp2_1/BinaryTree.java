@@ -128,7 +128,47 @@ public class BinaryTree<T> {
                        }
                    }
             }
+
     }
+
+    public void delete(int num){
+        if (root.getIzq() == null && root.getDer()==null && root.getInfo() == num){
+            root.setIzq(null);
+            root.setDer(null);
+        }
+        else{
+            deleteNode(num, root);
+        }
+    }
+
+    private Node<Integer> deleteNode(int num, Node<Integer> root) {
+        if (root == null) {
+            return null; // Si el nodo es null, no hay nada que eliminar
+        }
+
+        System.out.println("Visitando nodo: " + root.getInfo());
+
+        if (num < root.getInfo()) {
+            System.out.println("Buscando en el subárbol izquierdo de " + root.getInfo());
+            root.setIzq(deleteNode(num, root.getIzq())); // Buscamos en la izquierda
+        } else if (num > root.getInfo()) {
+            System.out.println("Buscando en el subárbol derecho de " + root.getInfo());
+            root.setDer(deleteNode(num, root.getDer())); // Buscamos en la derecha
+        } else {
+            System.out.println("Nodo encontrado: " + root.getInfo());
+
+            // **Caso 1: Nodo sin hijos**
+            if (root.getIzq() == null && root.getDer() == null) {
+                System.out.println("Eliminando nodo sin hijos: " + root.getInfo());
+                return null; // Lo eliminamos
+            }
+
+            // Aquí irán los casos 2 y 3
+        }
+
+        return root; // Devolvemos el nodo actual (puede haber cambiado)
+    }
+
 
 
     /*public void insert(Integer num){

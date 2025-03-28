@@ -7,9 +7,6 @@
     <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="laberinto, complicadito">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tp2_1/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp2_1/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tp2_1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp2_1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tp2_1/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tp2_1/BinaryTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tp2_1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tp2_1/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,6 +244,7 @@
       <workItem from="1742489842741" duration="13538000" />
       <workItem from="1742999806039" duration="17813000" />
       <workItem from="1743104666494" duration="4322000" />
+      <workItem from="1743178900365" duration="2556000" />
     </task>
     <task id="LOCAL-00001" summary="git add .">
       <option name="closed" value="true" />
