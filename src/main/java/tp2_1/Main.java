@@ -14,8 +14,9 @@ public class Main {
         tree.add(7);
         tree.add(9);
 
-        boolean tiene = tree.hasElem(11);
+        boolean tiene = tree.hasElem(9);
         System.out.println(tiene);
+        System.out.println("hola");
 
     }
 }

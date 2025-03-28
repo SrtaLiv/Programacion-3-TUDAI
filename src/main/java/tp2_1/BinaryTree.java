@@ -25,7 +25,7 @@ public class BinaryTree<T> {
         this.size = size;
     }
 
-    public boolean hasElem(Integer num){
+    /*public boolean hasElem(Integer num){
         Node<Integer> der = root.getDer();
         Node<Integer> izq = root.getIzq();
         if (root.getInfo() == num){
@@ -62,6 +62,34 @@ public class BinaryTree<T> {
             }
         }
         return false;
+    }*/
+
+    public boolean hasElem(int num) {
+        if (root != null && root.getInfo() == num) {
+            return true;
+        }
+        Node<Integer> cursor = root;
+        while (cursor.getDer() != null || cursor.getIzq() != null) {
+            if (num > cursor.getInfo()) {
+                if (cursor.getDer() != null && cursor.getDer().getInfo() == num) {
+                    return true;
+                }
+                if (cursor.getDer() == null) {
+                    break;
+                }
+                cursor = cursor.getDer(); // apunta al proximo
+            }
+            else if (num < cursor.getInfo()) {
+                if (cursor.getIzq() != null && cursor.getIzq().getInfo() == num) {
+                    return true;
+                }
+                if (cursor.getIzq() == null){
+                    break;
+                }
+                cursor = cursor.getIzq();
+            }
+        }
+        return false;
     }
 
     public boolean isEmpty(){
@@ -76,14 +104,30 @@ public class BinaryTree<T> {
             root = insert;
             return;
         }
-        insert(num, root);
+        else{
+            insert(num, root);
+        }
     }
 
     private void insert(Integer num, Node<Integer> root) {
+            if (num > root.getInfo()) {
+                if (root.getDer() == null){
+                    root.setDer(new Node<>(null, null, num));
+                }
+                else{
+                    insert(num, root.getDer());
+                }
 
-        if (num > root.getInfo()){
-
-        }
+            } else {
+                   if (num < root.getInfo()){
+                       if (root.getIzq() == null){
+                           root.setIzq(new Node<>(null, null, num));
+                       }
+                       else{
+                           insert(num, root.getIzq());
+                       }
+                   }
+            }
     }
 
 
