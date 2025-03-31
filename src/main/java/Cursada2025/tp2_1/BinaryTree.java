@@ -1,4 +1,6 @@
-package tp2_1;
+package Cursada2025.tp2_1;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class BinaryTree<T> {
 
@@ -24,45 +26,8 @@ public class BinaryTree<T> {
     public void setSize(int size) {
         this.size = size;
     }
+    // aclarar que es ese N, altura del arbol?
 
-    /*public boolean hasElem(Integer num){
-        Node<Integer> der = root.getDer();
-        Node<Integer> izq = root.getIzq();
-        if (root.getInfo() == num){
-            return true;
-        }
-        if (num < root.getInfo()){
-            if (izq.getInfo() == num){
-                return true;
-            }
-            Node<Integer> izquierda = izq.getIzq();
-            Node<Integer> derecha  = izq.getDer();
-            while (izquierda != null || derecha != null){
-                if (izquierda.getInfo() == num || derecha.getDer().getInfo() == num){
-                    return true;
-                }
-                // luego izq.getDer deberia cambiar de lugar con el hijo
-                izquierda = izq.getIzq().getIzq();
-                derecha  = izq.getDer().getDer();
-            }
-        }
-        if (num > root.getInfo()){
-            if (der.getInfo() == num){
-                return true;
-            }
-            Node<Integer> izquierda = der.getIzq();
-            Node<Integer> derecha  = der.getDer();
-            while (izquierda != null || derecha != null){
-                if (izquierda.getInfo() == num || derecha.getDer().getInfo() == num){
-                    return true;
-                }
-                // luego izq.getDer deberia cambiar de lugar con el hijo
-                izquierda = izq.getIzq().getIzq();
-                derecha  = izq.getDer().getDer();
-            }
-        }
-        return false;
-    }*/
 
     public boolean hasElem(int num) {
         if (root != null && root.getInfo() == num) {
@@ -96,13 +61,10 @@ public class BinaryTree<T> {
         return root == null;
     }
 
-    // private void insert(Integer num, Node root)
-
     public void add(Integer num){
         Node<Integer> insert = new Node<>(null, null, num);
         if (this.isEmpty()){
             root = insert;
-            return;
         }
         else{
             insert(num, root);
@@ -118,19 +80,126 @@ public class BinaryTree<T> {
                     insert(num, root.getDer());
                 }
 
-            } else {
-                   if (num < root.getInfo()){
+            } else
+                if (num < root.getInfo()){
                        if (root.getIzq() == null){
                            root.setIzq(new Node<>(null, null, num));
                        }
                        else{
                            insert(num, root.getIzq());
                        }
-                   }
             }
+    }
+
+
+    // cantidad de arcos hasta la hoja mas lejana. Empieza en 0
+    public int getHeight(){
+        if (isEmpty()){
+            return 0;
+        }
+        AtomicInteger alturaAux = new AtomicInteger(0);
+//         getHeightP(root, 0,alturaAux);
+//         return alturaAux.get();
+
+        return getHeightRecursivo(root);
+    }
+
+   private void getHeightP(Node<Integer> cursor, int suma, AtomicInteger alturaAux){
+        if (cursor.getIzq() != null || cursor.getDer() != null){
+            suma++;
+            if(suma > alturaAux.get()){ // si la altura de esa rama es mayor, esa es la altura
+                alturaAux.set(suma);
+            }
+
+            if (cursor.getIzq() != null)
+                getHeightP(cursor.getIzq(), suma, alturaAux);
+            if (cursor.getDer() != null)
+                getHeightP(cursor.getDer(), suma, alturaAux);
+        }
+    }
+
+    private int getHeightRecursivo(Node<Integer> cursor){
+        if (cursor.getIzq() == null && cursor.getDer() == null){
+            return 0;
+        }
+        else {
+            int izq = 0;
+            int der = 0;
+            if (cursor.getIzq() != null) {
+                izq = getHeightRecursivo(cursor.getIzq()) + 1;
+            }
+            if (cursor.getDer() != null) {
+                der = getHeightRecursivo(cursor.getDer()) + 1;
+            }
+            return Math.max(izq, der);
+        }
+    }
+
+
+    // get longest branch cantidad de arcos
+
+    // IMPRIMIR GUIONCITOS CUANDO HAY NULL
+    public void printPreOrder(Node<Integer> cursor){
+        if (cursor == null){
+            return;
+        }
+        System.out.print(cursor.getInfo());
+        printPreOrder(cursor.getIzq());
+        printPreOrder(cursor.getDer());
+    }
+
+    public void printInOrder(Node<Integer> cursor){
+        if (cursor == null){
+            return;
+        }
+        printPreOrder(cursor.getIzq());
+        System.out.print(" - ");
+        System.out.print(cursor.getInfo() + " -");
+        printPreOrder(cursor.getDer());
+    }
+    public void printPosOrder(Node<Integer> cursor){
+        if (cursor == null){
+            return;
+        }
+        printPosOrder(cursor.getIzq());
+        printPosOrder(cursor.getDer());
+        System.out.print(cursor.getInfo() + "-");
+    }
+
+    // rama mas larga, lista de vlaores que compone la rama mas larga.
+    // La lista e valores que tienen los nodos. Lista al reves NO!
+
+    // GET FRONTERA, todos los valores de las hojas!! NO NODOS.
+    // izquierda a derecha
+    public void listGetFrontera(){
 
     }
 
+    // obtener valor mas grande, derecha de todo. Se puede sin recursion
+    public int getMaxElem(){
+        return 0;
+    }
+
+    public void printPreOrderV1(Node<Integer> cursor) {
+        if (cursor == root) {
+            System.out.println(root.getInfo() + "-");
+        }
+
+        if (root.getIzq() == null || root.getDer() == null) {
+            System.out.println("--");
+        } else if (cursor.getIzq() != null) {
+            System.out.println(cursor.getIzq().getInfo() + "-");
+            printPreOrderV1(cursor.getIzq());
+        }
+        if (cursor.getDer() != null) {
+            System.out.println(cursor.getDer().getInfo() + "-");
+            printPreOrderV1(cursor.getDer());
+        }
+    }
+
+        //
+
+    /* DEJALRLO PARA EL FINAL
     public void delete(int num){
         if (root.getIzq() == null && root.getDer()==null && root.getInfo() == num){
             root.setIzq(null);
@@ -141,35 +210,33 @@ public class BinaryTree<T> {
         }
     }
 
-    private Node<Integer> deleteNode(int num, Node<Integer> root) {
+    // si lo encontro uy lo botto
+
+    private boolean deleteNode(int num, Node<Integer> root) {
         if (root == null) {
-            return null; // Si el nodo es null, no hay nada que eliminar
+            return ; // Si el nodo es null, no hay nada que eliminar
         }
 
-        System.out.println("Visitando nodo: " + root.getInfo());
-
         if (num < root.getInfo()) {
-            System.out.println("Buscando en el subárbol izquierdo de " + root.getInfo());
             root.setIzq(deleteNode(num, root.getIzq())); // Buscamos en la izquierda
         } else if (num > root.getInfo()) {
-            System.out.println("Buscando en el subárbol derecho de " + root.getInfo());
             root.setDer(deleteNode(num, root.getDer())); // Buscamos en la derecha
         } else {
-            System.out.println("Nodo encontrado: " + root.getInfo());
-
-            // **Caso 1: Nodo sin hijos**
+            // Caso 1: Nodo sin hijos
             if (root.getIzq() == null && root.getDer() == null) {
-                System.out.println("Eliminando nodo sin hijos: " + root.getInfo());
                 return null; // Lo eliminamos
             }
 
-            // Aquí irán los casos 2 y 3
+            // Caso 2: Nodo con 1 hijo
+
+
         }
 
         return root; // Devolvemos el nodo actual (puede haber cambiado)
-    }
+    }*/
 
 
+    // CODIGOS QUE NO SIRVEN :( //
 
     /*public void insert(Integer num){
         Node<Integer> insert = new Node<>(null, null, num);
@@ -235,4 +302,48 @@ public class BinaryTree<T> {
                 }
             }
     }*/
+
+     /*public boolean hasElem(Integer num){
+        Node<Integer> der = root.getDer();
+        Node<Integer> izq = root.getIzq();
+        if (root.getInfo() == num){
+            return true;
+        }
+        if (num < root.getInfo()){
+            if (izq.getInfo() == num){
+                return true;
+            }
+            Node<Integer> izquierda = izq.getIzq();
+            Node<Integer> derecha  = izq.getDer();
+            while (izquierda != null || derecha != null){
+                if (izquierda.getInfo() == num || derecha.getDer().getInfo() == num){
+                    return true;
+                }
+                // luego izq.getDer deberia cambiar de lugar con el hijo
+                izquierda = izq.getIzq().getIzq();
+                derecha  = izq.getDer().getDer();
+            }
+        }
+        if (num > root.getInfo()){
+            if (der.getInfo() == num){
+                return true;
+            }
+            Node<Integer> izquierda = der.getIzq();
+            Node<Integer> derecha  = der.getDer();
+            while (izquierda != null || derecha != null){
+                if (izquierda.getInfo() == num || derecha.getDer().getInfo() == num){
+                    return true;
+                }
+                // luego izq.getDer deberia cambiar de lugar con el hijo
+                izquierda = izq.getIzq().getIzq();
+                derecha  = izq.getDer().getDer();
+            }
+        }
+        return false;
+    }
+
+       /*
+    }*/
+
+
 }

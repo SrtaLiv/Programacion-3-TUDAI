@@ -1,6 +1,4 @@
-package tp1;
-
-import Cursada2024.practico1.ej4.MyIterador;
+package Cursada2025.tp1;
 
 import java.util.Iterator;
 

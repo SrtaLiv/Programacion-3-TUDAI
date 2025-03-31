@@ -1,4 +1,4 @@
-package tp2_1;
+package Cursada2025.tp2_1;
 
 public class Node<Integer> {
     private Node<java.lang.Integer> izq;

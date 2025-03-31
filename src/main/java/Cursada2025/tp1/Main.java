@@ -1,4 +1,4 @@
-package tp1;
+package Cursada2025.tp1;
 
 import java.util.Iterator;
 

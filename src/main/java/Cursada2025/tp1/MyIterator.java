@@ -1,4 +1,4 @@
-package tp1;
+package Cursada2025.tp1;
 
 public class MyIterator<T> implements java.util.Iterator<T> {
     // un iterador pregunta si hay un siguiente y si lo hay devuelve ese sig

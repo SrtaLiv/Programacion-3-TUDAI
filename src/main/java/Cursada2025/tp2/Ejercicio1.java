@@ -1,4 +1,4 @@
-package tp2;
+package Cursada2025.tp2;
 
 import java.util.ArrayList;
 
