@@ -1,5 +1,6 @@
 package Cursada2025.tp2_1;
 
+import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class BinaryTree<T> {
@@ -98,9 +99,8 @@ public class BinaryTree<T> {
             return 0;
         }
         AtomicInteger alturaAux = new AtomicInteger(0);
-//         getHeightP(root, 0,alturaAux);
-//         return alturaAux.get();
-
+//      getHeightP(root, 0,alturaAux);
+//      return alturaAux.get();
         return getHeightRecursivo(root);
     }
 
@@ -137,6 +137,27 @@ public class BinaryTree<T> {
 
 
     // get longest branch cantidad de arcos
+    public ArrayList<Integer> getLongestBranch() {
+        return getLongestBranchP(this.getRoot());
+    }
+
+    private ArrayList<Integer> getLongestBranchP(Node<Integer> cursor) {
+        if (cursor == null) {
+            return new ArrayList<>();
+        }
+
+        ArrayList<Integer> leftBranch = getLongestBranchP(cursor.getIzq());
+        ArrayList<Integer> rightBranch = getLongestBranchP(cursor.getDer());
+
+        // Elegimos la rama más larga y agregamos el nodo actual al inicio
+        if (leftBranch.size() > rightBranch.size()) {
+            leftBranch.add(0, cursor.getInfo());
+            return leftBranch;
+        } else {
+            rightBranch.add(0, cursor.getInfo());
+            return rightBranch;
+        }
+    }
 
     // IMPRIMIR GUIONCITOS CUANDO HAY NULL
     public void printPreOrder(Node<Integer> cursor){
@@ -171,13 +192,26 @@ public class BinaryTree<T> {
 
     // GET FRONTERA, todos los valores de las hojas!! NO NODOS.
     // izquierda a derecha
-    public void listGetFrontera(){
-
+    public ArrayList<Integer> listGetFrontera(){
+        return listGetFronteraP(getRoot());
     }
 
-    // obtener valor mas grande, derecha de todo. Se puede sin recursion
-    public int getMaxElem(){
-        return 0;
+    private ArrayList<Integer> listGetFronteraP(Node<Integer> root) {
+        ArrayList<Integer> list = new ArrayList<>();
+        if (root == null) {
+            return list;
+        }
+
+        if (root.getIzq() == null && root.getDer() == null){ //es hoja
+            list.add(root.getInfo());
+            return list;
+        }
+
+        // Si no es una hoja, seguir buscando en los hijos..
+        listGetFronteraP(root.getDer());
+        listGetFronteraP(root.getIzq());
+
+        return list;
     }
 
     public void printPreOrderV1(Node<Integer> cursor) {
@@ -197,7 +231,59 @@ public class BinaryTree<T> {
         }
     }
 
-        //
+    // obtener valor mas grande, derecha de todo. Se puede sin recursion
+    public int getMaxElem(){
+        while(root.getDer()!=null){
+            root = root.getDer();
+        }
+        return root.getInfo();
+    }
+
+    //pide que devuelvas una lista con todos los nodos que están en un nivel específico del árbol.
+    public ArrayList<Integer> getElemAtLevel(int level){
+        int count = 1;
+        ArrayList<Integer> list = new ArrayList<>();
+        if (getRoot() != null && level == 1){
+            list.add(root.getInfo());
+            return list;
+        }
+        else{
+            list = getElemAtLevelP(level, count, getRoot()); //tengo que pedirle los hijos al padre!!
+            // si pongo nivel 2, en realidad deberia preguntar si el nivel es 1 y este tiene hijos agregarlos.
+        }
+        return list;
+    }
+
+    private ArrayList<Integer> getElemAtLevelP(int level, int count, Node<Integer> cursor) {
+        ArrayList<Integer> list = new ArrayList<>();
+
+        if (cursor == null){
+            return new ArrayList<>();
+        }
+
+        if (level == count){ // Si encontro el nivel..
+            // no hace falta porque ya estoy recorriendo el hijo de la izquierda y derecha en cada llamado recurisvo!!
+//            int izq = cursor.getIzq().getInfo();
+//            int der = cursor.getDer().getInfo();
+
+
+//            if (cursor.getIzq() != null) {
+//                list.add(izq);
+//            }
+//            if (cursor.getDer()!=null) {
+//                list.add(der);
+//            }
+            list.add(cursor.getInfo());
+            System.out.println("agrego a la lista");
+            return list;
+        }
+
+        list.addAll(getElemAtLevelP(level, count+1, cursor.getIzq()));
+        list.addAll(getElemAtLevelP(level, count+1, cursor.getDer()));
+
+        return list;
+    }
+
 
     /* DEJALRLO PARA EL FINAL
     public void delete(int num){

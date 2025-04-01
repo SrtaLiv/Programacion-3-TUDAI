@@ -1,4 +1,4 @@
-package practico2_1.ej1;
+package Cursada2024.practico2_1.ej1;
 
 public class Main {
     public static void main(String[] args) {

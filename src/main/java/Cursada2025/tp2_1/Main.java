@@ -1,5 +1,7 @@
 package Cursada2025.tp2_1;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         BinaryTree<Integer> tree = new BinaryTree<>();
@@ -36,16 +38,23 @@ public class Main {
         int altura = tree.getHeight();
 
         System.out.println(altura);
+//
+//        System.out.println("PRE ORDER");
+//        tree.printPreOrder(tree.getRoot());
+////      tree.printPreOrderV1(tree.getRoot());
+//
+//        System.out.println("POS ORDER");
+//        tree.printPosOrder(tree.getRoot());
+//
+//
+//        System.out.println("IN ORDER");
+//        tree.printInOrder(tree.getRoot());
 
-        System.out.println("PRE ORDER");
-        tree.printPreOrder(tree.getRoot());
-//        tree.printPreOrderV1(tree.getRoot());
+        // tree.getLongestBranch();
+//        int max = tree.getMaxElem();
+//        System.out.println("Maximo elemento: " + max);
 
-        System.out.println("POS ORDER");
-        tree.printPosOrder(tree.getRoot());
+        System.out.println(tree.getElemAtLevel(3));
 
-
-        System.out.println("IN ORDER");
-        tree.printInOrder(tree.getRoot());
     }
 }

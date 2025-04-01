@@ -1,4 +1,4 @@
-package practico2_1.ej1;
+package Cursada2024.practico2_1.ej1;
 
 //public boolean delete(Integer delete){
  //por que es un boolean?

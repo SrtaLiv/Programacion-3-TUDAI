@@ -1,37 +1,37 @@
 package Cursada2025.tp2_1;
 
 public class Node<Integer> {
-    private Node<java.lang.Integer> izq;
-    private Node<java.lang.Integer> der;
-    private java.lang.Integer info;
+    private Node<Integer> izq;
+    private Node<Integer> der;
+    private Integer info;
 
-    public Node(Node<Integer> izq, Node<Integer> der, java.lang.Integer info) {
+    public Node(Node<Integer> izq, Node<Integer> der, Integer info) {
         this.izq = null;
         this.der = null;
         this.info = info;
     }
 
-    public Node<java.lang.Integer> getIzq() {
+    public Node<Integer> getIzq() {
         return izq;
     }
 
-    public void setIzq(Node<java.lang.Integer> izq) {
+    public void setIzq(Node<Integer> izq) {
         this.izq = izq;
     }
 
-    public Node<java.lang.Integer> getDer() {
+    public Node<Integer> getDer() {
         return der;
     }
 
-    public void setDer(Node<java.lang.Integer> der) {
+    public void setDer(Node<Integer> der) {
         this.der = der;
     }
 
-    public java.lang.Integer getInfo() {
+    public Integer getInfo() {
         return info;
     }
 
-    public void setInfo(java.lang.Integer info) {
+    public void setInfo(Integer info) {
         this.info = info;
     }
 }
