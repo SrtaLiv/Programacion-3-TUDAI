@@ -285,41 +285,95 @@ public class BinaryTree<T> {
     }
 
 
-    /* DEJALRLO PARA EL FINAL
-    public void delete(int num){
-        if (root.getIzq() == null && root.getDer()==null && root.getInfo() == num){
-            root.setIzq(null);
-            root.setDer(null);
+    public void delete(int num) {
+        if (root == null) {
+            System.out.println("El árbol está vacío.");
+            return;
         }
-        else{
-            deleteNode(num, root);
+
+        if (root.getInfo() == num) {
+            // Manejar la raíz
+            if (root.getIzq() == null && root.getDer() == null) {
+                root = null;  // Si la raíz no tiene hijos, se elimina
+            } else if (root.getIzq() == null || root.getDer() == null) {
+                root = (root.getIzq() != null) ? root.getIzq() : root.getDer();
+            } else {
+                // Si la raíz tiene dos hijos, encontrar un reemplazante
+                Node<Integer> reemplazante = buscarReemplazante(root);
+                root.setInfo(reemplazante.getInfo());
+                deleteNode(reemplazante.getInfo(), root);
+            }
+            System.out.println("Nodo eliminado");
+            return;
         }
+        deleteNode(num, root);
     }
 
     // si lo encontro uy lo botto
 
-    private boolean deleteNode(int num, Node<Integer> root) {
-        if (root == null) {
-            return ; // Si el nodo es null, no hay nada que eliminar
+    private boolean deleteNode(int num, Node<Integer> padre) {
+        if (padre == null) {
+            return true; // Si el nodo es null, no hay nada que eliminar
         }
 
-        if (num < root.getInfo()) {
-            root.setIzq(deleteNode(num, root.getIzq())); // Buscamos en la izquierda
-        } else if (num > root.getInfo()) {
-            root.setDer(deleteNode(num, root.getDer())); // Buscamos en la derecha
-        } else {
-            // Caso 1: Nodo sin hijos
-            if (root.getIzq() == null && root.getDer() == null) {
-                return null; // Lo eliminamos
-            }
+        if (num < padre.getInfo()) {
+            return deleteNode(num, padre.getIzq());  // Recursivamente buscamos en el subárbol izquierdo
+        } else if (num > padre.getInfo()) {
+            return deleteNode(num, padre.getDer());  // Recursivamente buscamos en el subárbol derecho
+        }
 
-            // Caso 2: Nodo con 1 hijo
+        Node<Integer> nodoEliminar = num < padre.getInfo() ? padre.getIzq() : padre.getDer();
 
+        if (padre.getInfo() == num){
+                System.out.println("Nodo encontrado");
+                // Caso 1: no tiene hijos
+                if (padre.getIzq() == null && padre.getDer() == null) {
+                    System.out.println("Eliminando el nodo sin hijos: " + num);
+                    padre = null;
+                }
+
+                // Caso 2: tiene 1 hijo, padre apunta a nieto
+                else if (padre.getIzq() == null || padre.getDer() == null) {
+                    System.out.println("Tiene 1 hijos");
+                    if (padre.getIzq()!=null){
+                        padre.setIzq(nodoEliminar);
+                    }
+                    else {
+                        padre.setDer(nodoEliminar);
+                    }
+                }
+
+                // Caso 3: tienen 2 hijos
+                else {
+                    System.out.println("Tiene 2 hijos");
+                    Node<Integer> reemplazante = buscarReemplazante(padre); // 1 der, todo izq.
+                    padre.setInfo(reemplazante.getInfo()); // padre toma valor de reemplazante
+                    deleteNode(reemplazante.getInfo(), padre.getDer());  // Eliminamos el reemplazante
+                }
 
         }
 
-        return root; // Devolvemos el nodo actual (puede haber cambiado)
-    }*/
+        return true; // Devolvemos el nodo actual (puede haber cambiado)
+    }
+
+    private Node<Integer> buscarReemplazante(Node<Integer> padre) {
+        Node<Integer> der = padre.getDer();
+        Node<Integer> izq = der.getIzq();
+        if(izq==null){
+            return der;
+        }
+        while (izq!=null){
+            izq = izq.getIzq();
+        }
+        return izq;
+    }
+
+    /*
+    Ejercicio 2
+    Dado un árbol binario de búsquedas que almacena números enteros, implementar un algoritmo
+    que retorne la suma de todos los nodos internos del árbol.
+     */
+    
 
 
     // CODIGOS QUE NO SIRVEN :( //
