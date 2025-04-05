@@ -56,5 +56,9 @@ public class Main {
 
         System.out.println(tree.getElemAtLevel(3));
 
+        tree.sumarHojas(1);
+        tree.sumarNodosInternos();
+
     }
+
 }

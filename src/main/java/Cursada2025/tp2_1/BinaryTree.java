@@ -368,12 +368,59 @@ public class BinaryTree<T> {
         return izq;
     }
 
-    /*
+         /*
     Ejercicio 2
     Dado un árbol binario de búsquedas que almacena números enteros, implementar un algoritmo
     que retorne la suma de todos los nodos internos del árbol.
      */
-    
+
+    public void sumarNodosInternos(){
+        int count = 0;
+        count += sumarNodos(getRoot());
+        System.out.println(count);
+    }
+
+    public int sumarNodos(Node<Integer> cursor){
+        if (cursor == null){
+            return 0;
+        }
+        if (cursor.getDer() == null && cursor.getIzq() == null){// hoja
+            return 0;
+        }
+        int aux = cursor.getInfo();
+
+        aux += sumarNodos(cursor.getIzq());
+        aux += sumarNodos(cursor.getDer());
+        return aux;
+    }
+    /*
+    Ejercicio 3
+    Dado un árbol binario de búsqueda que almacena números
+    enteros y un valor de entrada K, implementar un algoritmo
+    que permita obtener un listado con los valores de todas las
+    hojas cuyo valor supere K. Por ejemplo, para el árbol de la
+    derecha, con un valor K = 8, el resultado debería ser [9, 11].
+    */
+    public void sumarHojas(int k){
+        ArrayList<Integer> result = new ArrayList<>(recorrerHojas(this.getRoot(), k));
+        System.out.println(result);
+    }
+
+    private ArrayList<Integer> recorrerHojas(Node<Integer> cursor, int k){
+        ArrayList<Integer> hojas = new ArrayList<>();
+        if (cursor == null) return hojas;  // caso base
+
+        if (cursor.getIzq() == null && cursor.getDer() == null){
+            if (cursor.getInfo() > k){
+                 hojas.add(cursor.getInfo());
+            }
+        }
+            //MAL -> recorrerHojas(cursor.getIzq(), k);  lo estás llamando, pero no usás su resultado
+            hojas.addAll(recorrerHojas(cursor.getIzq(), k));  // lo estás llamando, pero no usás su resultado
+            hojas.addAll(recorrerHojas(cursor.getDer(), k));
+
+        return hojas;
+    }
 
 
     // CODIGOS QUE NO SIRVEN :( //
