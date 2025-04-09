@@ -1,11 +1,14 @@
 package Cursada2025.tp2_1;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class BinaryTree<T> {
 
     private Node<Integer> root;
+    private Node<String> rootString;
+
     private int size;
 
     public BinaryTree() {
@@ -91,7 +94,6 @@ public class BinaryTree<T> {
                        }
             }
     }
-
 
     // cantidad de arcos hasta la hoja mas lejana. Empieza en 0
     public int getHeight(){
@@ -422,6 +424,61 @@ public class BinaryTree<T> {
         return hojas;
     }
 
+    /* Ejercicio 5
+    *
+    * Dado un árbol binario donde todos los nodos poseen un carácter, de manera que cada rama del
+    árbol contiene una palabra, implementar un algoritmo que busque y retorne todas las palabras
+    que posea exactamente N vocales (ni más ni menos). Por ejemplo, para el siguiente árbol, con
+    una entrada de N = 1, el algoritmo debería retornar [“MAL”]. En cambio, para un N = 2, debería
+    retornar [“MANA”, “MANO”, “MISA”, “MIO”].
+    * */
+
+    public void palabrasConNVocales(int n) {
+        List<String> resultado = new ArrayList<>();
+        buscarPalabrasConCantVocales(getRootString(), n, "", 0, resultado);
+        System.out.println(resultado);
+    }
+
+    private void buscarPalabrasConCantVocales(Node<String> cursor, int n, String palabraActual, int count, List<String> res) {
+        if (cursor == null){
+            return;
+        }
+        String letra = cursor.getInfo();
+        palabraActual += letra;
+
+        if (esVocal(cursor.getInfo())){
+            count++;
+        }
+
+        // hoja
+        if (cursor.getIzq() == null && cursor.getDer() == null) {
+            if (count == n) {
+                res.add(palabraActual);
+            }
+            return;
+        }
+
+        buscarPalabrasConCantVocales(cursor.getIzq(), n, palabraActual, count, res);
+        buscarPalabrasConCantVocales(cursor.getDer(), n, palabraActual, count, res);
+
+    }
+
+    public boolean esVocal(String letra) {
+        if (letra == null || letra.length() != 1) {
+            return false; // Validamos que sea una sola letra
+        }
+
+        letra = letra.toLowerCase(); // Convertimos a minúscula
+        return "aeiou".contains(letra);
+    }
+
+    public Node<String> getRootString() {
+        return rootString;
+    }
+
+    public void setRootString(Node<String> rootString) {
+        this.rootString = rootString;
+    }
 
     // CODIGOS QUE NO SIRVEN :( //
 
