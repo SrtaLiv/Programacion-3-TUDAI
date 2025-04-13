@@ -1,5 +1,7 @@
 package Cursada2025.tp2_1;
 
+import Cursada2024.practico1.ej4.MySimpleLinkedList;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -479,6 +481,35 @@ public class BinaryTree<T> {
     public void setRootString(Node<String> rootString) {
         this.rootString = rootString;
     }
+
+    /* Ejercicio 2 | Recuperatorio 2024
+    * */
+
+    public void obtenerPorNivel(int level){
+        MySimpleLinkedList<Integer> list = new MySimpleLinkedList<>();
+        obtenerNivel(getRoot() ,level, list);
+        System.out.println(list);
+    }
+
+    private MySimpleLinkedList<Integer> obtenerNivel(Node<Integer> cursor ,int k, MySimpleLinkedList<Integer> result){
+        if (cursor == null){
+            return result;
+        }
+        if (k == 0){
+            result.insertFront(cursor.getInfo());
+        }
+        else{
+            /* *
+            Si no ponés el else, el código igual compila y puede funcionar, pero tiene una consecuencia lógica importante:
+             se ejecutarán las llamadas recursivas incluso cuando k == 0, lo cual no tiene sentido,
+              porque ya encontraste el nivel deseado./
+             */
+            obtenerNivel(cursor.getIzq(), k-1, result);
+            obtenerNivel(cursor.getDer(), k-1, result);
+        }
+        return result;
+    }
+
 
     // CODIGOS QUE NO SIRVEN :( //
 

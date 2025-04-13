@@ -80,11 +80,6 @@ public class MySimpleLinkedList<T extends Comparable<T>> implements Iterable<T> 
         return this.size;
     }
 
-    @Override
-    public String toString() {
-        return "" + this.first.getInfo();
-    }
-
     /*A la implementación de la clase Lista realizada en el ejercicio 1, agregue un método
 int indexOf(T), que reciba un elemento y retorne el índice donde está almacenado ese
 elemento, o -1 si el elemento no existe en la lista.
@@ -106,5 +101,20 @@ elemento, o -1 si el elemento no existe en la lista.
         return new MyIterator<>(this.first);
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        Node<T> current = this.first;
+        while (current != null) {
+            sb.append(current.getInfo());
+            if (current.getNext() != null) {
+                sb.append(", ");
+            }
+            current = current.getNext();
+        }
+        sb.append("]");
+        return sb.toString();
+    }
 
 }

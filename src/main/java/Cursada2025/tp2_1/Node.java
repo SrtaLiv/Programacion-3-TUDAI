@@ -34,4 +34,13 @@ public class Node<Integer> {
     public void setInfo(Integer info) {
         this.info = info;
     }
+
+    @Override
+    public String toString() {
+        return "Node{" +
+                "izq=" + izq +
+                ", der=" + der +
+                ", info=" + info +
+                '}';
+    }
 }

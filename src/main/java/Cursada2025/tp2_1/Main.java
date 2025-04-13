@@ -1,6 +1,9 @@
 package Cursada2025.tp2_1;
 
+import Cursada2024.practico1.ej4.MySimpleLinkedList;
+
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,6 +29,7 @@ public class Main {
         tree.add(20);
         tree.add(13);
         tree.add(9);
+
 
         boolean tiene = tree.hasElem(9);
         System.out.println(tiene);
@@ -54,10 +58,14 @@ public class Main {
 //        int max = tree.getMaxElem();
 //        System.out.println("Maximo elemento: " + max);
 
-        System.out.println(tree.getElemAtLevel(3));
+      /*  System.out.println(tree.getElemAtLevel(3));
 
         tree.sumarHojas(1);
         tree.sumarNodosInternos();
+        */
+
+        tree.obtenerPorNivel(2);
+
 
     }
 

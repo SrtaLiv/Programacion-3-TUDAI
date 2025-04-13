@@ -62,10 +62,18 @@ public class MySimpleLinkedList<T> implements Iterable<T> {
 
     @Override
     public String toString() {
-        return "MySimpleLinkedList{" +
-                "first=" + first +
-                ", size=" + size +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        Node<T> actual = this.first;
+        while (actual != null) {
+            sb.append(actual.getInfo());
+            if (actual.getNext() != null) {
+                sb.append(", ");
+            }
+            actual = actual.getNext();
+        }
+        sb.append("]");
+        return sb.toString();
     }
 
     @Override
