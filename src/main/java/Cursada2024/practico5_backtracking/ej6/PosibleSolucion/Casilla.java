@@ -1,4 +1,4 @@
-package practico5_backtracking.ej6.PosibleSolucion;
+package Cursada2024.practico5_backtracking.ej6.PosibleSolucion;
 
 import java.util.Objects;
 

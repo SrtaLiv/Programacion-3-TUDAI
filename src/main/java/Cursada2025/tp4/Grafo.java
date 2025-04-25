@@ -1,7 +1,9 @@
-package Cursada2024.practico4_grafos.grafoListaAdy;
+package Cursada2025.tp4;
+
 import java.util.Iterator;
 
 public interface Grafo<T> {
+
     // Agrega un vertice
     public void agregarVertice(int verticeId);
 

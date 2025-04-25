@@ -1,4 +1,4 @@
-package practico4_grafos.grafosHash;
+package Cursada2024.practico4_grafos.grafosHash;
 
 import java.util.Iterator;
 

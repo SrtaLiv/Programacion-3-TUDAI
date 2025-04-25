@@ -1,4 +1,4 @@
-package practico5_backtracking.ej7;
+package Cursada2024.practico5_backtracking.ej7;
 
 public class Backtracking {
     /**

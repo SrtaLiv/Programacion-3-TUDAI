@@ -1,4 +1,4 @@
-package practico4_grafos.grafoListaAdy;
+package Cursada2024.practico4_grafos.grafoListaAdy;
 
 public class GrafoNoDirigido<T> extends GrafoDirigido<T> {
 

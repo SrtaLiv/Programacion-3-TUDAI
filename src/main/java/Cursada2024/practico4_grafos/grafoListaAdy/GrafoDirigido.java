@@ -1,4 +1,4 @@
-package practico4_grafos.grafoListaAdy;
+package Cursada2024.practico4_grafos.grafoListaAdy;
 
 import java.util.ArrayList;
 import java.util.Iterator;

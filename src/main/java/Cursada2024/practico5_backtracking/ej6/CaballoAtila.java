@@ -1,4 +1,4 @@
-package practico5_backtracking.ej6;
+package Cursada2024.practico5_backtracking.ej6;
 
 public class CaballoAtila {
     /**

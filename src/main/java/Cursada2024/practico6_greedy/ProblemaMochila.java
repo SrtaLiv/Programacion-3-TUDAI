@@ -1,4 +1,4 @@
-package practico6_greedy;
+package Cursada2024.practico6_greedy;
 
 public class ProblemaMochila {
     /***

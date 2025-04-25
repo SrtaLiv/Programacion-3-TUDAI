@@ -1,6 +1,4 @@
-package practico5_backtracking.ej3;
-
-import practico5_backtracking.ej2.Camino;
+package Cursada2024.practico5_backtracking.ej3;
 
 import java.util.ArrayList;
 import java.util.Arrays;

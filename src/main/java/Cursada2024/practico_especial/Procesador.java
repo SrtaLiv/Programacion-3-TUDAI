@@ -1,4 +1,4 @@
-package practico_especial;
+package Cursada2024.practico_especial;
 
 public class Procesador {
     int idProcesador;

@@ -1,7 +1,4 @@
-package practico4_grafos.grafosHash;
-
-import practico4_grafos.ej2.ServicioDFS;
-import practico4_grafos.ej3.GrafoTieneCiclo;
+package Cursada2024.practico4_grafos.grafosHash;
 
 import java.util.ArrayList;
 import java.util.Iterator;

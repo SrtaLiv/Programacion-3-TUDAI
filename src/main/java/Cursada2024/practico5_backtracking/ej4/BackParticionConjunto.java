@@ -1,4 +1,4 @@
-package practico5_backtracking.ej4;
+package Cursada2024.practico5_backtracking.ej4;
 
 import java.util.ArrayList;
 

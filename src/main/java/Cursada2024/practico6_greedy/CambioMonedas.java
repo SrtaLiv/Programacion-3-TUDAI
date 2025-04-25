@@ -1,5 +1,5 @@
 // Si no se puede formar la cantidad exacta, devolver una lista vacía
-package practico6_greedy;
+package Cursada2024.practico6_greedy;
 
 import java.util.ArrayList;
 import java.util.Collections;

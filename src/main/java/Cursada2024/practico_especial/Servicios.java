@@ -1,4 +1,4 @@
-package practico_especial;
+package Cursada2024.practico_especial;
 
 import java.io.*;
 import java.util.ArrayList;

@@ -1,6 +1,7 @@
-package practico4_grafos.grafosHash;
+package Cursada2024.practico4_grafos.grafosHash;
 
-import practico4_grafos.grafoListaAdy.GrafoDirigido;
+
+import Cursada2024.practico4_grafos.grafoListaAdy.GrafoDirigido;
 
 public class GrafoNoDirigido<T> extends GrafoDirigido<T> {
 
