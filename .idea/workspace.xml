@@ -5,46 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="laberinto, complicadito">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Arco.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Grafo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/GrafoDirigido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/GrafoNoDirigido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/ListaVinculada.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Vertice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafoListaAdy/Arco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafoListaAdy/Arco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafoListaAdy/Grafo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafoListaAdy/Grafo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafoListaAdy/GrafoDirigido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafoListaAdy/GrafoDirigido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafoListaAdy/GrafoDirigidoMatriz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafoListaAdy/GrafoDirigidoMatriz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafoListaAdy/GrafoNoDirigido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafoListaAdy/GrafoNoDirigido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafoListaAdy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafoListaAdy/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafosHash/Arco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafosHash/Arco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafosHash/Grafo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafosHash/Grafo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafosHash/GrafoDirigidoHASH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafosHash/GrafoDirigidoHASH.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafosHash/GrafoNoDirigido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafosHash/GrafoNoDirigido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafosHash/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafosHash/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej1/GrafoDirigido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej1/GrafoDirigido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej1/Puerta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej1/Puerta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej1/Sala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej1/Sala.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej2/BacktrackingLaberinto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej2/BacktrackingLaberinto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej2/Camino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej2/Camino.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej2/Casillero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej2/Casillero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej3/BackSuma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej3/BackSuma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej4/BackParticionConjunto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej4/BackParticionConjunto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej6/CaballoAtila.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej6/CaballoAtila.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej6/PosibleSolucion/Backtracking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej6/PosibleSolucion/Backtracking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej6/PosibleSolucion/Casilla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej6/PosibleSolucion/Casilla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej6/PosibleSolucion/Jardin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej6/PosibleSolucion/Jardin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej6/PosibleSolucion/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej6/PosibleSolucion/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej7/Backtracking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico5_backtracking/ej7/Backtracking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico6_greedy/CambioMonedas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico6_greedy/CambioMonedas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico6_greedy/ProblemaMochila.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico6_greedy/ProblemaMochila.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico_especial/Procesador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico_especial/Procesador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico_especial/Servicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico_especial/Servicios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico_especial/Tarea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico_especial/Tarea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/GrafoDirigido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/GrafoDirigido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/ListaVinculada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/ListaVinculada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Vertice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Vertice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,52 +67,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Algoritmo.executor": "Run",
-    "Application.AlgoritmoN.executor": "Run",
-    "Application.AlgoritmoRecursivo2.executor": "Run",
-    "Application.AlgoritmosOrdenamiento.executor": "Run",
-    "Application.BackSuma.executor": "Run",
-    "Application.BusquedaRecursiva.executor": "Run",
-    "Application.CambioMonedas.executor": "Run",
-    "Application.Cursada2025.tp2_1.Main.executor": "Run",
-    "Application.Fibonacci.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MergeSort.executor": "Run",
-    "Application.NumeroABinario.executor": "Run",
-    "Application.Palindromo.executor": "Run",
-    "Application.Tree.executor": "Run",
-    "Application.ejyoutube.EliminarDuplicados.Main.executor": "Run",
-    "Application.main.executor": "Run",
-    "Application.practico1.ej5.Main.executor": "Run",
-    "Application.practico1.ej6.Main.executor": "Run",
-    "Application.practico4.Main.executor": "Run",
-    "Application.practico5_backtracking.ej2.Main.executor": "Run",
-    "Application.practico_especial.Main.executor": "Run",
-    "Application.tp1.Main.executor": "Run",
-    "Application.tp2.Main.executor": "Run",
-    "Application.tp2_1.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/University/SEGUNDO ANIO/PROGRAMACION 3/Programacion-3-TUDAI",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Algoritmo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AlgoritmoN.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AlgoritmoRecursivo2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AlgoritmosOrdenamiento.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BackSuma.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BusquedaRecursiva.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CambioMonedas.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Cursada2025.tp2_1.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Fibonacci.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MergeSort.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NumeroABinario.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Palindromo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Tree.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ejyoutube.EliminarDuplicados.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.practico1.ej5.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.practico1.ej6.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.practico4.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.practico5_backtracking.ej2.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.practico_especial.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.tp1.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.tp2.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.tp2_1.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/University/SEGUNDO ANIO/PROGRAMACION 3/Programacion-3-TUDAI&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="practico5_backtracking.ej6.PosibleSolucion" />
@@ -299,6 +263,7 @@
       <workItem from="1744485492604" duration="5816000" />
       <workItem from="1744670689601" duration="1512000" />
       <workItem from="1745588896488" duration="5595000" />
+      <workItem from="1745600713830" duration="3596000" />
     </task>
     <task id="LOCAL-00001" summary="git add .">
       <option name="closed" value="true" />

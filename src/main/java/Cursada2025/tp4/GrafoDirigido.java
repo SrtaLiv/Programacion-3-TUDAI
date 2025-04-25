@@ -1,24 +1,31 @@
 package Cursada2025.tp4;
 
-import Cursada2025.tp1.MySimpleLinkedList;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 
 public class GrafoDirigido<T> implements Grafo<T> {
     // LISTA DE ADYACENCIA
-    private ArrayList<Integer> vertices; // guardamos los id, no el Vertice?
-    private MySimpleLinkedList<Arco> listaDeAdyacentes;
+    // relacione cada ID de vértice con su lista de adyacencia
+    private ArrayList<Vertice<T>> vertices; // guardamos los id, no el Vertice?
+    private ListaVinculada<Arco<T>> adyacentes;
 
     @Override
     public void agregarVertice(int verticeId) {
-        vertices.add(verticeId);
+        Vertice v = new Vertice<>(verticeId, null);
+        vertices.add(v);
     }
 
     @Override
     public void borrarVertice(int verticeId) {
         // buscar su adyacente y ssacar arcos que apunten tambien
+        Vertice v = vertices.get(verticeId);
+        // y borrar arco
+        for (Arco arc : v.getAdyacentes()){
+            borrarArco(verticeId, arc.getVerticeDestino());
+        }
+
         vertices.remove(verticeId);
+
     }
 
     @Override
@@ -27,12 +34,16 @@ public class GrafoDirigido<T> implements Grafo<T> {
         arco.setVerticeOrigen(verticeId1);
         arco.setVerticeDestino(verticeId2);
         arco.setEtiqueta(etiqueta);
+
+        Vertice<T> v1 = vertices.get(verticeId1);
+        v1.addAdyacente(arco);
     }
 
     @Override
     public void borrarArco(int verticeId1, int verticeId2) {
-
+        vertices.get(verticeId1).getAdyacentes().remove(verticeId2);
     }
+
 
     @Override
     public boolean contieneVertice(int verticeId) {
@@ -41,11 +52,13 @@ public class GrafoDirigido<T> implements Grafo<T> {
 
     @Override
     public boolean existeArco(int verticeId1, int verticeId2) {
-        int i = vertices.get(verticeId1); // si tiene de adyacente a v2 hay arco
-        // if vertice . getVerticeDestino() == verticeId2 hay arco
-        if (){
+        Vertice<T> v1 = vertices.get(verticeId1); // si tiene de adyacente a v2 hay arco
+        Vertice<T> v2 = vertices.get(verticeId2); // si tiene de adyacente a v2 hay arco
 
-        }
+       if (v1.getAdyacentes().get(verticeId2) != null ||
+               v2.getAdyacentes().get(verticeId1) != null){
+           return true;
+       }
         return false;
     }
 
