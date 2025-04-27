@@ -5,58 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="laberinto, complicadito">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_5_2024_14_24__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_5_2024_14_24__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_5_2024_15_18__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_5_2024_15_18__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/ej2/ServicioBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/ej2/ServicioBFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/ej2/ServicioDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/ej2/ServicioDFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/ej3/GrafoTieneCiclo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/ej3/GrafoTieneCiclo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/ej5_hayCaminoAlDestino/TodosLosCaminos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/ej5_hayCaminoAlDestino/TodosLosCaminos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/ej6_ciudad_caminoCorto/CaminoMasCorto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/ej6_ciudad_caminoCorto/CaminoMasCorto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafoListaAdy/RecorridoSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafoListaAdy/RecorridoSimple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafosHash/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafosHash/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/GrafoDirigido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/GrafoDirigido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/ListaVinculada.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Vertice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Vertice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp2_1/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp2_1/BinaryTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/ej2/ServicioBFS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/ej2/ServicioDFS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/ej3/GrafoTieneCiclo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/ej5_hayCaminoAlDestino/TodosLosCaminos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/ej6_ciudad_caminoCorto/CaminoMasCorto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafoListaAdy/Arco.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafoListaAdy/Grafo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafoListaAdy/GrafoDirigido$Vertice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafoListaAdy/GrafoDirigido.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafoListaAdy/GrafoDirigidoMatriz.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafoListaAdy/GrafoNoDirigido.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafoListaAdy/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafoListaAdy/RecorridoSimple.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafosHash/Arco.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafosHash/Grafo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafosHash/GrafoDirigidoHASH.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafosHash/GrafoNoDirigido.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafosHash/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej1/GrafoDirigido.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej1/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej1/Puerta.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej1/Sala.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej2/BacktrackingLaberinto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej2/Camino.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej2/Casillero.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej2/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej3/BackSuma.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej4/BackParticionConjunto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej6/CaballoAtila.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej6/PosibleSolucion/Backtracking.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej6/PosibleSolucion/Casilla.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej6/PosibleSolucion/Jardin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej6/PosibleSolucion/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej7/Backtracking.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico6_greedy/CambioMonedas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico6_greedy/ProblemaMochila.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico_especial/Procesador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico_especial/Servicios.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico_especial/Tarea.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +77,7 @@
     "Application.BackSuma.executor": "Run",
     "Application.BusquedaRecursiva.executor": "Run",
     "Application.CambioMonedas.executor": "Run",
+    "Application.Cursada2025.tp2.Main.executor": "Run",
     "Application.Cursada2025.tp2_1.Main.executor": "Run",
     "Application.Cursada2025.tp4.Main.executor": "Run",
     "Application.Fibonacci.executor": "Run",
@@ -259,8 +213,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Cursada2025.tp4.Main" />
-        <item itemvalue="Application.Cursada2025.tp2_1.Main" />
         <item itemvalue="Application.Cursada2025.tp2.Main" />
+        <item itemvalue="Application.Cursada2025.tp2_1.Main" />
         <item itemvalue="Application.Cursada2025.tp1.Main" />
         <item itemvalue="Application.CambioMonedas" />
       </list>
@@ -415,7 +369,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp2/Ejercicio1.java</url>
           <line>46</line>
-          <properties class="Cursada2025.tp2.Ejercicio1">
+          <properties class="Cursada2025.tp2.Ejercicio1" method="convertirDecimalABinario">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -470,6 +424,31 @@
           <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp2/Ejercicio1.java</url>
           <line>61</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp4/GrafoDirigido.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp4/GrafoDirigido.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Main.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp4/GrafoDirigido.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp4/GrafoDirigido.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

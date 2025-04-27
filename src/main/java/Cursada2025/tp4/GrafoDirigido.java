@@ -16,7 +16,7 @@ public class GrafoDirigido<T> implements Grafo<T> {
 
     @Override
     public void agregarVertice(int verticeId) {
-        Vertice<T> v = new Vertice<>(verticeId, null);
+        Vertice<T> v = new Vertice<>(verticeId);
         if (!vertices.contains(verticeId)) // o(n)
             vertices.add(v);
     }
@@ -62,30 +62,25 @@ public class GrafoDirigido<T> implements Grafo<T> {
         return false;
     }
 
+    //O(n) cuadrado
     @Override
     public boolean existeArco(int verticeId1, int verticeId2) {
         // si existe el vertice
         if (contieneVertice(verticeId1) && contieneVertice(verticeId2)) {
             Vertice<T> v1 = vertices.get(verticeId1); // si tiene de adyacente a v2 hay arco
-            Vertice<T> v2 = vertices.get(verticeId2); // si tiene de adyacente a v2 hay arco
 
-            // si son adyacentes
-            if (v1.getAdyacentes().get(verticeId2) != null ||
-                    v2.getAdyacentes().get(verticeId1) != null) {
-
-                // si hay arco return true
-                // esta comparando con int !!
-                if (v1.getAdyacentes().get(verticeId2).getVerticeDestino() ==
-                v2.getId()){
-                    return true;
-                }
-            }
+            // si son adyacentes, deberia preguntar si existe arco desde verticeId1 a verticeId2 o al reves?
+            // o si existe arco entre ambos sin importar el orden de direccion?(eso pal gnd)
+            return v1.esAdyacente(verticeId2);
         }
         return false;
     }
 
     @Override
-    public Arco obtenerArco(int verticeId1, int verticeId2) {
+    public Arco<T> obtenerArco(int verticeId1, int verticeId2) {
+        if (existeArco(verticeId1, verticeId2)){
+            return vertices.get(verticeId1).getAdyacentes().get(verticeId2);
+        }
         return null;
     }
 
@@ -115,7 +110,11 @@ public class GrafoDirigido<T> implements Grafo<T> {
 
     @Override
     public Iterator<Integer> obtenerAdyacentes(int verticeId) {
-        return null;
+        ArrayList<Integer> adyacentesIds = new ArrayList<>();
+        for (Arco<T> arco : vertices.get(verticeId).getAdyacentes()) {
+            adyacentesIds.add(arco.getVerticeDestino());
+        }
+        return adyacentesIds.iterator();
     }
 
     @Override

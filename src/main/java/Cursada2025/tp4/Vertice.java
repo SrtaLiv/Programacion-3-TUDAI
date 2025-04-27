@@ -1,6 +1,7 @@
 package Cursada2025.tp4;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Objects;
 
 public class Vertice<T>{
@@ -11,13 +12,23 @@ public class Vertice<T>{
     private int id;
     private ArrayList<Arco<T>> adyacentes;
 
-    public Vertice(int id, T etiqueta) {
+    public Vertice(int id) {
         this.id = id;
         this.adyacentes = new ArrayList<>();
     }
 
     public void addAdyacente(Arco arco){
         adyacentes.add(arco);
+    }
+
+    // A -> B, B es adyacente de A
+    public boolean esAdyacente(int verticeId) {
+        for (Arco<T> adyacente : this.getAdyacentes()) {
+            if (adyacente.getVerticeDestino() == verticeId) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public int getId() {
@@ -29,8 +40,9 @@ public class Vertice<T>{
     }
 
     public ArrayList<Arco<T>> getAdyacentes() {
-        return adyacentes;
+        return new ArrayList<>(this.adyacentes);
     }
+
 
     public void setAdyacentes() {
         this.adyacentes = new ArrayList<>();
@@ -51,6 +63,7 @@ public class Vertice<T>{
         Vertice<?> vertice = (Vertice<?>) o;
         return id == vertice.id && Objects.equals(adyacentes, vertice.adyacentes);
     }
+
 
 
 }

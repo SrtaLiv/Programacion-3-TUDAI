@@ -12,6 +12,7 @@ public class Main {
         grafito.agregarVertice(1);
         grafito.agregarVertice(2);
         grafito.agregarVertice(3);
+        grafito.agregarVertice(4);
 
         // Genero un arco desde 1 hasta 2 con el valor de etiqueta 3
         grafito.agregarArco(1, 2, 3F);
