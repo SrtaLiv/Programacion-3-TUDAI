@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class Vertice<T>{
+
+    //if (!vertices.contains(vertieId)) o(n)
+    // no es buena opcion tener lista de arcos pq si me piden de Xvertice tendria q recorrer TODOS los arcos
+
     private int id;
     private ArrayList<Arco<T>> adyacentes;
 
