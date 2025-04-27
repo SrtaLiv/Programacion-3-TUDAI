@@ -8,13 +8,17 @@ public class Vertice<T>{
     // no es buena opcion tener lista de arcos pq si me piden de Xvertice tendria q recorrer TODOS los arcos
 
     private int id;
-    private ArrayList<Integer> adyacentes;
+    private ArrayList<Arco> adyacentes;
     private T etiqueta;
 
     public Vertice(int id, T etiqueta) {
         this.id = id;
         this.adyacentes = new ArrayList<>();
         this.etiqueta = etiqueta;
+    }
+
+    public void addAdyacente(Arco arco){
+        adyacentes.add(arco);
     }
 
     public int getId() {
@@ -25,11 +29,11 @@ public class Vertice<T>{
         this.id = id;
     }
 
-    public ArrayList<Vertice> getAdyacentes() {
+    public ArrayList<Arco> getAdyacentes() {
         return adyacentes;
     }
 
-    public void setAdyacentes(ArrayList<Vertice> adyacentes) {
+    public void setAdyacentes(ArrayList<Arco> adyacentes) {
         this.adyacentes = adyacentes;
     }
 
