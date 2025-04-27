@@ -1,6 +1,7 @@
-package practico4_grafos.ej5_hayCaminoAlDestino;
+package Cursada2024.practico4_grafos.ej5_hayCaminoAlDestino;
 
-import practico4_grafos.grafosHash.GrafoDirigidoHASH;
+
+import Cursada2024.practico4_grafos.grafosHash.GrafoDirigidoHASH;
 
 import java.util.ArrayList;
 import java.util.Iterator;

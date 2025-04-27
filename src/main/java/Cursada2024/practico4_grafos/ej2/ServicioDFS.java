@@ -1,6 +1,7 @@
-package practico4_grafos.ej2;
+package Cursada2024.practico4_grafos.ej2;
 
-import practico4_grafos.grafosHash.GrafoDirigidoHASH;
+
+import Cursada2024.practico4_grafos.grafosHash.GrafoDirigidoHASH;
 
 import java.util.HashSet;
 import java.util.Iterator;

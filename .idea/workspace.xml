@@ -6,9 +6,57 @@
   <component name="ChangeListManager">
     <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="laberinto, complicadito">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/ej2/ServicioBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/ej2/ServicioBFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/ej2/ServicioDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/ej2/ServicioDFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/ej3/GrafoTieneCiclo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/ej3/GrafoTieneCiclo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/ej5_hayCaminoAlDestino/TodosLosCaminos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/ej5_hayCaminoAlDestino/TodosLosCaminos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/ej6_ciudad_caminoCorto/CaminoMasCorto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/ej6_ciudad_caminoCorto/CaminoMasCorto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafoListaAdy/RecorridoSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafoListaAdy/RecorridoSimple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafosHash/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2024/practico4_grafos/grafosHash/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/GrafoDirigido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/GrafoDirigido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/ListaVinculada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/ListaVinculada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/ListaVinculada.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Vertice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Vertice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp2_1/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp2_1/BinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/ej2/ServicioBFS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/ej2/ServicioDFS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/ej3/GrafoTieneCiclo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/ej5_hayCaminoAlDestino/TodosLosCaminos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/ej6_ciudad_caminoCorto/CaminoMasCorto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafoListaAdy/Arco.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafoListaAdy/Grafo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafoListaAdy/GrafoDirigido$Vertice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafoListaAdy/GrafoDirigido.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafoListaAdy/GrafoDirigidoMatriz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafoListaAdy/GrafoNoDirigido.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafoListaAdy/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafoListaAdy/RecorridoSimple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafosHash/Arco.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafosHash/Grafo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafosHash/GrafoDirigidoHASH.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafosHash/GrafoNoDirigido.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/grafosHash/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej1/GrafoDirigido.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej1/Puerta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej1/Sala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej2/BacktrackingLaberinto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej2/Camino.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej2/Casillero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej3/BackSuma.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej4/BackParticionConjunto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej6/CaballoAtila.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej6/PosibleSolucion/Backtracking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej6/PosibleSolucion/Casilla.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej6/PosibleSolucion/Jardin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej6/PosibleSolucion/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico5_backtracking/ej7/Backtracking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico6_greedy/CambioMonedas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico6_greedy/ProblemaMochila.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico_especial/Procesador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico_especial/Servicios.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/practico_especial/Tarea.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,52 +115,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Algoritmo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AlgoritmoN.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AlgoritmoRecursivo2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AlgoritmosOrdenamiento.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BackSuma.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BusquedaRecursiva.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CambioMonedas.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Cursada2025.tp2_1.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Fibonacci.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MergeSort.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NumeroABinario.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Palindromo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Tree.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ejyoutube.EliminarDuplicados.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.practico1.ej5.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.practico1.ej6.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.practico4.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.practico5_backtracking.ej2.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.practico_especial.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.tp1.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.tp2.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.tp2_1.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/University/SEGUNDO ANIO/PROGRAMACION 3/Programacion-3-TUDAI&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Algoritmo.executor": "Run",
+    "Application.AlgoritmoN.executor": "Run",
+    "Application.AlgoritmoRecursivo2.executor": "Run",
+    "Application.AlgoritmosOrdenamiento.executor": "Run",
+    "Application.BackSuma.executor": "Run",
+    "Application.BusquedaRecursiva.executor": "Run",
+    "Application.CambioMonedas.executor": "Run",
+    "Application.Cursada2025.tp2_1.Main.executor": "Run",
+    "Application.Cursada2025.tp4.Main.executor": "Run",
+    "Application.Fibonacci.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MergeSort.executor": "Run",
+    "Application.NumeroABinario.executor": "Run",
+    "Application.Palindromo.executor": "Run",
+    "Application.Tree.executor": "Run",
+    "Application.ejyoutube.EliminarDuplicados.Main.executor": "Run",
+    "Application.main.executor": "Run",
+    "Application.practico1.ej5.Main.executor": "Run",
+    "Application.practico1.ej6.Main.executor": "Run",
+    "Application.practico4.Main.executor": "Run",
+    "Application.practico5_backtracking.ej2.Main.executor": "Run",
+    "Application.practico_especial.Main.executor": "Run",
+    "Application.tp1.Main.executor": "Run",
+    "Application.tp2.Main.executor": "Run",
+    "Application.tp2_1.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/chili/Desktop/Programacion-3-TUDAI",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="practico5_backtracking.ej6.PosibleSolucion" />
@@ -141,7 +190,7 @@
       <recent name="practico1.ej6" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Cursada2025.tp2_1.Main">
+  <component name="RunManager" selected="Application.Cursada2025.tp4.Main">
     <configuration name="CambioMonedas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="practico6_greedy.CambioMonedas" />
       <module name="Programacion-3-JAVA-TUDAI" />
@@ -194,12 +243,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practico5_backtracking.ej6.PosibleSolucion.Main" />
+    <configuration name="Cursada2025.tp4.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Cursada2025.tp4.Main" />
       <module name="Programacion-3-JAVA-TUDAI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="practico5_backtracking.ej6.PosibleSolucion.*" />
+          <option name="PATTERN" value="Cursada2025.tp4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -209,19 +258,19 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Cursada2025.tp4.Main" />
         <item itemvalue="Application.Cursada2025.tp2_1.Main" />
         <item itemvalue="Application.Cursada2025.tp2.Main" />
         <item itemvalue="Application.Cursada2025.tp1.Main" />
         <item itemvalue="Application.CambioMonedas" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
       </set>
     </attachedChunks>
   </component>
@@ -264,6 +313,7 @@
       <workItem from="1744670689601" duration="1512000" />
       <workItem from="1745588896488" duration="5595000" />
       <workItem from="1745600713830" duration="3596000" />
+      <workItem from="1745614040128" duration="5561000" />
     </task>
     <task id="LOCAL-00001" summary="git add .">
       <option name="closed" value="true" />
