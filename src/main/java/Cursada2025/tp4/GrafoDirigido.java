@@ -8,11 +8,20 @@ public class GrafoDirigido<T> implements Grafo<T> {
     // LISTA DE ADYACENCIA
     // relacione cada ID de vértice con su lista de adyacencia
     private List<Vertice<T>> vertices; // guardamos los id, no el Vertice?
-   // private List<Arco<T>> adyacentes;
+
 
     public GrafoDirigido() {
         this.vertices = new ArrayList<>();
     }
+
+    public List<Vertice<T>> getVertices() {
+        return vertices;
+    }
+
+    public void setVertices(List<Vertice<T>> vertices) {
+        this.vertices = vertices;
+    }
+
 
     @Override
     public void agregarVertice(int verticeId) {
@@ -21,16 +30,24 @@ public class GrafoDirigido<T> implements Grafo<T> {
             vertices.add(v);
     }
 
+
     @Override
     public void borrarVertice(int verticeId) {
         // buscar su adyacente y ssacar arcos que apunten tambien
-        Vertice<T> v = vertices.get(verticeId);
-        // y borrar arco
-        for (Arco<T> arc : v.getAdyacentes()){
-            borrarArco(verticeId, arc.getVerticeDestino());
-            borrarArco(arc.getVerticeDestino(), verticeId);
+        if (contieneVertice(verticeId)){
+            Vertice<T> v = vertices.get(verticeId);
+
+            // y borrar arco
+            Iterator<Integer> adyacentes = obtenerAdyacentes(verticeId);
+            while (adyacentes.hasNext()){
+                borrarArco(verticeId, adyacentes.next());
+                borrarArco(adyacentes.next(), verticeId);
+            }
+            vertices.remove(v);
         }
-        vertices.remove(v);
+        else{
+            System.out.println("No se encontro el vertice");
+        }
     }
 
     @Override
@@ -48,7 +65,6 @@ public class GrafoDirigido<T> implements Grafo<T> {
     public void borrarArco(int verticeId1, int verticeId2) {
         if (existeArco(verticeId1, verticeId2)){
             vertices.get(verticeId1).getAdyacentes().remove(verticeId2);
-            vertices.get(verticeId2).getAdyacentes().remove(verticeId1);
         }
     }
 
@@ -119,11 +135,16 @@ public class GrafoDirigido<T> implements Grafo<T> {
 
     @Override
     public Iterator<Arco<T>> obtenerArcos() {
-        return null;
+        ArrayList<Arco<T>> arcos = new ArrayList<>();
+
+        for (Vertice<T> v : vertices){
+            arcos.addAll(v.getAdyacentes());
+        }
+        return arcos.iterator();
     }
 
     @Override
     public Iterator<Arco<T>> obtenerArcos(int verticeId) {
-        return null;
+        return vertices.get(verticeId).getAdyacentes().iterator();
     }
 }

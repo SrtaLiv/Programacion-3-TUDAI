@@ -11,6 +11,7 @@ public class Vertice<T>{
 
     private int id;
     private ArrayList<Arco<T>> adyacentes;
+    private String color;
 
     public Vertice(int id) {
         this.id = id;
@@ -64,6 +65,11 @@ public class Vertice<T>{
         return id == vertice.id && Objects.equals(adyacentes, vertice.adyacentes);
     }
 
+    public String getColor() {
+        return color;
+    }
 
-
+    public void setColor(String color) {
+        this.color = color;
+    }
 }

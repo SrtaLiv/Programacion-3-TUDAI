@@ -22,20 +22,34 @@ public class Main {
             System.out.println(it.next());
         }
 
+        System.out.println(" ");
+        System.out.println("Existe arco: ");
         boolean existe = grafito.existeArco(1, 2);
         System.out.println(existe);
 
-      /*  System.out.println("otra iteracion");
+        System.out.println(" ");
+        System.out.println("Contiene vertice: ");
+        boolean contieneVertice = grafito.contieneVertice(1);
+        System.out.println(contieneVertice);
+
+        /* PREGUNTAR EN CLASE PQ NO FUNCIONA
+        System.out.println(" ");
+        System.out.println("Borrando vertice 2...");
+        grafito.borrarVertice(0);
+
+        System.out.println(" ");
+        System.out.println("Obtener vertices: ");
         Iterator<Integer> it2 = grafito.obtenerVertices();
-        while (it.hasNext()){
+        while (it2.hasNext()){
             System.out.println(it2.next());
-        }
-*/
+        }*/
+
 
         // Obtengo el arco entre 1 y 2, y le pido la etiqueta
-      //  Float etiqueta = grafito.obtenerArco(1, 2).getEtiqueta();
+         Float etiqueta = grafito.obtenerArco(1, 2).getEtiqueta();
+         System.out.println(etiqueta); // Debería imprimir 3
 
-    //    System.out.println(etiqueta); // Debería imprimir 3
+
     }
 
 }
