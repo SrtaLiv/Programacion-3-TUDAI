@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="laberinto, complicadito">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/ej2/DFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/GrafoDirigidoMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/ej2/BFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/ej4/Ejercicio4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/ej5/Ejercicio5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/GrafoDirigido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/GrafoDirigido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Vertice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Vertice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/GrafoDirigido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/GrafoDirigido.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/ej2/DFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/ej2/DFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EjerciciosExtra/Recursividad/Factorial.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +107,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/University/SEGUNDO ANIO/PROGRAMACION 3/Programacion-3-TUDAI",
+    "last_opened_file_path": "D:/universidad/Programacion-3-TUDAI",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -225,8 +228,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
       </set>
     </attachedChunks>
   </component>
@@ -272,6 +275,7 @@
       <workItem from="1745614040128" duration="5561000" />
       <workItem from="1746065331889" duration="48000" />
       <workItem from="1746624261566" duration="2541000" />
+      <workItem from="1746652090974" duration="8153000" />
     </task>
     <task id="LOCAL-00001" summary="git add .">
       <option name="closed" value="true" />
@@ -381,8 +385,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp4/GrafoDirigido.java</url>
-          <line>95</line>
-          <properties class="Cursada2025.tp4.GrafoDirigido" method="obtenerArco">
+          <line>150</line>
+          <properties class="Cursada2025.tp4.GrafoDirigido" method="obtenerArcos">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -440,17 +444,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp4/GrafoDirigido.java</url>
-          <line>96</line>
+          <line>151</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp4/GrafoDirigido.java</url>
-          <line>97</line>
+          <line>152</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp4/GrafoDirigido.java</url>
-          <line>99</line>
+          <line>154</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>

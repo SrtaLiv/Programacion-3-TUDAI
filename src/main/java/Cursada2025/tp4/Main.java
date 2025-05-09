@@ -32,7 +32,7 @@ public class Main {
         boolean contieneVertice = grafito.contieneVertice(1);
         System.out.println(contieneVertice);
 
-        /* PREGUNTAR EN CLASE PQ NO FUNCIONA
+        // PREGUNTAR EN CLASE PQ NO FUNCIONA
         System.out.println(" ");
         System.out.println("Borrando vertice 2...");
         grafito.borrarVertice(0);
@@ -42,12 +42,12 @@ public class Main {
         Iterator<Integer> it2 = grafito.obtenerVertices();
         while (it2.hasNext()){
             System.out.println(it2.next());
-        }*/
+        }
 
 
         // Obtengo el arco entre 1 y 2, y le pido la etiqueta
-         Float etiqueta = grafito.obtenerArco(1, 2).getEtiqueta();
-         System.out.println(etiqueta); // Debería imprimir 3
+        // Float etiqueta = grafito.obtenerArco(1, 2).getEtiqueta();
+         //System.out.println(etiqueta); // Debería imprimir 3
 
 
     }

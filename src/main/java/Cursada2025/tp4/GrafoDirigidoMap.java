@@ -1,20 +1,18 @@
 package Cursada2025.tp4;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
-public class GrafoDirigido<T> implements Grafo<T> {
-    // LISTA DE ADYACENCIA
-    // relacione cada ID de vértice con su lista de adyacencia
-    private List<Vertice<T>> vertices; // guardamos los id, no el Vertice?
+public class GrafoDirigidoMap<T> implements Grafo<T> {
+    private HashMap<Integer, Arco<T>> vertices; // guardamos los id, no el Vertice?
 
-
-    public GrafoDirigido() {
-        this.vertices = new ArrayList<>();
+    public GrafoDirigidoMap(HashMap<Integer, Arco<T>> vertices) {
+        this.vertices = vertices;
     }
 
-    public List<Vertice<T>> getVertices() {
+    public HashMap<Integer, Arco<T>> getVertices() {
         return vertices;
     }
 
@@ -76,11 +74,6 @@ public class GrafoDirigido<T> implements Grafo<T> {
             }
         }
         return false;
-    }
-
-    // buscar el vertoce y devolverlo
-    private Integer buscar(){
-
     }
 
     //O(n) cuadrado

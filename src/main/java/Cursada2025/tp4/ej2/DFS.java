@@ -6,6 +6,7 @@ import Cursada2025.tp4.GrafoDirigido;
 import Cursada2025.tp4.Vertice;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Objects;
 
 public class DFS<T> {
@@ -17,30 +18,32 @@ public class DFS<T> {
      * Querés ver si hay una ruta entre dos nodos (no la más corta).
      * Trabajás con problemas de backtracking (como laberintos, sudokus, etc).
      */
-    ArrayList<Integer> visitados;
+    HashMap<Integer, String> visitados;
 
     public void dfsVisitar(GrafoDirigido<T> grafo){
         for (Vertice<T> v : grafo.getVertices()){
-            v.setColor("Blanco");
+            visitados.put(v.getId(), "Blanco");
         }
-        for (Vertice<T> vertice : grafo.getVertices()){
+        for (Integer vertice : grafo.getVertices()){ // cambiarlo por iterator
             buscarEnProfundidad(vertice);
         }
     }
 
-    private void buscarEnProfundidad(Vertice<T> v){
-        v.setColor("Amarillo");
+    private boolean buscarEnProfundidad(Vertice<T> v){
+        visitados.put(v.getId(), "Amarillo"); // Esta visitado
 //
        for (Arco<T> ady : v.getAdyacentes()){
-            if (!visitados.contains(ady.getVerticeDestino())) {
-                visitados.add(ady.getVerticeDestino());
+            if (visitados.get(ady.getVerticeDestino()).equals("Blanco")){ // si el ady no esta visitado,
+                //estaba mal poner is es igual amarillo, pq si fuera NEGRO entraba, y no queremos eso.
+                visitados.put(ady.getVerticeDestino(), "Amarillo"); // lo visitamos
                 buscarEnProfundidad(v);
             }
-            else if (v.getColor().equals("Amarillo")){
-                System.out.println("Hay Ciclo");
+            else if (visitados.get(ady.getVerticeDestino()).equals("Amarillo")){
+                return true; // hay ciclo
             }
         }
-        v.setColor("Negro");
+        visitados.put(v.getId(), "Negro");
+       return false;
     }
 
 }
