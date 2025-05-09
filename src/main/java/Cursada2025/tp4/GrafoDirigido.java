@@ -52,7 +52,7 @@ public class GrafoDirigido<T> implements Grafo<T> {
 
     @Override
     public void agregarArco(int verticeId1, int verticeId2, T etiqueta) {
-        Arco<T> arco = new Arco<>();
+        Arco<T> arco = new Arco<>(verticeId1, verticeId2, etiqueta);
         arco.setVerticeOrigen(verticeId1);
         arco.setVerticeDestino(verticeId2);
         arco.setEtiqueta(etiqueta);
@@ -80,7 +80,7 @@ public class GrafoDirigido<T> implements Grafo<T> {
 
     // buscar el vertoce y devolverlo
     private Integer buscar(){
-
+return 0;
     }
 
     //O(n) cuadrado

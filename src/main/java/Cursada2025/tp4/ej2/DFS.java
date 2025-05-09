@@ -1,12 +1,10 @@
 package Cursada2025.tp4.ej2;
 
-import Cursada2025.tp4.Arco;
-import Cursada2025.tp4.Grafo;
-import Cursada2025.tp4.GrafoDirigido;
-import Cursada2025.tp4.Vertice;
+import Cursada2025.tp4.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Objects;
 
 public class DFS<T> {
@@ -18,32 +16,46 @@ public class DFS<T> {
      * Querés ver si hay una ruta entre dos nodos (no la más corta).
      * Trabajás con problemas de backtracking (como laberintos, sudokus, etc).
      */
-    HashMap<Integer, String> visitados;
+    private HashMap<Integer, String> visitados = new HashMap<>();
 
-    public void dfsVisitar(GrafoDirigido<T> grafo){
-        for (Vertice<T> v : grafo.getVertices()){
-            visitados.put(v.getId(), "Blanco");
+    public boolean dfsVisitar(GrafoDirigidoMap<T> grafo) {
+        // Inicializar todos los vértices como "Blanco"
+        Iterator<Integer> vertices = grafo.obtenerVertices();
+        while (vertices.hasNext()) {
+            visitados.put(vertices.next(), "Blanco");
         }
-        for (Integer vertice : grafo.getVertices()){ // cambiarlo por iterator
-            buscarEnProfundidad(vertice);
+
+        // Recorrer vértices y hacer DFS
+        Iterator<Integer> vertices2 = grafo.obtenerVertices();
+        while (vertices2.hasNext()) {
+            int v = vertices2.next();
+            if (visitados.get(v).equals("Blanco")) {
+                if (buscarEnProfundidad(v, grafo)) {
+                    return true; // ciclo encontrado
+                }
+            }
         }
+        return false; // no hay ciclos
     }
 
-    private boolean buscarEnProfundidad(Vertice<T> v){
-        visitados.put(v.getId(), "Amarillo"); // Esta visitado
-//
-       for (Arco<T> ady : v.getAdyacentes()){
-            if (visitados.get(ady.getVerticeDestino()).equals("Blanco")){ // si el ady no esta visitado,
-                //estaba mal poner is es igual amarillo, pq si fuera NEGRO entraba, y no queremos eso.
-                visitados.put(ady.getVerticeDestino(), "Amarillo"); // lo visitamos
-                buscarEnProfundidad(v);
-            }
-            else if (visitados.get(ady.getVerticeDestino()).equals("Amarillo")){
-                return true; // hay ciclo
+    private boolean buscarEnProfundidad(int v, GrafoDirigidoMap<T> grafo) {
+        visitados.put(v, "Amarillo");
+
+        Iterator<Integer> adyacentes = grafo.obtenerAdyacentes(v);
+        while (adyacentes.hasNext()) {
+            int adyacenteId = adyacentes.next();
+            String color = visitados.get(adyacenteId);
+            if (color.equals("Blanco")) {
+                if (buscarEnProfundidad(adyacenteId, grafo)) {
+                    return true;
+                }
+            } else if (color.equals("Amarillo")) {
+                return true; // ciclo encontrado
             }
         }
-        visitados.put(v.getId(), "Negro");
-       return false;
+
+        visitados.put(v, "Negro");
+        return false;
     }
 
 }

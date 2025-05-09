@@ -27,7 +27,8 @@ public class Ejercicio5 {
 
     private void buscarCamino(GrafoDirigido<Integer> gr, int destino, int ady ){
         Iterator<Integer> adyacentes = gr.obtenerAdyacentes(ady);
-        while (adyacentes.hasNext()){
+
+        /*while (adyacentes.hasNext()){
             // Si ya estaba el ady en el camino, significa que ese vertice puede llegar al destino
             // no hace falta seguir recorriendo
             if (camino.contains(adyacentes.next())){
@@ -41,6 +42,10 @@ public class Ejercicio5 {
                 buscarCaminoDeUnVertice(gr, a);
             }
 
-        }
+        }*/
+    }
+
+    public static void main(String[] args) {
+
     }
 }
