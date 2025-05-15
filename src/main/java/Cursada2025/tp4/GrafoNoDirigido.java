@@ -2,7 +2,7 @@ package Cursada2025.tp4;
 
 import java.util.Iterator;
 
-public class GrafoNoDirigido<T> extends GrafoDirigido<T> {
+public class GrafoNoDirigido<T> extends GrafoDirigidoMap<T> {
 
     @Override
     public void agregarArco(int verticeId1, int verticeId2, T etiqueta) {
