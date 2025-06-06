@@ -5,121 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="laberinto, complicadito">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio2/Camino.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio2/Casillero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio2/Ejercicio2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio3/Ejercicio3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio4/Ejercicio4Bien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio5/Ejercicio5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio5/Ejercicio5Back.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio5/Procesador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio5/Tarea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio6/Casillero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio6/Ejercicio6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio10/Ejericico10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio8/Ejercicio8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio8/Piramide.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercico7/Ejercicio7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp6/Actividad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp6/ComparadorMejorTiempo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp6/ComparadorValorPorPeso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp6/Ej1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp6/Ej2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp6/Ej3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp6/Objeto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_5_2024_14_24__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_5_2024_14_24__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_5_2024_15_18__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_5_2024_15_18__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico1/ej1/MySimpleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico1/ej1/MySimpleLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico1/ej1/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico1/ej1/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico1/ej4/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico1/ej4/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico1/ej4/MyIterador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico1/ej4/MyIterador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico1/ej4/MySimpleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico1/ej4/MySimpleLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico1/ej4/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico1/ej4/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico2_1/ej1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico2_1/ej1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico2_1/ej1/Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico2_1/ej1/Tree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico2_1/ej1/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico2_1/ej1/TreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/ej2/ServicioBFS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/ej2/ServicioBFS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/ej2/ServicioDFS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/ej2/ServicioDFS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/ej3/GrafoTieneCiclo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/ej3/GrafoTieneCiclo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/ej5_hayCaminoAlDestino/TodosLosCaminos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/ej5_hayCaminoAlDestino/TodosLosCaminos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/ej6_ciudad_caminoCorto/CaminoMasCorto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/ej6_ciudad_caminoCorto/CaminoMasCorto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafoListaAdy/Arco.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafoListaAdy/Arco.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafoListaAdy/Grafo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafoListaAdy/Grafo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafoListaAdy/GrafoDirigido$Vertice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafoListaAdy/GrafoDirigido$Vertice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafoListaAdy/GrafoDirigido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafoListaAdy/GrafoDirigido.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafoListaAdy/GrafoDirigidoMatriz.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafoListaAdy/GrafoDirigidoMatriz.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafoListaAdy/GrafoNoDirigido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafoListaAdy/GrafoNoDirigido.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafoListaAdy/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafoListaAdy/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafoListaAdy/RecorridoSimple.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafoListaAdy/RecorridoSimple.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafosHash/Arco.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafosHash/Arco.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafosHash/Grafo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafosHash/Grafo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafosHash/GrafoDirigidoHASH.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafosHash/GrafoDirigidoHASH.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafosHash/GrafoNoDirigido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafosHash/GrafoNoDirigido.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafosHash/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico4_grafos/grafosHash/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej1/GrafoDirigido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej1/GrafoDirigido.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej1/Puerta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej1/Puerta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej1/Sala.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej1/Sala.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej2/BacktrackingLaberinto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej2/BacktrackingLaberinto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej2/Camino.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej2/Camino.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej2/Casillero.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej2/Casillero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej2/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej3/BackSuma.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej3/BackSuma.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej4/BackParticionConjunto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej4/BackParticionConjunto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej6/CaballoAtila.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej6/CaballoAtila.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej6/PosibleSolucion/Backtracking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej6/PosibleSolucion/Backtracking.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej6/PosibleSolucion/Casilla.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej6/PosibleSolucion/Casilla.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej6/PosibleSolucion/Jardin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej6/PosibleSolucion/Jardin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej6/PosibleSolucion/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej6/PosibleSolucion/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej7/Backtracking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico5_backtracking/ej7/Backtracking.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico6_greedy/CambioMonedas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico6_greedy/CambioMonedas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico6_greedy/ProblemaMochila.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico6_greedy/ProblemaMochila.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico_especial/Procesador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico_especial/Procesador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico_especial/Servicios.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico_especial/Servicios.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2024/practico_especial/Tarea.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2024/practico_especial/Tarea.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp1/MyIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp1/MyIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp1/MySimpleLinkedDoubleList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp1/MySimpleLinkedDoubleList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp1/MySimpleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp1/MySimpleLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp1/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp1/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp2/Ejercicio1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp2/Ejercicio1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp2/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp2_1/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp2_1/BinaryTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp2_1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp2_1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp2_1/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp2_1/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/Arco.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/Arco.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/Grafo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/Grafo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/GrafoDirigido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/GrafoDirigido.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/GrafoDirigidoMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/GrafoDirigidoMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/GrafoNoDirigido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/GrafoNoDirigido.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/Vertice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/Vertice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/ej2/BFS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/ej2/BFS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/ej2/DFS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/ej2/DFS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/ej4/Ejercicio4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/ej4/Ejercicio4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/ej5/Ejercicio5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/ej5/Ejercicio5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/ej6/Ejercicio6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp4/ej6/Ejercicio6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EjerciciosExtra/Recursividad/Factorial.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EjerciciosExtra/Recursividad/Factorial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ejyoutube/BusquedaBinaria/BusquedaRecursiva.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ejyoutube/BusquedaBinaria/BusquedaRecursiva.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ejyoutube/EliminarDuplicados/ListaVinculada.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ejyoutube/EliminarDuplicados/ListaVinculada.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ejyoutube/EliminarDuplicados/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ejyoutube/EliminarDuplicados/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ejyoutube/EliminarDuplicados/MyIterador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ejyoutube/EliminarDuplicados/MyIterador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ejyoutube/EliminarDuplicados/Nodo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ejyoutube/EliminarDuplicados/Nodo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ejyoutube/Palindromo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ejyoutube/Palindromo/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ejyoutube/Palindromo/Palind.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ejyoutube/Palindromo/Palind.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/programacion3javatudai/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/programacion3javatudai/HelloApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/programacion3javatudai/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/programacion3javatudai/HelloController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/programacion3javatudai/ListaVinculada/MySimpleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/programacion3javatudai/ListaVinculada/MySimpleLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/programacion3javatudai/ListaVinculada/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/programacion3javatudai/ListaVinculada/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej5/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej5/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej5/MyIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej5/MyIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej5/MySimpleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej5/MySimpleLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej5/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej5/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej6/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej6/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej6/MyIterador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej6/MyIterador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej6/MySimpleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej6/MySimpleLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico1/ej6/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico1/ej6/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico2/ej1/AlgoritmoN.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2/ej1/AlgoritmoN.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico2/ej2/AlgoritmoRecursivo2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2/ej2/AlgoritmoRecursivo2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico2/ej3/NumeroABinario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2/ej3/NumeroABinario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico2/ej4/Fibonacci.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2/ej4/Fibonacci.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico2/ej5/Algoritmo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2/ej5/Algoritmo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico2/ej6/AlgoritmosOrdenamiento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2/ej6/AlgoritmosOrdenamiento.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico2/ej7/AlgoritmosOrdenamiento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2/ej7/AlgoritmosOrdenamiento.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico2/ej7/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico2/ej7/MergeSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico3/ej1/Hashing$Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico3/ej1/Hashing$Entry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico3/ej1/Hashing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico3/ej1/Hashing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practico4_grafos/ej4_camino/CaminoMayorLongitud.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practico4_grafos/ej4_camino/CaminoMayorLongitud.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio6/Casillero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio6/Casillero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio6/Ejercicio6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio6/Ejercicio6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp5/Ejercicio6/Ejercicio6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp5/Ejercicio6/Ejercicio6.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,12 +93,15 @@
     "Application.Cursada2025.tp2_1.Main.executor": "Run",
     "Application.Cursada2025.tp4.Main.executor": "Run",
     "Application.Cursada2025.tp5.Ejercicio4.Ejercicio4.executor": "Run",
+    "Application.Ej1.executor": "Run",
+    "Application.Ej2.executor": "Run",
     "Application.Ejercicio1.executor": "Run",
     "Application.Ejercicio3.executor": "Run",
     "Application.Ejercicio4.executor": "Run",
     "Application.Ejercicio5.executor": "Run",
     "Application.Ejercicio5Back.executor": "Debug",
     "Application.Ejercicio6.executor": "Run",
+    "Application.Ejercicio7.executor": "Debug",
     "Application.Fibonacci.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.MergeSort.executor": "Run",
@@ -219,7 +124,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/universidad/Programacion-3-TUDAI",
+    "last_opened_file_path": "D:/University/SEGUNDO ANIO/PROGRAMACION 3/Programacion-3-TUDAI",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -261,7 +166,7 @@
       <recent name="practico1.ej6" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Ejercicio5Back">
+  <component name="RunManager" selected="Application.Ej2">
     <configuration name="Cursada2025.tp5.Ejercicio4.Ejercicio4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Cursada2025.tp5.Ejercicio4.Ejercicio4" />
       <module name="Programacion-3-JAVA-TUDAI" />
@@ -275,12 +180,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ejercicio1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Cursada2025.tp5.Ejercicio1" />
+    <configuration name="Ej1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Cursada2025.tp6.Ej1" />
       <module name="Programacion-3-JAVA-TUDAI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Cursada2025.tp5.Ejercicio2.*" />
+          <option name="PATTERN" value="Cursada2025.tp6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -288,12 +193,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ejercicio3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Cursada2025.tp5.Ejercicio3.Ejercicio3" />
+    <configuration name="Ej2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Cursada2025.tp6.Ej2" />
       <module name="Programacion-3-JAVA-TUDAI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Cursada2025.tp5.Ejercicio3.*" />
+          <option name="PATTERN" value="Cursada2025.tp6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -314,12 +219,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ejercicio6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Cursada2025.tp4.ej6.Ejercicio6" />
+    <configuration name="Ejercicio7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Cursada2025.tp5.Ejercico7.Ejercicio7" />
       <module name="Programacion-3-JAVA-TUDAI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Cursada2025.tp4.ej6.*" />
+          <option name="PATTERN" value="Cursada2025.tp5.Ejercico7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -329,19 +234,19 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Ej2" />
+        <item itemvalue="Application.Ej1" />
+        <item itemvalue="Application.Ejercicio7" />
         <item itemvalue="Application.Ejercicio5Back" />
         <item itemvalue="Application.Cursada2025.tp5.Ejercicio4.Ejercicio4" />
-        <item itemvalue="Application.Ejercicio3" />
-        <item itemvalue="Application.Ejercicio1" />
-        <item itemvalue="Application.Ejercicio6" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
       </set>
     </attachedChunks>
   </component>
@@ -393,6 +298,13 @@
       <workItem from="1747861977252" duration="176000" />
       <workItem from="1748017997085" duration="11539000" />
       <workItem from="1748263423779" duration="13077000" />
+      <workItem from="1748437069361" duration="7686000" />
+      <workItem from="1748521182993" duration="36000" />
+      <workItem from="1749084130329" duration="2122000" />
+      <workItem from="1749088711881" duration="208000" />
+      <workItem from="1749166115884" duration="3463000" />
+      <workItem from="1749214263820" duration="2187000" />
+      <workItem from="1749218593137" duration="5566000" />
     </task>
     <task id="LOCAL-00001" summary="git add .">
       <option name="closed" value="true" />
@@ -562,16 +474,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp4/ej6/Ejercicio6.java</url>
-          <line>93</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp4/ej6/Ejercicio6.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp4/ej6/Ejercicio6.java</url>
           <line>53</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
@@ -584,6 +486,21 @@
           <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio5/Ejercicio5Back.java</url>
           <line>187</line>
           <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio10/Ejericico10.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio10/Ejericico10.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio10/Ejericico10.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

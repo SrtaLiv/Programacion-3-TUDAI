@@ -13,6 +13,10 @@ public class Casillero {
         this.columna = columna;
     }
 
+    public Casillero(int value) {
+        this.value = value;
+    }
+
     public int getFila() { return fila; }
     public int getColumna() { return columna; }
 
