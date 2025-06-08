@@ -11,10 +11,19 @@ public class Vertice<T>{
 
     private int id;
     private ArrayList<Arco<T>> adyacentes;
+    private String color;
 
     public Vertice(int id) {
         this.id = id;
         this.adyacentes = new ArrayList<>();
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public void addAdyacente(Arco arco){

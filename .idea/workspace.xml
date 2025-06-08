@@ -5,23 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="laberinto, complicadito">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio10/Ejericico10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio8/Ejercicio8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio8/Piramide.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercico7/Ejercicio7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp6/Actividad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp6/ComparadorMejorTiempo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp6/ComparadorValorPorPeso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp6/Ej1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp6/Ej2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp6/Ej3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp6/Objeto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_5_2024_14_24__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_5_2024_14_24__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_5_2024_15_18__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_5_2024_15_18__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp6/Ej8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp6/Ej9.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio6/Casillero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio6/Casillero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio6/Ejercicio6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio6/Ejercicio6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp5/Ejercicio6/Ejercicio6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp5/Ejercicio6/Ejercicio6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Vertice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Vertice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,64 +67,64 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Algoritmo.executor": "Run",
-    "Application.AlgoritmoN.executor": "Run",
-    "Application.AlgoritmoRecursivo2.executor": "Run",
-    "Application.AlgoritmosOrdenamiento.executor": "Run",
-    "Application.BackSuma.executor": "Run",
-    "Application.BusquedaRecursiva.executor": "Run",
-    "Application.CambioMonedas.executor": "Run",
-    "Application.Cursada2025.tp2.Main.executor": "Run",
-    "Application.Cursada2025.tp2_1.Main.executor": "Run",
-    "Application.Cursada2025.tp4.Main.executor": "Run",
-    "Application.Cursada2025.tp5.Ejercicio4.Ejercicio4.executor": "Run",
-    "Application.Ej1.executor": "Run",
-    "Application.Ej2.executor": "Run",
-    "Application.Ejercicio1.executor": "Run",
-    "Application.Ejercicio3.executor": "Run",
-    "Application.Ejercicio4.executor": "Run",
-    "Application.Ejercicio5.executor": "Run",
-    "Application.Ejercicio5Back.executor": "Debug",
-    "Application.Ejercicio6.executor": "Run",
-    "Application.Ejercicio7.executor": "Debug",
-    "Application.Fibonacci.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MergeSort.executor": "Run",
-    "Application.NumeroABinario.executor": "Run",
-    "Application.Palindromo.executor": "Run",
-    "Application.Tree.executor": "Run",
-    "Application.ejyoutube.EliminarDuplicados.Main.executor": "Run",
-    "Application.main.executor": "Run",
-    "Application.practico1.ej5.Main.executor": "Run",
-    "Application.practico1.ej6.Main.executor": "Run",
-    "Application.practico4.Main.executor": "Run",
-    "Application.practico5_backtracking.ej2.Main.executor": "Run",
-    "Application.practico_especial.Main.executor": "Run",
-    "Application.tp1.Main.executor": "Run",
-    "Application.tp2.Main.executor": "Run",
-    "Application.tp2_1.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/University/SEGUNDO ANIO/PROGRAMACION 3/Programacion-3-TUDAI",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Algoritmo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AlgoritmoN.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AlgoritmoRecursivo2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AlgoritmosOrdenamiento.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BackSuma.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BusquedaRecursiva.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CambioMonedas.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Cursada2025.tp2.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Cursada2025.tp2_1.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Cursada2025.tp4.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Cursada2025.tp5.Ejercicio4.Ejercicio4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ej1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ej2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio5.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio5Back.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Ejercicio6.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio7.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Fibonacci.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MergeSort.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NumeroABinario.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Palindromo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Tree.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ejyoutube.EliminarDuplicados.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.practico1.ej5.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.practico1.ej6.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.practico4.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.practico5_backtracking.ej2.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.practico_especial.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.tp1.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.tp2.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.tp2_1.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/University/SEGUNDO ANIO/PROGRAMACION 3/Programacion-3-TUDAI&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="practico5_backtracking.ej6.PosibleSolucion" />
@@ -304,7 +291,8 @@
       <workItem from="1749088711881" duration="208000" />
       <workItem from="1749166115884" duration="3463000" />
       <workItem from="1749214263820" duration="2187000" />
-      <workItem from="1749218593137" duration="5566000" />
+      <workItem from="1749218593137" duration="6217000" />
+      <workItem from="1749347575259" duration="4419000" />
     </task>
     <task id="LOCAL-00001" summary="git add .">
       <option name="closed" value="true" />
