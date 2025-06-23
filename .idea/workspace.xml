@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="laberinto, complicadito">
-      <change afterPath="$PROJECT_DIR$/archivo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/PracticoEspecial/Fabrica.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/PracticoEspecial/Fabrica_greedy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/PracticoEspecial/Maquina.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp6/Ej8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp6/Ej9.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cursada2025/tp5/Ejercicio6/Ejercicio6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Cursada2025/tp5/Ejercicio6/Ejercicio6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Vertice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Vertice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,14 +80,15 @@
     &quot;Application.Cursada2025.tp2_1.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.Cursada2025.tp4.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.Cursada2025.tp5.Ejercicio4.Ejercicio4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ej1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ej2.executor&quot;: &quot;Run&quot;,
     &quot;Application.Ejercicio1.executor&quot;: &quot;Run&quot;,
     &quot;Application.Ejercicio3.executor&quot;: &quot;Run&quot;,
     &quot;Application.Ejercicio4.executor&quot;: &quot;Run&quot;,
     &quot;Application.Ejercicio5.executor&quot;: &quot;Run&quot;,
     &quot;Application.Ejercicio5Back.executor&quot;: &quot;Debug&quot;,
     &quot;Application.Ejercicio6.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Fabrica.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Fabrica_greedy.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio7.executor&quot;: &quot;Debug&quot;,
     &quot;Application.Fibonacci.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.MergeSort.executor&quot;: &quot;Run&quot;,
@@ -112,7 +111,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/universidad/Programacion-3-TP-Especial&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/University/SEGUNDO ANIO/PROGRAMACION 3/Programacion-3-TUDAI&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -139,7 +138,6 @@
       <recent name="C:\Users\Liv\IdeaProjects\Programacion-3-JAVA-TUDAI\src\main\java\practico1\ej5" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\universidad\Programacion-3-TUDAI" />
       <recent name="D:\University\SEGUNDO ANIO\PROGRAMACION 3\Programacion-3-TUDAI\src\main\java" />
       <recent name="C:\Users\Liv\IdeaProjects\Programacion-3-JAVA-TUDAI\src\main\java\practico1" />
       <recent name="C:\Users\Liv\IdeaProjects\Programacion-3-JAVA-TUDAI\src\main\java\org\example\programacion3javatudai\ListaVinculada" />
@@ -155,7 +153,7 @@
       <recent name="practico1.ej6" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Fabrica">
+  <component name="RunManager" selected="Application.Ej2">
     <configuration name="Cursada2025.tp5.Ejercicio4.Ejercicio4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Cursada2025.tp5.Ejercicio4.Ejercicio4" />
       <module name="Programacion-3-JAVA-TUDAI" />
@@ -169,12 +167,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ejercicio3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Cursada2025.tp5.Ejercicio3.Ejercicio3" />
+    <configuration name="Ej1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Cursada2025.tp6.Ej1" />
       <module name="Programacion-3-JAVA-TUDAI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Cursada2025.tp5.Ejercicio3.*" />
+          <option name="PATTERN" value="Cursada2025.tp6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ej2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Cursada2025.tp6.Ej2" />
+      <module name="Programacion-3-JAVA-TUDAI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Cursada2025.tp6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -195,25 +206,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Fabrica" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Cursada2025.PracticoEspecial.Fabrica" />
+    <configuration name="Ejercicio7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Cursada2025.tp5.Ejercico7.Ejercicio7" />
       <module name="Programacion-3-JAVA-TUDAI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Cursada2025.PracticoEspecial.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Fabrica_greedy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Cursada2025.PracticoEspecial.Fabrica_greedy" />
-      <module name="Programacion-3-JAVA-TUDAI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Cursada2025.PracticoEspecial.*" />
+          <option name="PATTERN" value="Cursada2025.tp5.Ejercico7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -223,19 +221,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Fabrica" />
-        <item itemvalue="Application.Fabrica_greedy" />
+        <item itemvalue="Application.Ej2" />
+        <item itemvalue="Application.Ej1" />
+        <item itemvalue="Application.Ejercicio7" />
         <item itemvalue="Application.Ejercicio5Back" />
         <item itemvalue="Application.Cursada2025.tp5.Ejercicio4.Ejercicio4" />
-        <item itemvalue="Application.Ejercicio3" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
       </set>
     </attachedChunks>
   </component>
@@ -287,12 +285,14 @@
       <workItem from="1747861977252" duration="176000" />
       <workItem from="1748017997085" duration="11539000" />
       <workItem from="1748263423779" duration="13077000" />
-      <workItem from="1748466085551" duration="5569000" />
-      <workItem from="1748631614045" duration="46000" />
-      <workItem from="1748631757807" duration="8998000" />
-      <workItem from="1748641316638" duration="297000" />
-      <workItem from="1749035270104" duration="596000" />
-      <workItem from="1749068945343" duration="474000" />
+      <workItem from="1748437069361" duration="7686000" />
+      <workItem from="1748521182993" duration="36000" />
+      <workItem from="1749084130329" duration="2122000" />
+      <workItem from="1749088711881" duration="208000" />
+      <workItem from="1749166115884" duration="3463000" />
+      <workItem from="1749214263820" duration="2187000" />
+      <workItem from="1749218593137" duration="6217000" />
+      <workItem from="1749347575259" duration="4419000" />
     </task>
     <task id="LOCAL-00001" summary="git add .">
       <option name="closed" value="true" />
@@ -462,16 +462,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp4/ej6/Ejercicio6.java</url>
-          <line>93</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp4/ej6/Ejercicio6.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp4/ej6/Ejercicio6.java</url>
           <line>53</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
@@ -486,24 +476,19 @@
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/PracticoEspecial/Fabrica.java</url>
-          <line>34</line>
+          <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio10/Ejericico10.java</url>
+          <line>75</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/PracticoEspecial/Fabrica.java</url>
-          <line>42</line>
+          <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio10/Ejericico10.java</url>
+          <line>77</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/PracticoEspecial/Fabrica.java</url>
-          <line>26</line>
+          <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/tp5/Ejercicio10/Ejericico10.java</url>
+          <line>78</line>
           <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Cursada2025/PracticoEspecial/Fabrica.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

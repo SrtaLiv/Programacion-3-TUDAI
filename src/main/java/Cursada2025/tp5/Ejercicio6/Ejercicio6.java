@@ -31,18 +31,6 @@ public class Ejercicio6 {
             solucion.add(actual);
             return;
         }
-//
-//        else{
-//            if (!recorridoActual.contains(actual)){
-//                recorridoActual.add(actual);
-//
-//                for (Casillero casillero : recorrido) {
-//                    backtracking(recorrido, casillero, destino);
-//                }
-//
-//                recorridoActual.remove(actual);
-//            }
-//        }
 
         if (recorridoActual.contains(actual)) { // si ya lo recorri, no volver a pisar
             return;
