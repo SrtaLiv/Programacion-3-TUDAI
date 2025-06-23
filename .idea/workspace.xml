@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55d2d7d2-d721-4245-bf05-1ca2f3ddf5d1" name="Changes" comment="laberinto, complicadito">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp6/Ej8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp6/Ej9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EjerciciosExtra/Recuperatorio2024/CicloHamiltoneano.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Vertice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cursada2025/tp4/Vertice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
