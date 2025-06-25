@@ -9,6 +9,7 @@ import java.util.Iterator;
 public class CicloHamiltoneano {
     ArrayList<Integer> visitados;
     ArrayList<Integer> mejorSolucion;
+
     public void obtenerVertices(GrafoNoDirigido gr){
         visitados.clear();
         mejorSolucion.clear();
