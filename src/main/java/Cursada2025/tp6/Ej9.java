@@ -1,7 +1,10 @@
 package Cursada2025.tp6;
 
+import Cursada2024.practico5_backtracking.ej6.PosibleSolucion.Casilla;
+
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class Ej9 {
     /**
@@ -59,6 +62,39 @@ public class Ej9 {
 
         else{
             System.out.println("No se puede avanzar más. Camino terminado.");        }
+    }
+
+    public void buscarCaminoMayor(Tablero tt, Casilla origen, Casilla destino){
+        solucion.add(origen);
+        visitados.add(origen);
+        greedy(tt, origen, destino, origen.getValue());
+    }
+
+    private void greedy(Tablero tt, Casilla actual, Casilla destino, int contador) {
+        if (destino == actual){
+            solucion.add(actual);
+        }
+        else{
+            List<Casilla> adyacentes = tt.getAdyacentes(actual);
+            int mejorValor = -1;
+            Casilla elegidaMayor = null;
+
+            for (Casilla ady : adyacentes){
+                if (!visitados.contains(ady) && ady.getValue() > actual.getValue()){
+                    if (ady.getValue() > mejorValor)  {
+                        mejorValor = ady.getValue();
+                        elegidaMayor = ady;
+                    }
+                }
+            }
+
+            if (elegidaMayor == null) return;
+
+            contador += elegidaMayor.getValue();
+            visitados.add(elegidaMayor);
+            solucion.add(elegidaMayor);
+            greedy(tt, ady, tt.obtener(elegidaMayor), destino, contador);
+        }
     }
 
 }
